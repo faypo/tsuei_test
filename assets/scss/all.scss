@@ -1,3 +1,5 @@
+@import "./base/base";
+
 @import "../../node_modules/bootstrap/scss/functions";
 @import './utils/variables';
 @import "../../node_modules/bootstrap";
@@ -6,3 +8,4 @@
 @import './layout/footer.scss';
 
 @import './pages/index.scss';
+@import './pages/allproduct.scss';
