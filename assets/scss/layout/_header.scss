@@ -1,4 +1,46 @@
+
 .header{
-  background: #69F0AE;
-  font-size: 64px;
+  background: #FAFAFA;
+  color: lightgray;
+  padding:0; /*稍微撐大使用者體驗較好*/
+  width: 100%;
+
+  &-all{
+    width: 100%;
+    height: 24px;
+    background: #262626;
+  }
+
+  
+
+  .nav{
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .right_side{
+    width: 379px;
+  }
+
+  .left_side{
+    width: 30%;
+  }
+
+  .search-box{
+    width: 243px;
+  }
+
+  .a{
+    position:absolute; /*絕對配置*/
+    left:0;
+    width: 100%;
+    height: 100%;    
+  }
+
+  .mb-6{
+    margin-bottom: 36px;
+  }
+
 }
+
+

@@ -1,0 +1,39 @@
+/* base 基本設定 (將reset和base分開，可讓style更簡潔更容易維護)*/
+
+/*盒模型*/
+*::before, *::after {
+    box-sizing: border-box;
+    /*outline: solid 1px black; */ /*線外框*/
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    transition: opacity 0.5s; /*淡入小動畫*/
+}
+
+a:hover:not(.logo){
+    opacity: 0.7; /*小動畫*/
+}
+
+body{
+    font-family: "Roboto", "Noto Sans TC", sans-serif ;
+    line-height: 1.5;
+}
+
+button{
+    cursor:pointer;
+    font-size: 16px;
+    transition: opacity 0.5s;
+}
+
+button:hover{
+    opacity: 0.7;
+}

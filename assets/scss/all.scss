@@ -1,3 +1,11 @@
+
+@import './helper/variables'; //變數檔案往前放，因為後面scss需要讀取前方的變數設定
+@import './helper/mixins'; //理由同上，會被後方檔案讀取使用
+@import './helper/utils';
+
+@import './base/reset'; //瀏覽器基本樣式清除
+@import './base/base'; //建立基本樣式
+
 @import "../../node_modules/bootstrap/scss/functions";
 @import './utils/variables';
 @import "../../node_modules/bootstrap";
@@ -6,3 +14,5 @@
 @import './layout/footer.scss';
 
 @import './pages/index.scss';
+
+

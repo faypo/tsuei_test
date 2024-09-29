@@ -1,0 +1,69 @@
+/* utilities區 */
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 372px;
+    }
+}
+
+.container-md-fluid {
+    max-width: 1320px;
+    padding: 0px 12px;
+    margin: 0 auto;
+}
+
+.container-sm-full {
+    max-width: 1320px;
+    padding: 0px 12px;
+    margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+    .container-sm-full{
+        padding: 0;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bg-light { /*背景色*/
+    background: $bg-light;
+}
+
+.bg-dark {
+    background: $primary;
+}
+
+.text-white { /*純文字標題設定*/
+    color: white;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-sb{
+    justify-content: space-between;
+}
+
+.pr-0 {
+    padding-right: 0 !important; /*積分最高，無法被覆蓋修改*/
+}
+
+.p1-0 {
+    padding-left: 0 !important; /*積分最高，無法被覆蓋修改*/
+}
