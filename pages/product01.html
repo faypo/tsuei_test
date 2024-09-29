@@ -3,9 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <title>緊緻修護洗面皂</title>
 </head>
 <body>
+    <!--header-->
+    <%- include('./layout/header'); -%>
+    <!--section1-->
+    <div class="row align-items-center">
+    <!--左側商品圖群JS套件待補 圖片數量???參考: https://codepen.io/kevin-chang-the-sasster/pen/WNGZpLx-->
+        <div class="col">
+        
+        </div>
+    <!--右側介紹-->
+        <div class="col">
+            <ul>
+                <li><h1>緊緻修護洗面皂</h1></li>
+                <li>容量</li>
+                <li>120g</li>
+                <li><h4>NT$260</h4></li>
+                <li>數量</li>
+                <!--數量按鍵-->
+                <li>
+                    <button type="button" class="btn btn-light">加入購物車</button>
+                    <button type="button" class="btn btn-dark">立即結帳</button>
+                </li>
+            </ul>
+        </div>
+
+        
+    </div>
     
+   
+    <!--section2 Swipe 套件應用(圖片、CSS、JS未補完)參考: https://hackmd.io/iUyXrm0dSN6ILfLdw1_A8w-->
+    <div>
+        <div class="container"> 
+            <div class="">
+                <h3 class="fw-bold">本月推薦</h3>
+            </div>
+        </div>
+        <div class="swiper-container swiper-box">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide d-flex flex-column">
+                  <img src="" alt="product">
+                  <div class="">
+                    <h4>除毛刮鬍皂</h4>
+                    <div class="">
+                      <p>天然滋潤</br>輕鬆軟化毛髮及鬍鬚</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide d-flex flex-column">
+                    <img src="" alt="product">
+                    <div class="">
+                      <h4>洗髮皂</h4>
+                      <div class="">
+                        <p>保濕能力</br>不讓頭髮失去天然油脂</p>
+                      </div>
+                    </div>
+                </li>
+    </div>
+    <!--footer-->
+    <%- include('./layout/footer'); -%>
+<script type="module" src="../main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>
