@@ -1,0 +1,10 @@
+//font-size固定尺寸
+
+$utilities: map-merge(
+  $utilities, (
+    "border": map-merge(
+      map-get($utilities, "border"),
+      ( responsive: true ),
+    ),
+  )
+);

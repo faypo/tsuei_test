@@ -1,26 +1,18 @@
-<<<<<<< HEAD
-@import "./base/base";
-=======
-
-@import './helper/variables'; //變數檔案往前放，因為後面scss需要讀取前方的變數設定
-@import './helper/mixins'; //理由同上，會被後方檔案讀取使用
-@import './helper/utils';
-
-@import './base/reset'; //瀏覽器基本樣式清除
-@import './base/base'; //建立基本樣式
->>>>>>> b168836578acc017c1cd9525860302fc0313cb85
-
 @import "../../node_modules/bootstrap/scss/functions";
 @import './utils/variables';
 @import "../../node_modules/bootstrap";
+@import "./utils/utilities";
+
+@import "bootstrap/scss/utilities/api";
+
+@import "./base/base";
+@import "./helper/mixins";
 
 @import './layout/header.scss';
 @import './layout/footer.scss';
 
 @import './pages/index.scss';
-<<<<<<< HEAD
 @import './pages/allproduct.scss';
-=======
+@import './pages/product01';
+@import './pages/shopping.scss';
 
-
->>>>>>> b168836578acc017c1cd9525860302fc0313cb85

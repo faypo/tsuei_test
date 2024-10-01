@@ -1,23 +1,6 @@
-<<<<<<< HEAD
-img{
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-a{
-    color: white;
-    text-decoration: none;
-    display: inline-block;
-}
-=======
 /* base 基本設定 (將reset和base分開，可讓style更簡潔更容易維護)*/
 
 /*盒模型*/
-*::before, *::after {
-    box-sizing: border-box;
-    /*outline: solid 1px black; */ /*線外框*/
-}
 
 img{
     max-width: 100%;
@@ -26,19 +9,18 @@ img{
 }
 
 a{
-    display: inline-block;
-    text-decoration: none;
+    display: inline;
     color: inherit;
     transition: opacity 0.5s; /*淡入小動畫*/
 }
 
 a:hover:not(.logo){
+    color: $primary-br500;
     opacity: 0.7; /*小動畫*/
 }
 
-body{
-    font-family: "Roboto", "Noto Sans TC", sans-serif ;
-    line-height: 1.5;
+h1,h2,h3,h4,h5,h6{
+    letter-spacing: 0.1em;
 }
 
 button{
@@ -50,4 +32,3 @@ button{
 button:hover{
     opacity: 0.7;
 }
->>>>>>> b168836578acc017c1cd9525860302fc0313cb85
