@@ -1,26 +1,31 @@
 <header class="header">
-    <div class="header-all"></div>
     <div class="container py-6">
-        <div class="d-flex nav">
-        <div class="right_side d-flex nav">
-            <a class="link-neutral-800" href="index.html">首頁</a>
-            <a class="link-neutral-800" href="about.html">品牌故事</a>
-            <a class="link-neutral-800" href="allproduct.html">商品總覽</a>
-        </div>
-        <div class="logo_poto">
-            <img src="../assets/images/logo.png" alt="TSUEI Logo">
-
-        </div>
-        <div class="left_side d-flex nav">
-            <img src="../assets/images/user.png" alt="account icon">
-            <a href="shopping.html">
-                <img src="../assets/images/shopping-cart.png" alt="shopping cart icon"> (10)
-            </a>
-            <div class="input-group mb-3 search-box">
-                <input type="text" class="form-control rounded-pill" placeholder="search" aria-label="search" aria-describedby="basic-addon1">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex">
+                <a class="header-link px-6" href="index.html">首頁</a>
+                <a class="header-link px-6" href="about.html">品牌故事</a>
+                <a class="header-link px-6" href="allproduct.html">商品總覽</a>
             </div>
-        </div>
-        
+            <div class="logo_poto">
+                <img src="../assets/images/logo.png" alt="TSUEI Logo">
+
+            </div>
+            <div class="d-flex align-items-center gap-7">
+                <a href="#">
+                    <img src="../assets/images/user.png" alt="account icon">
+                </a>
+                <a class="header-link" href="shopping.html">
+                    <img src="../assets/images/shopping-cart.png" alt="shopping cart icon"> (10)
+                </a>
+                <form class="d-flex position-relative" role="search" >
+                    <input class="bg-neutral-200 text-neutral-300 form-control rounded-pill py-1 ps-7" type="search" placeholder="search" aria-label="Search" />
+                    <div class="header-icon">
+                        <a class="" href="#">
+                            <img class="" src="../assets/images/search.png" alt="">
+                        </a>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 
