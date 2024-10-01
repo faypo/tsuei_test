@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"> -->
     <title>緊緻修護洗面皂</title>
 </head>
 <body>
@@ -22,20 +22,23 @@
         <div class="col">
             <ul class="list-unstyled">
                 <li><h1>緊緻修護洗面皂</h1></li>
+                <li><h4>Body & Shave Bar</h4></li>
                 <li>容量</li>
                 <li>120g</li>
                 <li><h4>NT$260</h4></li>
                 <li>數量</li>
-                <!--數量按鍵 參考: https://codepen.io/SimonAllen/pen/pEWbdO
+                <!--數量按鍵 參考: https://codepen.io/NinaLena/pen/jmqwxb-->
                 <li>
-                    <div class="box">
-                        <div class="minus">-</div>
-                        <div class="num">1</div>
-                        <div class="add">+</div>
-                        <div class="fill_stock"></div>
-                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-btn">
+                            <button class="btn btn-outline-secondary" type="button" id="down"><span class="glyphicon glyphicon-minus">-</button>
+                        </div>
+                        <input type="text" id="myNumber" class="form-control input-number" value="1"/>
+                        <div class="input-group-btn">
+                            <button class="btn btn-outline-secondary" type="button" id="up"><span class="glyphicon glyphicon-plus"></span>+</button>
+                        </div>
                 </li>
-                <li>待修改-->
+                <li>
                     <button type="button" class="btn btn-light">加入購物車</button>
                     <button type="button" class="btn btn-dark">立即結帳</button>
                 </li>
@@ -71,7 +74,7 @@
         <div class="swiper-container swiper-box">
             <ul class="swiper-wrapper">
                 <li class="swiper-slide d-flex flex-column">
-                  <img src="" alt="product">
+                  <img src="" alt="Body & Shave Bar">
                   <div class="">
                     <h4>除毛刮鬍皂</h4>
                     <div class="">
@@ -93,5 +96,6 @@
     <%- include('./layout/footer'); -%>
 <script type="module" src="../main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 </body>
 </html>
