@@ -1,3 +1,9 @@
+a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: opacity 0.5s; /*淡入小動畫*/
+}
 /* base 基本設定 (將reset和base分開，可讓style更簡潔更容易維護)*/
 
 /*盒模型*/
@@ -6,12 +12,6 @@ img{
     max-width: 100%;
     height: auto;
     vertical-align: middle;
-}
-
-a{
-    display: inline;
-    color: inherit;
-    transition: opacity 0.5s; /*淡入小動畫*/
 }
 
 a:hover:not(.logo){
