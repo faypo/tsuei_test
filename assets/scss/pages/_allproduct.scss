@@ -1,9 +1,29 @@
 .like-link{
-    background: red;
+    display: block;
+    background: #0a0a0a66;
     width: 50px;
     height: 50px;
+    border-radius: 4px;
     position: absolute;
-    top:0;
-    right: 0;
-    display: block;
+    top: 12px;
+    right: 12px;
+    color:  white;
+}
+
+.nav-link:hover{
+    background: $primary-br500;
+}
+
+.allproduct-bg{
+    background-image: url("../images/Banner_product.jpg");
+    background-size: cover;
+}
+
+.combo-bg{
+    background-image: url("../images/banner_product_2.jpg");
+    background-size: cover;
+}
+.combo-title{
+    background: #FFFFFFCC;
+    width: 420px;
 }

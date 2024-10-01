@@ -5,16 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>商品總覽</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
   </head>
   <body>
     <%- include('./layout/header'); -%>
     
     <main>
-      <section>
-        <div class="container py-5">
-          <ul class="nav nav-underline pb-5">
+      <section class="bg-primary-br200">
+        <div class="container">
+          <ul class="nav nav-pills">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">+臉部清潔</a>
+              <a class="nav-link" aria-current="page" href="#">+臉部清潔</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">+臉部保養</a>
@@ -29,39 +31,226 @@
               <a class="nav-link" href="#">+沐浴系列</a>
             </li>
           </ul>
-          <div class="row">
-            <div class="col-6">
-              <div class="position-relative">
-                <div class="card border-0" style="">
-                  <img src="https://fakeimg.pl/300/" class="card-img-top" alt="...">
-                  <div class="card-body text-center">
-                    <h5 class="card-title me-5">產品名稱</h5>
-                    <p class="card-text ms-5">99</p>
-                    <div class="">
-                      <a href="product01.html" class="btn btn-primary">精選商品</a>
-                    </div>
-                  </div>
-                  <div class="like-link">
-                    <a href="#"></a>
+        </div>
+      </section>
+      <section class="allproduct-bg">
+        <div class="container py-10">
+          <div class="row justify-content-center">
+            <div class="col-5">
+              <div class="d-flex mb-1">
+                <div class="me-auto">
+                  <h5 class="">除毛刮皂</h5>
+                  <p class="me-auto fs-sm">Rummy Body & Shave Soap</p>
+                </div>
+                <div class="pt-2">
+                  <div class="d-flex text-primary-br500">
+                    <p class="mt-2 me-1">NT$</p>
+                    <h3 class="h3">99</h3>                      
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col-6">
               <div class="position-relative">
-                <div class="card border-0" style="">
-                  <img src="https://fakeimg.pl/300/" class="card-img-top" alt="...">
-                  <div class="card-body text-center">
-                    <h5 class="card-title me-5">產品名稱</h5>
-                    <p class="card-text ms-5">99</p>
-                    <div class="">
-                      <a href="product01.html" class="btn btn-primary">精選商品</a>
-                    </div>
-                  </div>
-                  <div class="like-link">
-                    <a href="#"></a>
+                <img src="../assets/images/prod_1.png" class="card-img-top" alt="...">
+                <button type="button" class="like-link btn" data-bs-toggle="button" autocomplete="off"><i data-feather="heart"></i></button>
+              </div>
+            </div>
+            <div class="col-5">
+              <div class="d-flex mb-1">
+                <div class="me-auto">
+                  <h5 class="h5">除毛刮皂</h5>
+                  <p class="me-auto fs-sm">Rummy Body & Shave Soap</p>
+                </div>
+                <div class="pt-2">
+                  <div class="d-flex text-primary-br500">
+                    <p class="mt-2 me-1">NT$</p>
+                    <h3 class="h3">99</h3>                      
                   </div>
                 </div>
+              </div>
+              <div class="position-relative">
+                <img src="../assets/images/prod_1.png" class="card-img-top" alt="...">
+                <button type="button" class="like-link btn" data-bs-toggle="button" autocomplete="off"><i data-feather="heart"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container py-10">
+          <div class="combo-bg py-10">
+            <div class="combo-title p-6 ms-9 my-7">
+              <h2 class="h2 mb-8">柔化肌膚組合</h2>
+              <div class="d-flex align-items-end justify-content-end text-primary-br500">
+                <p class="h4 me-1">NT$</p>
+                <h3 class="h1">99</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container py-10">
+          <div class="row row-gap-7">
+            <div class="col-4">
+              <div class="d-flex">
+                <div class="me-auto">
+                  <h5 class="">緊緻修護洗面皂</h5>
+                  <p class="me-auto fs-sm">Facial Cleanser with Pink Clay</p>
+                </div>
+                <div class="pt-2">
+                  <div class="d-flex text-primary-br500">
+                    <p class="mt-2 me-1">NT$</p>
+                    <h3 class="h3">99</h3>                      
+                  </div>
+                </div>
+              </div>
+              <div class="position-relative">
+                <img src="../assets/images/prod_2.png" class="card-img-top" alt="...">
+                <button type="button" class="like-link btn" data-bs-toggle="button" autocomplete="off"><i data-feather="heart"></i></button>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="d-flex">
+                <div class="me-auto">
+                  <h5 class="">深層潔淨洗面皂</h5>
+                  <p class="me-auto fs-sm">Facial Cleanser with Charcoal</p>
+                </div>
+                <div class="pt-2">
+                  <div class="d-flex text-primary-br500">
+                    <p class="mt-2 me-1">NT$</p>
+                    <h3 class="h3">99</h3>                      
+                  </div>
+                </div>
+              </div>
+              <div class="position-relative">
+                <img src="../assets/images/prod_3.png" class="card-img-top" alt="...">
+                <button type="button" class="like-link btn" data-bs-toggle="button" autocomplete="off"><i data-feather="heart"></i></button>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="d-flex">
+                <div class="me-auto">
+                  <h5 class="">椰子油肥皂</h5>
+                  <p class="me-auto fs-sm">Base Coconut Bar Soap</p>
+                </div>
+                <div class="pt-2">
+                  <div class="d-flex text-primary-br500">
+                    <p class="mt-2 me-1">NT$</p>
+                    <h3 class="h3">99</h3>                      
+                  </div>
+                </div>
+              </div>
+              <div class="position-relative">
+                <img src="../assets/images/prod_4.png" class="card-img-top" alt="...">
+                <button type="button" class="like-link btn" data-bs-toggle="button" autocomplete="off"><i data-feather="heart"></i></button>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="d-flex">
+                <div class="me-auto">
+                  <h5 class="">檸檬香桃木肥皂</h5>
+                  <p class="me-auto fs-sm">Base Lemon Myrtle Bar Soap</p>
+                </div>
+                <div class="pt-2">
+                  <div class="d-flex text-primary-br500">
+                    <p class="mt-2 me-1">NT$</p>
+                    <h3 class="h3">99</h3>                      
+                  </div>
+                </div>
+              </div>
+              <div class="position-relative">
+                <img src="../assets/images/prod_5.png" class="card-img-top" alt="...">
+                <button type="button" class="like-link btn" data-bs-toggle="button" autocomplete="off"><i data-feather="heart"></i></button>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="d-flex">
+                <div class="me-auto">
+                  <h5 class="">天竺葵和粉紅礦物肥皂</h5>
+                  <p class="me-auto fs-sm">Base Geranium & Pink Clay Bar Soap</p>
+                </div>
+                <div class="pt-2">
+                  <div class="d-flex text-primary-br500">
+                    <p class="mt-2 me-1">NT$</p>
+                    <h3 class="h3">99</h3>                      
+                  </div>
+                </div>
+              </div>
+              <div class="position-relative">
+                <img src="../assets/images/prod_6.png" class="card-img-top" alt="...">
+                <button type="button" class="like-link btn" data-bs-toggle="button" autocomplete="off"><i data-feather="heart"></i></button>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="d-flex">
+                <div class="me-auto">
+                  <h5 class="">薰衣草綠礦皂</h5>
+                  <p class="me-auto fs-sm">Base Lavender & Green Clay Bar Soap</p>
+                </div>
+                <div class="pt-2">
+                  <div class="d-flex text-primary-br500">
+                    <p class="mt-2 me-1">NT$</p>
+                    <h3 class="h3">99</h3>                      
+                  </div>
+                </div>
+              </div>
+              <div class="position-relative">
+                <img src="../assets/images/prod_7.png" class="card-img-top" alt="...">
+                <button type="button" class="like-link btn" data-bs-toggle="button" autocomplete="off"><i data-feather="heart"></i></button>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="d-flex">
+                <div class="me-auto">
+                  <h5 class="">天竺葵和粉紅礦物肥皂</h5>
+                  <p class="me-auto fs-sm">Base Geranium & Pink Clay Bar Soap</p>
+                </div>
+                <div class="pt-2">
+                  <div class="d-flex text-primary-br500">
+                    <p class="mt-2 me-1">NT$</p>
+                    <h3 class="h3">99</h3>                      
+                  </div>
+                </div>
+              </div>
+              <div class="position-relative">
+                <img src="../assets/images/prod_6.png" class="card-img-top" alt="...">
+                <button type="button" class="like-link btn" data-bs-toggle="button" autocomplete="off"><i data-feather="heart"></i></button>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="d-flex">
+                <div class="me-auto">
+                  <h5 class="">椰子油肥皂</h5>
+                  <p class="me-auto fs-sm">Base Coconut Bar Soap</p>
+                </div>
+                <div class="pt-2">
+                  <div class="d-flex text-primary-br500">
+                    <p class="mt-2 me-1">NT$</p>
+                    <h3 class="h3">99</h3>                      
+                  </div>
+                </div>
+              </div>
+              <div class="position-relative">
+                <img src="../assets/images/prod_4.png" class="card-img-top" alt="...">
+                <button type="button" class="like-link btn" data-bs-toggle="button" autocomplete="off"><i data-feather="heart"></i></button>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="d-flex">
+                <div class="me-auto">
+                  <h5 class="">緊緻修護洗面皂</h5>
+                  <p class="me-auto fs-sm">Facial Cleanser with Pink Clay</p>
+                </div>
+                <div class="pt-2">
+                  <div class="d-flex text-primary-br500">
+                    <p class="mt-2 me-1">NT$</p>
+                    <h3 class="h3">99</h3>                      
+                  </div>
+                </div>
+              </div>
+              <div class="position-relative">
+                <img src="../assets/images/prod_2.png" class="card-img-top" alt="...">
+                <button type="button" class="like-link btn" data-bs-toggle="button" autocomplete="off"><i data-feather="heart"></i></button>
               </div>
             </div>
           </div>
@@ -69,198 +258,12 @@
       </section>
       <section>
         <div class="container py-5">
-          <div class="position-relative">
-            <div class="card border-0" style="">
-              <img src="https://fakeimg.pl/300/" class="card-img-top" alt="...">
-              <div class="card-body text-center">
-                <h5 class="card-title me-5">產品名稱</h5>
-                <p class="card-text ms-5">99</p>
-                <div class="">
-                  <a href="product01.ht" class="btn btn-primary">精選商品</a>
-                </div>
-              </div>
-              <div class="like-link">
-                <a href="#"></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div class="container py-5">
-          <div class="row">
-            <div class="col-4">
-              <div class="position-relative">
-                <div class="card border-0" style="">
-                  <img src="https://fakeimg.pl/300/" class="card-img-top" alt="...">
-                  <div class="card-body text-center">
-                    <h5 class="card-title me-5">產品名稱</h5>
-                    <p class="card-text ms-5">99</p>
-                    <div class="">
-                      <a href="product01.html" class="btn btn-primary">精選商品</a>
-                    </div>
-                  </div>
-                  <div class="like-link">
-                    <a href="#"></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="position-relative">
-                <div class="card border-0" style="">
-                  <img src="https://fakeimg.pl/300/" class="card-img-top" alt="...">
-                  <div class="card-body text-center">
-                    <h5 class="card-title me-5">產品名稱</h5>
-                    <p class="card-text ms-5">99</p>
-                    <div class="">
-                      <a href="product01.html" class="btn btn-primary">精選商品</a>
-                    </div>
-                  </div>
-                  <div class="like-link">
-                    <a href="#"></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="position-relative">
-                <div class="card border-0" style="">
-                  <img src="https://fakeimg.pl/300/" class="card-img-top" alt="...">
-                  <div class="card-body text-center">
-                    <h5 class="card-title me-5">產品名稱</h5>
-                    <p class="card-text ms-5">99</p>
-                    <div class="">
-                      <a href="product01.html" class="btn btn-primary">精選商品</a>
-                    </div>
-                  </div>
-                  <div class="like-link">
-                    <a href="#"></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div class="container py-5">
-          <div class="row">
-            <div class="col-4">
-              <div class="position-relative">
-                <div class="card border-0" style="">
-                  <img src="https://fakeimg.pl/300/" class="card-img-top" alt="...">
-                  <div class="card-body text-center">
-                    <h5 class="card-title me-5">產品名稱</h5>
-                    <p class="card-text ms-5">99</p>
-                    <div class="">
-                      <a href="product01.html" class="btn btn-primary">精選商品</a>
-                    </div>
-                  </div>
-                  <div class="like-link">
-                    <a href="#"></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="position-relative">
-                <div class="card border-0" style="">
-                  <img src="https://fakeimg.pl/300/" class="card-img-top" alt="...">
-                  <div class="card-body text-center">
-                    <h5 class="card-title me-5">產品名稱</h5>
-                    <p class="card-text ms-5">99</p>
-                    <div class="">
-                      <a href="product01.html" class="btn btn-primary">精選商品</a>
-                    </div>
-                  </div>
-                  <div class="like-link">
-                    <a href="#"></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="position-relative">
-                <div class="card border-0" style="">
-                  <img src="https://fakeimg.pl/300/" class="card-img-top" alt="...">
-                  <div class="card-body text-center">
-                    <h5 class="card-title me-5">產品名稱</h5>
-                    <p class="card-text ms-5">99</p>
-                    <div class="">
-                      <a href="product01.html" class="btn btn-primary">精選商品</a>
-                    </div>
-                  </div>
-                  <div class="like-link">
-                    <a href="#"></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div class="container py-5">
-          <div class="row">
-            <div class="col-4">
-              <div class="position-relative">
-                <div class="card border-0" style="">
-                  <img src="https://fakeimg.pl/300/" class="card-img-top" alt="...">
-                  <div class="card-body text-center">
-                    <h5 class="card-title me-5">產品名稱</h5>
-                    <p class="card-text ms-5">99</p>
-                    <div class="">
-                      <a href="product01.html" class="btn btn-primary">精選商品</a>
-                    </div>
-                  </div>
-                  <div class="like-link">
-                    <a href="#"></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="position-relative">
-                <div class="card border-0" style="">
-                  <img src="https://fakeimg.pl/300/" class="card-img-top" alt="...">
-                  <div class="card-body text-center">
-                    <h5 class="card-title me-5">產品名稱</h5>
-                    <p class="card-text ms-5">99</p>
-                    <div class="">
-                      <a href="product01.html" class="btn btn-primary">精選商品</a>
-                    </div>
-                  </div>
-                  <div class="like-link">
-                    <a href="#"></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="position-relative">
-                <div class="card border-0" style="">
-                  <img src="https://fakeimg.pl/300/" class="card-img-top" alt="...">
-                  <div class="card-body text-center">
-                    <h5 class="card-title me-5">產品名稱</h5>
-                    <p class="card-text ms-5">99</p>
-                    <div class="">
-                      <a href="product01.html" class="btn btn-primary">精選商品</a>
-                    </div>
-                  </div>
-                  <div class="like-link">
-                    <a href="#"></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="py-3 d-flex justify-content-center gap-3">            
-            <a href="#" class="btn btn-outline-primary" role="button"><img src="file:///C:/Users/Onion/Desktop/chevron-left.svg" alt=""></a>              
-            <a href="#" class="btn btn-outline-primary rounded-circle" role="button">1</a>             
-            <a href="#" class="btn btn-outline-primary rounded-circle" role="button">2</a>            
-            <a href="#" class="btn btn-outline-primary rounded-circle" role="button">3</a>
-            <a href="#" class="btn btn-outline-primary" role="button">後</a>
+          <div class="py-3 d-flex justify-content-center gap-7 align-items-center">            
+            <a href="#" class="btn px-1" role="button"><i data-feather="chevron-left"></i></a>              
+            <a href="#" class="btn fs-3" role="button">1</a>             
+            <a href="#" class="btn fs-3" role="button">2</a>          
+            <a href="#" class="btn fs-3" role="button">3</a>
+            <a href="#" class="btn px-1" role="button"><i data-feather="chevron-right"></i></a>
           </div>
         </div>
       </section>
@@ -268,6 +271,9 @@
 
     <%- include('./layout/footer'); -%>
 
+    <script>
+      feather.replace();
+    </script>
     <script type="module" src="../main.js"></script>
   </body>
 </html>

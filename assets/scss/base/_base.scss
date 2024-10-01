@@ -15,12 +15,19 @@ img{
 }
 
 a:hover:not(.logo){
-    color: $primary-br500;
     opacity: 0.7; /*小動畫*/
 }
 
 h1,h2,h3,h4,h5,h6{
     letter-spacing: 0.1em;
+}
+ul,ol,li{
+    list-style: none;
+}
+
+p{
+    letter-spacing: 0.05em;
+    margin-bottom: 0;
 }
 
 button{

@@ -1,8 +1,7 @@
 
 .header{
   background: #FAFAFA;
-  color: lightgray;
-  padding:0; /*稍微撐大使用者體驗較好*/
+  padding: 0; /*稍微撐大使用者體驗較好*/
   width: 100%;
 
   &-all{
@@ -34,9 +33,11 @@
     position:absolute; /*絕對配置*/
     left:0;
     width: 100%;
-    height: 100%;    
+    height: 100%;
   }
-
+  a:hover{
+    color: $primary-br500;
+  }
   .mb-6{
     margin-bottom: 36px;
   }

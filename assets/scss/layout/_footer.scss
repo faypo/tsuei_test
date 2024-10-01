@@ -1,17 +1,17 @@
 /*footer區*/
 
 .footer{
-  padding-top: 48px;
-  padding-bottom: 32px;
+  padding-top: 100px;
+  padding-bottom: 120px;
   color: #FAFAFA;
 }
 
 .footer-header {
   display: flex;
   justify-content: space-between;
-  border-bottom: solid 1px white;
-  padding-bottom: 32px;
-  margin-bottom: 32px;
+  border-bottom: solid 1px #525252;
+  padding-bottom: 36px;
+  margin-bottom: 36px;
 }
 
 .footer .nav {
@@ -32,7 +32,6 @@
 
 .footer .contact-list {
   font-size: 36px;
-  font-family: "Noto Sans TC", sans-serif;
 }
 
 .footer .contact-list .material-symbols-outlined {
