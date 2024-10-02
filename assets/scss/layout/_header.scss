@@ -4,6 +4,8 @@
 }
 
 .header-link{
+  padding-right: 18px;
+  padding-left: 18px;
   color: $neutral-800;
 }
 
@@ -11,9 +13,14 @@
   color: $primary-br500;
 }
 
-.header-icon{
+.find-icon{
   position: absolute;
-  left: 10px;
-  top:  8px;
+  left: 9px;
+  top:  6px;
 
+}
+
+.tsuei-logo{
+  width: 240px;
+  height: 100px;
 }

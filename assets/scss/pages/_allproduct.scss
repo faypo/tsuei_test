@@ -10,11 +10,11 @@
     color:  white;
 }
 
-.nav-link:hover{
+.nav-link:hover,.nav-link:focus{
     background: $primary-br500;
 }
 
-.allproduct-bg{
+.onSales-bg{
     background-image: url("../images/Banner_product.jpg");
     background-size: cover;
 }
