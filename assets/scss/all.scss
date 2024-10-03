@@ -3,6 +3,7 @@
 @import "../../node_modules/bootstrap/scss/functions";
 @import './utils/variables';
 @import "../../node_modules/bootstrap";
+
 @import "./utils/utilities";
 
 @import "bootstrap/scss/utilities/api";
@@ -10,6 +11,7 @@
 @import "./base/base";
 @import "./helper/mixins";
 @import "./helper/button";
+@import "./helper/utils";
 
 
 @import './layout/header.scss';
@@ -18,5 +20,5 @@
 @import './pages/index.scss';
 @import './pages/allproduct.scss';
 @import './pages/product01';
-/*@import './pages/shopping.scss';*/
+@import './pages/shopping.scss';
 
