@@ -12,7 +12,7 @@
     <!--header-->
     <%- include('./layout/header'); -%>
     <!--section1-->
-    <div class="container">
+    <div class="container pb-10">
     <div class="row align-items-center justify-content-center">
     <!--左側商品圖群JS套件待補/Swipe 圖片數量???參考: https://codepen.io/kevin-chang-the-sasster/pen/WNGZpLx-->
         <div class="col-4">
@@ -64,14 +64,27 @@
    
     <!--section2 Swipe 套件應用(圖片、CSS、JS未補完)參考: https://hackmd.io/iUyXrm0dSN6ILfLdw1_A8w-->
     <section>
-        <div> 
+        <div class="mb-8"> 
             <div class="container">
-                <h3 class="fw-bold text-center">本月推薦</h3>
+                <div class="position-relative">
+                    <div class="position-absolute top-50 start-50 translate-middle mt-6">
+                        <img src="../assets/images/deco/recommend_deco.png" class="z-n1"/>
+                        
+                    </div>
+                    <!--橫線參考 : https://codepen.io/rainiewang/pen/EJLomv?editors=1100-->
+                    <div class="position-absolute top-50 start-50 translate-middle mt-6">
+                        <div class="decoline">
+                            <p class="fs-3 text-center">本月推薦</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
             </div>
         </div>
-        <div class="swiper-container swiper-box">
-            <ul class="swiper-wrapper">
-                <li class="swiper-slide d-flex flex-column">
+        <div class="swiper-container swiper-box mt-6 pt-8">
+            <ul class="swiper-wrapper mt-6">
+                <li class="swiper-slide d-flex flex-column mt-6 pt-8">
                   <img src="" alt="Body & Shave Bar">
                   <div class="">
                     <h4>除毛刮鬍皂</h4>
@@ -80,7 +93,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="swiper-slide d-flex flex-column">
+                <li class="swiper-slide d-flex flex-column mt-6 pt-8">
                     <img src="" alt="product">
                     <div class="">
                       <h4>洗髮皂</h4>
@@ -89,6 +102,8 @@
                       </div>
                     </div>
                 </li>
+                </ul>
+            </div>
     </section>
     <!--footer-->
     <%- include('./layout/footer'); -%>
