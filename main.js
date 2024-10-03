@@ -16,3 +16,12 @@ document.getElementById("up").addEventListener('click',function(){
     document.getElementById("myNumber").value = parseInt(document.getElementById("myNumber").value) + 1;
 });
 
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 24,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+  });
