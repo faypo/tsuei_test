@@ -40,9 +40,10 @@
     text-align: center;
 }
 
-.bg-light { /*背景色*/
-    background: $bg-light;
+.bg-light { 
+    background: $fourthly;
 }
+
 
 .bg-dark {
     background: $primary;
@@ -51,6 +52,7 @@
 .text-white { /*純文字標題設定*/
     color: white;
 }
+
 
 .d-flex {
     display: flex;
