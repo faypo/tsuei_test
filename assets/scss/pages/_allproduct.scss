@@ -9,12 +9,12 @@
     right: 12px;
     color:  white;
 }
-
-.nav-link:hover{
+.nav-link:hover,.nav-link:focus{
     background: $primary-br500;
+    color: $neutral-50; 
 }
 
-.allproduct-bg{
+.onSales-bg{
     background-image: url("../images/Banner_product.jpg");
     background-size: cover;
 }
