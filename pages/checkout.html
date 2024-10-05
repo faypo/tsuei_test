@@ -4,19 +4,156 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>shopping</title>
+    <title>checkout</title>
 </head>
 <body>
     <%- include('./layout/header'); -%>
     <main>
         <section>
-            <div class="container py-10 mb-10">
+            <div class="container py-lg-10 mb-lg-10">
                 <div class="row">
-                    <div class="col-7">
+                    <div class="d-lg-none">
                         <div class="accordion" id="accordionPanelsStayOpenExample">
                             <div class="accordion-item border-0">
                                 <h2 class="accordion-header">
-                                    <button class="fs-5 text-neutral-800 accordion-button bg-neutral-200" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                    <button class="fs-5 text-neutral-800 accordion-button bg-checkout-bg" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseMobile" aria-expanded="true" aria-controls="panelsStayOpen-collapseMobile">
+                                        訂單明細
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseMobile" class="accordion-collapse collapse show px-2 bg-neutral-200">
+                                    <div class="border-bottom border-1 border-netral-400 pb-8 d-flex flex-column gap-4">
+                                        <div class="row align-items-center">
+                                            <div class="col-5">
+                                                <img class="" src="../assets/images/prod_2.png" alt="">
+                                            </div>
+                                            <div class="col-7">
+                                                <h6>緊緻修護洗面皂</h6>
+                                                <p class="fs-sm">容量 120 ML</p>
+                                                <div>
+                                                    <span class="text-primary-br500 me-1">NT$</span><span class="fs-5 text-primary-br500">260</span>
+                                                </div>
+                                                <div class="d-flex justify-content-between">
+                                                    <ul class="d-flex align-items-center">
+                                                        <li class="me-1">數量</li>
+                                                        <li><button class="btn bg-neutral-200" type="button"><img src="..//assets/images/minus.png" alt="minus-icon"></button></li>
+                                                        <li><button class="btn bg-neutral-200 text-primary-br500" type="button">1</button></li>
+                                                        <li><button class="btn bg-neutral-200" type="button"><img src="..//assets/images/plus.png" alt="plus-icon"></button></li>
+                                                    </ul>
+                                                    <button class="btn fs-sm text-neutral-400 text-decoration-underline" href="" type="button" class="btn">刪除</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row align-items-center">
+                                            <div class="col-5">
+                                                <img class="" src="../assets/images/prod_1.png" alt="">
+                                            </div>
+                                            <div class="col-7">
+                                                <h6>除毛刮鬍皂</h6>
+                                                <p class="fs-sm">容量 115 ML</p>
+                                                <div>
+                                                    <span class="text-primary-br500 me-1">NT$</span><span class="fs-5 text-primary-br500">460</span>
+                                                </div>
+                                                <div class="d-flex justify-content-between">
+                                                    <ul class="d-flex align-items-center">
+                                                        <li class="me-1">數量</li>
+                                                        <li><button class="btn bg-neutral-200" type="button"><img src="..//assets/images/minus.png" alt="minus-icon"></button></li>
+                                                        <li><button class="btn bg-neutral-200 text-primary-br500" type="button">1</button></li>
+                                                        <li><button class="btn bg-neutral-200" type="button"><img src="..//assets/images/plus.png" alt="plus-icon"></button></li>
+                                                    </ul>
+                                                    <button class="btn fs-sm text-neutral-400 text-decoration-underline" href="" type="button" class="btn">刪除</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row align-items-center">
+                                            <div class="col-5">
+                                                <img class="" src="../assets/images/prod_4.png" alt="prod_4">
+                                            </div>
+                                            <div class="col-7">
+                                                <h6>洗髮皂</h6>
+                                                <p class="fs-sm">容量 120 ML</p>
+                                                <div>
+                                                    <span class="text-primary-br500 me-1">NT$</span><span class="fs-5 text-primary-br500">310</span>
+                                                </div>
+                                                <div class="d-flex justify-content-between">
+                                                    <ul class="d-flex align-items-center">
+                                                        <li class="me-1">數量</li>
+                                                        <li><button class="btn bg-neutral-200" type="button"><img src="..//assets/images/minus.png" alt="minus-icon"></button></li>
+                                                        <li><button class="btn bg-neutral-200 text-primary-br500" type="button">1</button></li>
+                                                        <li><button class="btn bg-neutral-200" type="button"><img src="..//assets/images/plus.png" alt="plus-icon"></button></li>
+                                                    </ul>
+                                                    <button class="btn fs-sm text-neutral-400 text-decoration-underline" href="" type="button" class="btn">刪除</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row align-items-center">
+                                            <div class="col-5">
+                                                <img class="" src="../assets/images/prod_4.png" alt="prod_4">
+                                            </div>
+                                            <div class="col-7">
+                                                <h6>潤髮皂</h6>
+                                                <p class="fs-sm">容量 120 ML</p>
+                                                <div>
+                                                    <span class="text-primary-br500 me-1">NT$</span><span class="fs-5 text-primary-br500">260</span>
+                                                </div>
+                                                <div class="d-flex justify-content-between">
+                                                    <ul class="d-flex align-items-center">
+                                                        <li class="me-1">數量</li>
+                                                        <li><button class="btn bg-neutral-200" type="button"><img src="..//assets/images/minus.png" alt="minus-icon"></button></li>
+                                                        <li><button class="btn bg-neutral-200 text-primary-br500" type="button">1</button></li>
+                                                        <li><button class="btn bg-neutral-200" type="button"><img src="..//assets/images/plus.png" alt="plus-icon"></button></li>
+                                                    </ul>
+                                                    <button class="btn fs-sm text-neutral-400 text-decoration-underline" href="" type="button" class="btn">刪除</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="border-bottom border-1 border-netral-400 py-8 d-flex flex-column gap-4">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h6>總額</h6>
+                                            <div>
+                                                <span class="fs-5">NT$</span><span class="fs-5">260</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <h6>7-11 取貨</h6>
+                                            <p class="h6">免費</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <h6>折扣碼</h6>
+                                            <p class="h6">5% off</p>
+                                        </div>
+                                    </div>
+                                    <div class="border-bottom border-1 border-netral-400 py-8 d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h5 class="h5">總額</h5>
+                                            <p class="text-neutral-600">含運費總金額</p>
+                                        </div>
+                                        <div>
+                                            <span class="text-primary-br500 fs-5">NT$</span><span class="text-primary-br500 h3 fw-bold">979</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column gap-5 pt-8 pb-7">
+                                        <div class="d-flex align-items-center mb-5">
+                                            <img src="..//assets/images/credit-card.png" alt="">
+                                            <h5>100%交易安全承諾</h5>
+                                        </div>
+                                        <p class="text-neutral-600 fs-6">我們採用SSL安全憑證技術，以保障您在線上商店的信用卡交易安全。</p>
+                                        <ul class="d-flex gap-3">
+                                            <li><img src="..//assets/images/credit-1.png" alt="VISA"></li>
+                                            <li><img src="..//assets/images/credit-2.png" alt="JCB"></li>
+                                            <li><img src="..//assets/images/credit-3.png" alt="MASTER"></li>
+                                            <li><img src="..//assets/images/credit-4.png" alt="APPLE-PAY"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="accordion" id="accordionPanelsStayOpenExample">
+                            <div class="accordion-item border-0">
+                                <h2 class="accordion-header">
+                                    <button class="fs-5 text-neutral-800 accordion-button bg-checkout-bg" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
                                         1.登入
                                     </button>
                                 </h2>
@@ -29,7 +166,7 @@
                             </div>
                             <div class="accordion-item border-0">
                                 <h2 class="accordion-header">
-                                    <button class="fs-5 text-neutral-800 accordion-button bg-neutral-200" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
+                                    <button class="fs-5 text-neutral-800 accordion-button bg-checkout-bg" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
                                         2.商品寄送
                                     </button>
                                 </h2>
@@ -75,25 +212,29 @@
                             </div>
                             <div class="accordion-item border-0">
                                 <h2 class="accordion-header">
-                                    <button class="fs-5 text-neutral-800 accordion-button bg-neutral-200" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true" aria-controls="panelsStayOpen-collapseThree">
+                                    <button class="fs-5 text-neutral-800 accordion-button bg-checkout-bg" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true" aria-controls="panelsStayOpen-collapseThree">
                                         3.折扣碼
                                     </button>
                                 </h2>
                                 <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show">
-                                    <div class="accordion-body py-6 col-8">
-                                        <div class="input-group gap-1">
-                                            <label class="input-group-text border-0" for="tsueiformDiscoumt">
-                                                使用折扣碼
-                                            </label>
-                                            <input class="form-control" type="text" placeholder="discount95" aria-label="" id="tsueiformDiscoumt">
-                                            <button class="btn btn_2 rounded-1 active" type="button" data-bs-toggle="button">使用</button>
+                                    <div class="accordion-body py-6">
+                                        <div class="d-flex">
+                                            <div class="gap-1 me-1">
+                                                <label class="form-label border-0" for="tsueiformDiscoumt">
+                                                    使用折扣碼
+                                                </label>
+                                                <input class="form-control" type="text" placeholder="discount95" aria-label="" id="tsueiformDiscoumt">
+                                            </div>
+                                            <div class="align-self-baseline mt-auto">
+                                                <button class="btn btn_2 rounded-1 active" type="button" data-bs-toggle="button">使用</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item border-0">
                                 <h2 class="accordion-header">
-                                    <button class="fs-5 text-neutral-800 accordion-button bg-neutral-200" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="true" aria-controls="panelsStayOpen-collapseFour">
+                                    <button class="fs-5 text-neutral-800 accordion-button bg-checkout-bg" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="true" aria-controls="panelsStayOpen-collapseFour">
                                         4.付款方式
                                     </button>
                                 </h2>
@@ -102,67 +243,181 @@
                                         <select class="form-select" aria-label="Default select">
                                             <option selected>請選擇付款方式</option>
                                             <option value="1">線上信用卡付款</option>
-                                            <option value="2">ATM轉帳</option>
-                                            <option value="3">超商取貨付款</option>
+                                            <option value="2">貨到付款</option>
                                         </select>
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item border-0">
                                 <h2 class="accordion-header">
-                                    <button class="fs-5 text-neutral-800 accordion-button bg-neutral-200" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="true" aria-controls="panelsStayOpen-collapseFive">
+                                    <button class="fs-5 text-neutral-800 accordion-button bg-checkout-bg" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="true" aria-controls="panelsStayOpen-collapseFive">
                                         5.發票
                                     </button>
                                 </h2>
                                 <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse show">
                                     <div class="accordion-body py-6 row">
                                         <div class="col-6">
-                                            <span class="fs-xs">發票類型</span>
+                                            <p class="fs-xs mb-1">發票類型</p>
                                             <select class="form-select" aria-label="Default select">
                                                 <option value="1">二聯式統一發票</option>
                                                 <option value="2">電子發票</option>
                                             </select>
                                         </div>
                                         <div class="col-6">
-                                            <span class="fs-xs">載具類型</span>
+                                            <p class="fs-xs mb-1">載具類型</p>
                                             <select class="form-select" aria-label="Default select">
-                                                <option value="1">線上信用卡付款</option>
-                                                <option value="2">ATM轉帳</option>
-                                                <option value="3">超商取貨付款</option>
+                                                <option value="1">請附紙本</option>
+                                                <option value="2">手機載具</option>
                                             </select>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text-center">
-                                <button class="btn btn-primary-br500 rounded-pill text-neutral-50 px-6" type="submit">
-                                    前往結帳/完成訂單
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-5">
-                        <div class="bg-neutral-200">
-                            <div class="p-6">
-                                <div class="border-bottom border-1 border-netral-400 pb-8">
-                                    <h6>訂單資訊</h6>
-                                    <div class="d-flex align-items-center">
-                                        <img class="" src="../assets/images/prod_2.png" alt="">
-                                        <div>
-                                            <h6>緊緻修護洗面皂</h6>
-                                            <p class="fs-sm">容量 120 ML</p>
-                                            <div>
-                                                <span class="text-primary-br500">NT$</span><span class="fw-bold fs-5 text-primary-br500">260</span>
-                                            </div>
+                                        <div class="ms-auto col-6 mt-1">
+                                            <label for="tsueimobileBarcode" class="form-label fs-xs">載具編號</span>
+                                            <input class="form-control" type="text" placeholder="請輸入載具編號" aria-label="" id="tsueimobileBarcode">
                                         </div>
                                     </div>
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
                                 </div>
                             </div>
                         </div>
+                        <div class="text-center py-6 d-none d-lg-block">
+                            <button class="btn btn-primary-br500 rounded-pill text-neutral-50 px-6" type="submit">
+                                前往結帳/完成訂單
+                            </button>
+                        </div>
                     </div>
+                    <div class="col-lg-5 d-lg-block d-none">
+                        <div class="bg-checkout-bg p-6">
+                            <div class="border-bottom border-1 border-netral-400 pb-8 d-flex flex-column gap-4">
+                                <h6>訂單明細</h6>
+                                <div class="row align-items-center">
+                                    <div class="col-5">
+                                        <img class="" src="../assets/images/prod_2.png" alt="">
+                                    </div>
+                                    <div class="col-7">
+                                        <h6>緊緻修護洗面皂</h6>
+                                        <p class="fs-sm">容量 120 ML</p>
+                                        <div>
+                                            <span class="text-primary-br500 me-1">NT$</span><span class="fs-5 text-primary-br500">260</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <ul class="d-flex align-items-center">
+                                                <li class="me-1">數量</li>
+                                                <li><button class="btn bg-neutral-200" type="button"><img src="..//assets/images/minus.png" alt="minus-icon"></button></li>
+                                                <li><button class="btn bg-neutral-200 text-primary-br500" type="button">1</button></li>
+                                                <li><button class="btn bg-neutral-200" type="button"><img src="..//assets/images/plus.png" alt="plus-icon"></button></li>
+                                            </ul>
+                                            <button class="btn fs-sm text-neutral-400 text-decoration-underline" href="" type="button" class="btn">刪除</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-5">
+                                        <img class="" src="../assets/images/prod_1.png" alt="">
+                                    </div>
+                                    <div class="col-7">
+                                        <h6>除毛刮鬍皂</h6>
+                                        <p class="fs-sm">容量 115 ML</p>
+                                        <div>
+                                            <span class="text-primary-br500 me-1">NT$</span><span class="fs-5 text-primary-br500">460</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <ul class="d-flex align-items-center">
+                                                <li class="me-1">數量</li>
+                                                <li><button class="btn bg-neutral-200" type="button"><img src="..//assets/images/minus.png" alt="minus-icon"></button></li>
+                                                <li><button class="btn bg-neutral-200 text-primary-br500" type="button">1</button></li>
+                                                <li><button class="btn bg-neutral-200" type="button"><img src="..//assets/images/plus.png" alt="plus-icon"></button></li>
+                                            </ul>
+                                            <button class="btn fs-sm text-neutral-400 text-decoration-underline" href="" type="button" class="btn">刪除</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-5">
+                                        <img class="" src="../assets/images/prod_4.png" alt="prod_4">
+                                    </div>
+                                    <div class="col-7">
+                                        <h6>洗髮皂</h6>
+                                        <p class="fs-sm">容量 120 ML</p>
+                                        <div>
+                                            <span class="text-primary-br500 me-1">NT$</span><span class="fs-5 text-primary-br500">310</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <ul class="d-flex align-items-center">
+                                                <li class="me-1">數量</li>
+                                                <li><button class="btn bg-neutral-200" type="button"><img src="..//assets/images/minus.png" alt="minus-icon"></button></li>
+                                                <li><button class="btn bg-neutral-200 text-primary-br500" type="button">1</button></li>
+                                                <li><button class="btn bg-neutral-200" type="button"><img src="..//assets/images/plus.png" alt="plus-icon"></button></li>
+                                            </ul>
+                                            <button class="btn fs-sm text-neutral-400 text-decoration-underline" href="" type="button" class="btn">刪除</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-5">
+                                        <img class="" src="../assets/images/prod_4.png" alt="prod_4">
+                                    </div>
+                                    <div class="col-7">
+                                        <h6>潤髮皂</h6>
+                                        <p class="fs-sm">容量 120 ML</p>
+                                        <div>
+                                            <span class="text-primary-br500 me-1">NT$</span><span class="fs-5 text-primary-br500">260</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <ul class="d-flex align-items-center">
+                                                <li class="me-1">數量</li>
+                                                <li><button class="btn bg-neutral-200" type="button"><img src="..//assets/images/minus.png" alt="minus-icon"></button></li>
+                                                <li><button class="btn bg-neutral-200 text-primary-br500" type="button">1</button></li>
+                                                <li><button class="btn bg-neutral-200" type="button"><img src="..//assets/images/plus.png" alt="plus-icon"></button></li>
+                                            </ul>
+                                            <button class="btn fs-sm text-neutral-400 text-decoration-underline" href="" type="button" class="btn">刪除</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border-bottom border-1 border-netral-400 py-8 d-flex flex-column gap-4">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h6>總額</h6>
+                                    <div>
+                                        <span class="fs-5">NT$</span><span class="fs-5">260</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <h6>7-11 取貨</h6>
+                                    <p class="h6">免費</p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <h6>折扣碼</h6>
+                                    <p class="h6">5% off</p>
+                                </div>
+                            </div>
+                            <div class="border-bottom border-1 border-netral-400 py-8 d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h5 class="h5">總額</h5>
+                                    <p class="text-neutral-600">含運費總金額</p>
+                                </div>
+                                <div>
+                                    <span class="text-primary-br500 fs-5">NT$</span><span class="text-primary-br500 h3 fw-bold">979</span>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column gap-5 pt-8 pb-7">
+                                <div class="d-flex align-items-center mb-5">
+                                    <img src="..//assets/images/credit-card.png" alt="">
+                                    <h5>100%交易安全承諾</h5>
+                                </div>
+                                <p class="text-neutral-600 fs-6">我們採用SSL安全憑證技術，以保障您在線上商店的信用卡交易安全。</p>
+                                <ul class="d-flex gap-3">
+                                    <li><img src="..//assets/images/credit-1.png" alt="VISA"></li>
+                                    <li><img src="..//assets/images/credit-2.png" alt="JCB"></li>
+                                    <li><img src="..//assets/images/credit-3.png" alt="MASTER"></li>
+                                    <li><img src="..//assets/images/credit-4.png" alt="APPLE-PAY"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center py-6 d-lg-none">
+                    <button class="fs-6 px-2 btn btn-primary-br500 rounded-pill text-neutral-50 px-6" type="submit">
+                        前往結帳/完成訂單
+                    </button>
                 </div>
             </div>
         </section>
