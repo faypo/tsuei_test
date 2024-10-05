@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shopping</title>
+</head>
+<body>
+    <%- include('./layout/header'); -%>
+    <main>
+        <section>
+            <div class="container py-10 mb-10">
+                <div class="row">
+                    <div class="col-7">
+                        <div class="accordion" id="accordionPanelsStayOpenExample">
+                            <div class="accordion-item border-0">
+                                <h2 class="accordion-header">
+                                    <button class="fs-5 text-neutral-800 accordion-button bg-neutral-200" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                        1.登入
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                                    <div class="accordion-body py-6">
+                                        <h5 class="fs-6">您好!曉明 您正以以下google帳號登入</h5>
+                                        <p class="text-primary-br500">abc123456@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0">
+                                <h2 class="accordion-header">
+                                    <button class="fs-5 text-neutral-800 accordion-button bg-neutral-200" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
+                                        2.商品寄送
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show py-7">
+                                    <button class="btn btn-outline-neutral-400 px-6 text-neutral-800 ative" type="button" data-bs-toggle="button">
+                                        超商取貨
+                                    </button>
+                                    <div class="accordion-body py-7">
+                                        <div class="mb-4">
+                                            <h5 class="fs-6">配送方式</h5>
+                                            <div class="d-flex justify-content-between mt-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                    <label class="form-check-label fs-6" for="flexRadioDefault1">
+                                                        7-11取貨
+                                                    </label>
+                                                </div>
+                                                <h6 class="h6">免費</h6>
+                                            </div>
+                                            <div class="mt-1 ps-4">
+                                                <p class="ps-2 text-primary-br500">預計2024-08-28 星期三 送達</p>
+                                                <p class="ps-2 fs-sm">選擇您的超取商店</p>
+                                            </div>
+                                        </div>
+                                        <div class="mt-2">
+                                            <h5 class="fs-6">收貨人資料</h5>
+                                            <div class="form-check mt-4">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label fs-6" for="flexCheckDefault">
+                                                    收貨人資料與會員收貨人資料與會員資料相同
+                                                </label>
+                                            </div>
+                                            <div class="d-flex gap-4 my-1">
+                                                <input class="form-control" type="text" placeholder="收件人名稱*" aria-label="" id="tsueiformReceive">
+                                                <input class="form-control" type="tel" placeholder="收件人手機號碼*" aria-label="" id="tsueiformReceive">
+                                            </div>
+                                            <label class="form-check-label" for="tsueiformReceive">
+                                                請填寫收件人真實姓名、正確手機號碼，以確保能正常收件。
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0">
+                                <h2 class="accordion-header">
+                                    <button class="fs-5 text-neutral-800 accordion-button bg-neutral-200" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true" aria-controls="panelsStayOpen-collapseThree">
+                                        3.折扣碼
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show">
+                                    <div class="accordion-body py-6 col-8">
+                                        <div class="input-group gap-1">
+                                            <label class="input-group-text border-0" for="tsueiformDiscoumt">
+                                                使用折扣碼
+                                            </label>
+                                            <input class="form-control" type="text" placeholder="discount95" aria-label="" id="tsueiformDiscoumt">
+                                            <button class="btn btn_2 rounded-1 active" type="button" data-bs-toggle="button">使用</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0">
+                                <h2 class="accordion-header">
+                                    <button class="fs-5 text-neutral-800 accordion-button bg-neutral-200" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="true" aria-controls="panelsStayOpen-collapseFour">
+                                        4.付款方式
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse show">
+                                    <div class="accordion-body py-6">
+                                        <select class="form-select" aria-label="Default select">
+                                            <option selected>請選擇付款方式</option>
+                                            <option value="1">線上信用卡付款</option>
+                                            <option value="2">ATM轉帳</option>
+                                            <option value="3">超商取貨付款</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0">
+                                <h2 class="accordion-header">
+                                    <button class="fs-5 text-neutral-800 accordion-button bg-neutral-200" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="true" aria-controls="panelsStayOpen-collapseFive">
+                                        5.發票
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse show">
+                                    <div class="accordion-body py-6 row">
+                                        <div class="col-6">
+                                            <span class="fs-xs">發票類型</span>
+                                            <select class="form-select" aria-label="Default select">
+                                                <option value="1">二聯式統一發票</option>
+                                                <option value="2">電子發票</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-6">
+                                            <span class="fs-xs">載具類型</span>
+                                            <select class="form-select" aria-label="Default select">
+                                                <option value="1">線上信用卡付款</option>
+                                                <option value="2">ATM轉帳</option>
+                                                <option value="3">超商取貨付款</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <button class="btn btn-primary-br500 rounded-pill text-neutral-50 px-6" type="submit">
+                                    前往結帳/完成訂單
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="bg-neutral-200">
+                            <div class="p-6">
+                                <div class="border-bottom border-1 border-netral-400 pb-8">
+                                    <h6>訂單資訊</h6>
+                                    <div class="d-flex align-items-center">
+                                        <img class="" src="../assets/images/prod_2.png" alt="">
+                                        <div>
+                                            <h6>緊緻修護洗面皂</h6>
+                                            <p class="fs-sm">容量 120 ML</p>
+                                            <div>
+                                                <span class="text-primary-br500">NT$</span><span class="fw-bold fs-5 text-primary-br500">260</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+</body>
+</html>
