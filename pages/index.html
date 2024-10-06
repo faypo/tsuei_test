@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TSUEI</title>
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
   </head>
   <body>
     <%- include('./layout/header'); -%>
@@ -24,102 +22,42 @@
     <!--介紹區-->
     <section>
       <div class="container">
-        <div class="core_value-box mt-30 d-flex">
-          <div class="mountain-photo"><!--山景照片-->
-            <div>
+        <div>
+          <!--第一部分-->
+          <div class="row mt-30">
+            <div class="col-6 mountain-photo">
               <ul class="list-unstyled">
                 <li class="top-title">O<samp class="normal-title">rganic</samp></li>
                 <li class="top-title">E<samp class="normal-title">nvironmental friendly</samp></li>
                 <li class="top-title">C<samp class="normal-title">lear</samp></li>
               </ul>
             </div>
-          </div>
-          <div><!--綠色-->
-            <div class><!--黑色文字-->
-              <ul class="list-unstyled">
-                <li class="mt-16"><img src="../assets/images/trees.png" alt="tree icon" class="mr-3"><samp class="text-description">專為關注地球環境和皮膚健康的人士設計</samp></li>
-                <li class="mt-16"><img src="../assets/images/trees.png" alt="tree icon" class="mr-3"><samp class="text-description">採用天然成分製作，不含化學添加劑</samp></li>
-                <li class="mt-16"><img src="../assets/images/trees.png" alt="tree icon" class="mr-3"><samp class="text-description">包裝使用可降解材質，從生產到使用全程減少對環境的影響</samp></li>
-              </ul>
-
-
-
+            <div class="col-6">
+              <div class="">
+                <ul class="list-unstyled mt-16">
+                  <li class="mb-8"><img src="../assets/images/trees.png" alt="tree icon" class="mr-3"><samp class="text-description">專為關注地球環境和皮膚健康的人士設計</samp></li>
+                  <li class="mb-8"><img src="../assets/images/trees.png" alt="tree icon" class="mr-3"><samp class="text-description">採用天然成分製作，不含化學添加劑</samp></li>
+                  <li class=""><img src="../assets/images/trees.png" alt="tree icon" class="mr-3"><samp class="text-description">包裝使用可降解材質，從生產到使用全程減少對環境的影響</samp></li>
+                </ul>
+              </div>
+              <div class="row">
+                <div class="col washHand-photo">1</div>
+                <div class="col tree-photo">2</div>
+                <div class="col soapSkin-photo">3</div>
+              </div>
             </div>
-            <div><!--粉紅色圖片-->
-            </div>
-
           </div>
         </div>
-        <div><!--藍色-->
-          <div><!--棕色文字-->
-
-          </div>
-          <div><!--無尾熊圖片-->
-
-          </div>
-
-
-
+        <div class="row">
+          <div class="col-6 vector-photo"><p class="text-center text-description">減少棕櫚油使用對環境至關重要。棕櫚油生產常涉及砍伐熱带雨林，不僅摧毀珍貴生態系統，並影響多種動植物生存。選擇無棕櫚油產品，支持永續農業，一起保護地球生物多樣性和氣候。</p></div>
+          <div class="col-6 koala-photo mb-30"></div>
         </div>
-
-
-
-
-
-
-      </div>
-
-
-
-
     </section>
 
 
 
-
-    <div class="card" style="width: 18rem">
-      <img src="../assets/images/cat.jpg" class="card-img-top" alt="cat" />
-      <div class="card-body">
-        <h5 class="card-title">卡片元件</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
-          nobis earum!
-        </p>
-      </div>
-    </div>
-
-    <!-- Modal 按鈕 -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      打開 modal
-    </button>
-
-    <!-- Modal 元件 -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-            <button type="button" class="btn btn-primary">確定</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <%- include('./layout/footer'); -%>
-    <script>
-      feather.replace();
-    </script>
+
     <script type="module" src="../main.js"></script>
   </body>
 </html>
