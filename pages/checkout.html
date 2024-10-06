@@ -8,6 +8,7 @@
 </head>
 <body>
     <%- include('./layout/header'); -%>
+
     <main>
         <section>
             <div class="container py-lg-10 mb-lg-10">
@@ -188,7 +189,7 @@
                                             </div>
                                             <div class="mt-1 ps-4">
                                                 <p class="ps-2 text-primary-br500">預計2024-08-28 星期三 送達</p>
-                                                <p class="ps-2 fs-sm">選擇您的超取商店</p>
+                                                <small class="ps-2">選擇您的超取商店</small>
                                             </div>
                                         </div>
                                         <div class="mt-2">
@@ -257,14 +258,14 @@
                                 <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse show">
                                     <div class="accordion-body py-6 row">
                                         <div class="col-6">
-                                            <p class="fs-xs mb-1">發票類型</p>
+                                            <small class="fs-xs">發票類型</small>
                                             <select class="form-select" aria-label="Default select">
                                                 <option value="1">二聯式統一發票</option>
                                                 <option value="2">電子發票</option>
                                             </select>
                                         </div>
                                         <div class="col-6">
-                                            <p class="fs-xs mb-1">載具類型</p>
+                                            <small class="fs-xs">載具類型</small>
                                             <select class="form-select" aria-label="Default select">
                                                 <option value="1">請附紙本</option>
                                                 <option value="2">手機載具</option>
@@ -422,6 +423,7 @@
             </div>
         </section>
     </main>
+
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
