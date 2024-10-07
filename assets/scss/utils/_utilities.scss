@@ -1,0 +1,9 @@
+//font-size不隨著寬度伸縮，中斷點固定尺寸
+$utilities: map-merge(
+  $utilities, (
+    "border": map-merge(
+      map-get($utilities, "border"),
+      ( responsive: true ),
+    ),
+  )
+);

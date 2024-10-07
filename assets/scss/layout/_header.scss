@@ -1,0 +1,26 @@
+
+.header{
+  border-top: 24px solid #262626;
+}
+
+.header-link{
+  padding-right: 18px;
+  padding-left: 18px;
+  color: $neutral-800;
+}
+
+.header-link:hover {
+  color: $primary-br500;
+}
+
+.find-icon{
+  position: absolute;
+  left: 9px;
+  top:  6px;
+
+}
+
+.tsuei-logo{
+  width: 240px;
+  height: 100px;
+}

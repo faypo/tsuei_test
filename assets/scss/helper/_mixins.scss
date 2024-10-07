@@ -1,0 +1,23 @@
+//可以放入重複性語法
+
+/*在寬度992px(pad)以下*/
+@mixin pad{
+    @media (max-width: 992px){
+        @content;
+    }
+}
+
+/*在寬度767px(mobile-lager)以下*/
+@mixin mobile-lager{
+    @media (max-width: 767px){
+        @content;
+    }
+}
+
+/*在寬度576px(mobile)以下*/
+@mixin mobile{
+    @media (max-width: 576px){
+        @content;
+    }
+}
+

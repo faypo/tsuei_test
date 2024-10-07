@@ -1,0 +1,43 @@
+a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: opacity 0.5s; /*淡入小動畫*/
+}
+/* base 基本設定 (將reset和base分開，可讓style更簡潔更容易維護)*/
+
+/*盒模型*/
+
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+a:hover:not(.logo){
+    opacity: 0.7; /*小動畫*/
+}
+
+h1,h2,h3,h4,h5,h6{
+    letter-spacing: 0.1em;
+}
+ul,ol,li{
+    list-style: none;
+    padding-left: 0;
+    
+}
+
+p{
+    letter-spacing: 0.05em;
+    margin-bottom: 0;
+}
+
+button{
+    cursor:pointer;
+    font-size: 16px;
+    transition: opacity 0.5s;
+}
+
+button:hover{
+    opacity: 0.7;
+}

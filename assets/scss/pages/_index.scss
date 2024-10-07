@@ -1,0 +1,153 @@
+/*banner區設定*/
+.banner {
+  color: var(--secondary); /*顏色用變數設定*/
+  background-image: url("../assets/images/Banner_top.jpg");
+  background-size: cover; /*調整圖片大小*/
+  height: calc(100vh - 80px); /*計算*/
+}
+
+.banner-wrapper{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.banner-title {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.banner-subtitle {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/*在寬度992px以下，修正成下方設定*/
+@media (max-width: 992px) {
+  .banner{
+      background-image: url("../img/home-header-sm.png");
+  }
+}
+
+@media (max-width: 767px) {
+  .banner-title{
+      font-size:24px;
+  }
+
+  .banner-subtitle{
+      font-size: 16px;
+  }
+}
+
+//介紹區 core value
+
+.test-box{
+  border: solid black 1px;
+}
+
+.core_value-box{
+  width: 1296px;
+  height: 570px;
+  border: 1px solid black;
+}
+
+
+
+.mountain-photo{
+  background-image: url("../assets/images/rocky-mountain-landscape.jpg");
+  background-size: cover; /*調整圖片大小*/
+  height: 570px;
+}
+
+.washHand-photo{
+  background-image: url("../assets/images/close-up-hand-with-cleaning-products.jpg");
+  background-size: cover; /*調整圖片大小*/
+  height: 282px;
+}
+
+.tree-photo{
+  background-image: url("../assets/images/coast-twilight-summer-paradise-sun.jpg");
+  background-size: cover; /*調整圖片大小*/
+  height: 282px;
+}
+
+.soapSkin-photo{
+  background-image: url("../assets/images/macadamia-soap-skin-care-treatment.jpg");
+  background-size: cover; /*調整圖片大小*/
+  height: 282px;
+}
+
+.vector-photo{
+  background-image: url("../assets/images/Vector 25.png");
+  background-size: cover; /*調整圖片大小*/
+  height: 264px;
+}
+
+.koala-photo{
+  background-image: url("../assets/images/koala-bear-tree-branch.jpg");
+  background-size: cover; /*調整圖片大小*/
+  height: 264px;
+}
+
+.top-title{
+  color: #FAFAFA;
+  font-size: 64px;
+  font-family: "Roboto";
+}
+
+.normal-title{
+  color: #FAFAFA;
+  font-size: 32px;
+  font-family: "Roboto";
+}
+
+.text-description{
+  font-size: 20px;
+  color: #262626;
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mb-4{
+  margin-bottom: 16px;
+}
+
+.mb-8{
+  margin-bottom: 32px;
+}
+
+.mb-12{
+  margin-bottom: 48px;
+}
+
+.mb-30{
+  margin-bottom: 120px;
+}
+
+.mt-16{
+  margin-top: 64px;
+}
+
+.mt-30{
+  margin-top: 120px;
+}
+
+.mr-3{
+  margin-right: 12px;
+}
