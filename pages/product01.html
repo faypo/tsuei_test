@@ -14,15 +14,15 @@
     <!--section1-->
     <div class="container pb-10">
     <div class="row align-items-center justify-content-center">
-    <!--左側商品圖群JS套件待補/Swipe 圖片數量???
+    <!--左側商品圖群JS套件待補/Swiper 圖片數量???
     參考: https://codepen.io/kevin-chang-the-sasster/pen/WNGZpLx
     -->
-        <div class="col-4">
+        <div class="col-4 line">
                 
         </div>
         
     <!--右側介紹-->
-        <div class="col-4">
+        <div class="col-4 line">
             <ul>
                 <div>
                   <p class="fs-3">緊緻修護洗面皂</p>
@@ -30,20 +30,21 @@
                 </div>
                 <li>容量  120g</li>
                 <li><span class="fs-4 text-primary-br500">NT$</span><span class="fs-1 text-primary-br500">260</span></li>
-                <li>數量</li>
+                
                 <!--數量按鍵 參考: https://codepen.io/NinaLena/pen/jmqwxb-->
                 <li>
-                    <div class="input-group mb-3">
+                     <span>數量</span>
+                    <div class="input-group mb-3 countbtn">
                         <div class="input-group-btn">
-                            <button class="btn btn-outline-secondary" type="button" id="down"><span class="glyphicon glyphicon-minus">-</button>
+                            <button class="btn btn btn-light" type="button" id="down"><span class="glyphicon glyphicon-minus">-</button>
                         </div>
-                        <input type="text" id="myNumber" class="form-control input-number" value="1"/>
+                        <input type="text" id="myNumber" class="form-control input-number text-center border-0 bg-light" value="1"/>
                         <div class="input-group-btn">
-                            <button class="btn btn-outline-secondary" type="button" id="up"><span class="glyphicon glyphicon-plus"></span>+</button>
-                        </div>
+                            <button class="btn btn btn-light" type="button" id="up"><span class="glyphicon glyphicon-plus"></span>+</button>
+                    </div>
                 </li>
                   <button type="button" class="btn btn-primary rounded-3 px-7 py-1 fs-6 text-neutral-50">加入購物車</button>
-                  <button type="button" class="btn btn btn-secondary rounded-3 px-8 py-1 fs-6 text-primary-br500">立即結帳</button>
+                  <button type="button" class="btn btn btn-secondary rounded-3 px-8 py-1 ms-4 fs-6 text-primary-br500">立即結帳</button>
             </ul>
         </div>
      <!--商品描述-->
@@ -90,11 +91,15 @@
                       <p class="fs-5 card-title">除毛刮鬍皂</p>
                       <p class="fs-sm">Body & Shave Bar</p>
                     </div>
+                    <div>
+                      <div class="sale">
+                         <img src="../assets/images/deco/sale.png" alt="">
+                      </div>
                       <img
                       src="../assets/images/prod_1.png"
-                      class="card-img-top"
-                      alt="除毛刮鬍皂"
-                    />
+                      class="card-img-top productList"
+                      alt="除毛刮鬍皂">
+                    </div>
                     <div class="card-body bg-card">
                       <p class="card-text">
                           天然滋潤</br>輕鬆軟化毛髮及鬍鬚
