@@ -1,3 +1,11 @@
+.line{
+  border: 1px solid;
+}
+
+.countbtn{
+  width: 240px;
+}
+
 .decoline{
     display: block;
     font-size: 2px;
@@ -34,4 +42,16 @@
 .bg-card{
   background-color:#F0F0F0;
   ;
+}
+
+
+.productList{
+  position: relative;
+}
+
+.productList.sale{
+
+  position: absolute;
+  top: 0;
+  left: 0;
 }
