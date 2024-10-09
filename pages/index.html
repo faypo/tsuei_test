@@ -1,63 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TSUEI</title>
-  </head>
-  <body>
-    <%- include('./layout/header'); -%>
 
-     <!--banner區-->
-     <section class="banner">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TSUEI</title>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+
+    <!--banner區-->
+    <section class="banner">
       <div class="container banner-wrapper">
         <h1 class="banner-title mb-4">專注引入無化學成分的天然肥皂，</h1>
         <h2 class="banner-title mb-12">讓每塊肥皂，都成為都市人心靈的自然慰藉。</h2>
         <h3 class="banner-subtitle">在都市喧囂中尋覓寧靜，捕捉大自然的精華與靜謐。</H3>
-  
+
       </div>
     </section>
 
     <!--介紹區-->
     <section>
       <div class="container">
-          <!--第一部分-->
-          <div class="row mt-30 p-2">
-            <div class="col-12 col-md-6">
-              <!-- 山圖片區 -->
-              <div class="mountain-photo">
-                <ul class="list-unstyled">
-                  <li class="top-title pt-5 ps-8">O<samp class="normal-title">rganic</samp></li>
-                  <li class="top-title ps-8">E<samp class="normal-title">nvironmental friendly</samp></li>
-                  <li class="top-title ps-8">C<samp class="normal-title">lear</samp></li>
-                </ul>
-              </div>
+        <!--第一部分-->
+        <div class="row mt-30 p-2">
+          <div class="col-12 col-md-6">
+            <!-- 山圖片區 -->
+            <div class="mountain-photo">
+              <ul class="list-unstyled">
+                <li class="top-title pt-5 ps-8">O<samp class="normal-title">rganic</samp></li>
+                <li class="top-title ps-8">E<samp class="normal-title">nvironmental friendly</samp></li>
+                <li class="top-title ps-8">C<samp class="normal-title">lear</samp></li>
+              </ul>
             </div>
-            <div class="col-12 col-md-6 d-flex flex-column justify-content-between">
-              <div class="">
-                <ul class="list-unstyled mt-16">
-                  <li class="mb-b8"><img src="../assets/images/trees.png" alt="tree icon" class="mr-3"><samp class="text-description">專為關注地球環境和皮膚健康的人士設計</samp></li>
-                  <li class="mb-b8"><img src="../assets/images/trees.png" alt="tree icon" class="mr-3"><samp class="text-description">採用天然成分製作，不含化學添加劑</samp></li>
-                  <li class=""><img src="../assets/images/trees.png" alt="tree icon" class="mr-3"><samp class="text-description">包裝使用可降解材質，從生產到使用全程減少對環境的影響</samp></li>
-                </ul>
+          </div>
+          <div class="col-12 col-md-6 d-flex flex-column justify-content-between">
+            <div class="">
+              <ul class="list-unstyled mt-16">
+                <li class="mb-b8"><img src="../assets/images/trees.png" alt="tree icon" class="mr-3"><samp
+                    class="text-description">專為關注地球環境和皮膚健康的人士設計</samp></li>
+                <li class="mb-b8"><img src="../assets/images/trees.png" alt="tree icon" class="mr-3"><samp
+                    class="text-description">採用天然成分製作，不含化學添加劑</samp></li>
+                <li class=""><img src="../assets/images/trees.png" alt="tree icon" class="mr-3"><samp
+                    class="text-description">包裝使用可降解材質，從生產到使用全程減少對環境的影響</samp></li>
+              </ul>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="washHand-photo">1</div>
               </div>
-              <div class="row">
-                <div class="col">
-                  <div class="washHand-photo">1</div>
-                </div>
-                <div class="col">
-                  <div class="tree-photo">2</div>
-                </div>
-                <div class="col">
-                  <div class="soapSkin-photo">3</div>
-                </div>
+              <div class="col">
+                <div class="tree-photo">2</div>
+              </div>
+              <div class="col">
+                <div class="soapSkin-photo">3</div>
               </div>
             </div>
           </div>
-        <div class="row p-4">
+        </div>
+        <div class="row p-2">
           <div class="col-6 col-md-6">
-            <div class="vector-photo"><samp class="text-description2 align-middle">減少棕櫚油使用對環境至關重要。棕櫚油生產常涉及砍伐熱带雨林，不僅摧毀珍貴生態系統，並影響多種動植物生存。選擇無棕櫚油產品，支持永續農業，一起保護地球生物多樣性和氣候。</samp></div>
+            <div class="vector-photo d-flex align-items-center justify-content-center">
+              <div class="text-description2">
+                減少棕櫚油使用對環境至關重要。棕櫚油生產常涉及砍伐熱带雨林，不僅摧毀珍貴生態系統，並影響多種動植物生存。選擇無棕櫚油產品，支持永續農業，一起保護地球生物多樣性和氣候。</div>
+            </div>
           </div>
           <div class="col-6 col-md-6 mb-30">
             <div class="koala-photo"></div>
@@ -72,8 +80,12 @@
           <div class="col-lg-5">
             <!-- 底下透明度要改成60% 目前是50% -->
             <div class="box-whith60 opacity-50">
-              123
-
+              <div>
+                <p class="ps-8  fs-6 mt-9 mb-b7">天然滋潤 輕鬆軟化毛髮及鬍鬚</p>
+                <p class="ps-8 fs-4 mb-b7">除毛 x 刮鬍</p>
+                <p class="ps-8 fs-6 pb-4">減少刀片對皮膚的摩擦和刺激</p>
+                <p class="ps-8 fs-6">能夠產生豐富的泡沫，確保剃鬚過程順滑</p>
+              </div>
             </div>
             <!-- <div class="d-flex mb-1">
               <div class="me-auto mb-1">
@@ -101,22 +113,59 @@
               <div class="pt-2">
                 <div class="d-flex text-primary-br500">
                   <p class="mt-2 me-1">NT$</p>
-                  <h3 class="h3">99</h3>                      
+                  <h3 class="h3">99</h3>
                 </div>
               </div>
             </div>
             <div class="position-relative">
               <img src="../assets/images/prod_1.png" class="card-img-top" alt="...">
-              <button type="button" class="like-link btn" data-bs-toggle="button" autocomplete="off"><i data-feather="heart"></i></button>
+              <button type="button" class="like-link btn" data-bs-toggle="button" autocomplete="off"><i
+                  data-feather="heart"></i></button>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- 多個商品介紹區 -->
+
+    <section>
+      <div class="container">
+        <!-- 最外框:第一格 -->
+        <div class="mt-30">
+          <div class="box-outSide">
+            <div class="row">
+              <div class="col-4">
+                <div class="box-inSideFirst">
+                  <div class="mt-30 pb-3 ps-8 fs-2">柔化肌膚，<br> 淡化細紋紋理</div>
+                  <div class="ps-8 fs-6">符合環保和道德標準</div>
+                </div>
+              </div>
+              <div class="col-4"></div>
+              <div class="col-4"></div>
+            </div>
+
+          </div>
+
+
+
+
+        </div>
+
+
+
+
+
+      </div>
+
+
+
+    </section>
+
 
     <%- include('./layout/footer'); -%>
 
-    <script type="module" src="../main.js"></script>
-  </body>
+      <script type="module" src="../main.js"></script>
+</body>
+
 </html>

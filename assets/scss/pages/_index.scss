@@ -59,6 +59,7 @@
 
 .test-box-g{
   border: solid green 1px;
+  background-color: #262626;
 }
 
 .core_value-box{
@@ -97,6 +98,7 @@
   background-image: url("../assets/images/Vector 25.png");
   background-size: cover; /*調整圖片大小*/
   height: 264px;
+  background-position: center;
 }
 
 .koala-photo{
@@ -105,10 +107,23 @@
   height: 264px;
 }
 
+// 透明度的BOX
 .box-whith60{
   background-color: #FFFFFF;
   height: auto;
 }
+
+//多樣商品介紹的BOX
+.box-outSide{
+  height:530px;
+  border: 3px solid #525252;
+}
+
+.box-inSideFirst{
+  background: #E8EFCF66;
+}
+
+
 
 .top-title{
   color: #FAFAFA;
@@ -156,8 +171,8 @@
   margin-bottom: 32px;
 }
 
-.mb-12{
-  margin-bottom: 48px;
+.mb-b7{
+  margin-bottom: 28px;
 }
 
 .mb-b22{
