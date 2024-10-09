@@ -45,8 +45,20 @@
 
 //介紹區 core value
 
-.test-box{
+.test-box-b{
   border: solid black 1px;
+}
+
+.test-box-r{
+  border: solid red 1px;
+}
+
+.testbox-bl{
+  border: solid blue 1px;
+}
+
+.test-box-g{
+  border: solid green 1px;
 }
 
 .core_value-box{
@@ -93,6 +105,11 @@
   height: 264px;
 }
 
+.box-whith60{
+  background-color: #FFFFFF;
+  height: auto;
+}
+
 .top-title{
   color: #FAFAFA;
   font-size: 64px;
@@ -109,8 +126,15 @@
   font-size: 20px;
   color: #262626;
   font-weight: 700;
+  text-align: center;
 }
 
+.text-description2{
+  font-size: 20px;
+  color: #262626;
+  font-weight: 400;
+  text-align: center;
+}
 
 
 
@@ -128,12 +152,16 @@
   margin-bottom: 16px;
 }
 
-.mb-8{
+.mb-b8{
   margin-bottom: 32px;
 }
 
 .mb-12{
   margin-bottom: 48px;
+}
+
+.mb-b22{
+  margin-bottom: 88px;
 }
 
 .mb-30{
