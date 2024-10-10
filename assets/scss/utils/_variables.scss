@@ -313,8 +313,8 @@ $neutral-50:     #FAFAFA;
 
 $checkout-bg:    #f0f0f0;
 //$secondary:     $gray-600 !default;
-$secondary:   #ECCA9C; //輔色
-$fourthly:    #E8EFCF; //淺綠
+$secondary:     #ECCA9C; //輔色
+$fourthly:      #E8EFCF; //淺綠
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -1595,7 +1595,8 @@ $modal-footer-border-color:         $modal-header-border-color !default;
 $modal-footer-border-width:         $modal-header-border-width !default;
 
 $modal-sm:                          300px !default;
-$modal-md:                          500px !default;
+//$modal-md:                          500px !default;
+$modal-md:                          640px !default;
 $modal-lg:                          800px !default;
 $modal-xl:                          1140px !default;
 

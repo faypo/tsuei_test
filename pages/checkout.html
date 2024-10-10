@@ -13,7 +13,7 @@
         <section>
             <div class="container py-lg-10 mb-lg-10">
                 <div class="row">
-                    <div class="d-lg-none">
+                    <div class="d-lg-none"> <!-- 平板才出現的區塊 -->
                         <div class="accordion" id="accordionPanelsStayOpenExample">
                             <div class="accordion-item border-0">
                                 <h2 class="accordion-header">
@@ -40,7 +40,7 @@
                                                         <li><button class="btn bg-neutral-200 text-primary-br500" type="button">1</button></li>
                                                         <li><button class="btn bg-neutral-200" type="button"><img src="..//assets/images/plus.png" alt="plus-icon"></button></li>
                                                     </ul>
-                                                    <button class="btn fs-sm text-neutral-400 text-decoration-underline" href="" type="button" class="btn">刪除</button>
+                                                    <button class="btn fs-sm text-neutral-400 text-decoration-underline" href="" type="button" data-bs-toggle="modal" data-bs-target="#tsueicancelModal">刪除</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -61,7 +61,7 @@
                                                         <li><button class="btn bg-neutral-200 text-primary-br500" type="button">1</button></li>
                                                         <li><button class="btn bg-neutral-200" type="button"><img src="..//assets/images/plus.png" alt="plus-icon"></button></li>
                                                     </ul>
-                                                    <button class="btn fs-sm text-neutral-400 text-decoration-underline" href="" type="button" class="btn">刪除</button>
+                                                    <button class="btn fs-sm text-neutral-400 text-decoration-underline" href="" type="button" data-bs-toggle="modal" data-bs-target="#tsueicancelModal">刪除</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -82,7 +82,7 @@
                                                         <li><button class="btn bg-neutral-200 text-primary-br500" type="button">1</button></li>
                                                         <li><button class="btn bg-neutral-200" type="button"><img src="..//assets/images/plus.png" alt="plus-icon"></button></li>
                                                     </ul>
-                                                    <button class="btn fs-sm text-neutral-400 text-decoration-underline" href="" type="button" class="btn">刪除</button>
+                                                    <button class="btn fs-sm text-neutral-400 text-decoration-underline" href="" type="button" data-bs-toggle="modal" data-bs-target="#tsueicancelModal">刪除</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -103,7 +103,7 @@
                                                         <li><button class="btn bg-neutral-200 text-primary-br500" type="button">1</button></li>
                                                         <li><button class="btn bg-neutral-200" type="button"><img src="..//assets/images/plus.png" alt="plus-icon"></button></li>
                                                     </ul>
-                                                    <button class="btn fs-sm text-neutral-400 text-decoration-underline" href="" type="button" class="btn">刪除</button>
+                                                    <button class="btn fs-sm text-neutral-400 text-decoration-underline" href="" type="button" data-bs-toggle="modal" data-bs-target="#tsueicancelModal">刪除</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -280,12 +280,12 @@
                             </div>
                         </div>
                         <div class="text-center py-6 d-none d-lg-block">
-                            <button class="btn btn-primary-br500 rounded-pill text-neutral-50 px-6" type="submit">
+                            <button class="btn btn-primary-br500 rounded-pill text-neutral-50 px-6" type="submit" data-bs-toggle="modal" data-bs-target="#tsueicheckModal">
                                 前往結帳/完成訂單
                             </button>
                         </div>
                     </div>
-                    <div class="col-lg-5 d-lg-block d-none">
+                    <div class="col-lg-5 d-lg-block d-none"> <!-- 桌機板才出現的區塊 -->
                         <div class="bg-checkout-bg p-6">
                             <div class="border-bottom border-1 border-netral-400 pb-8 d-flex flex-column gap-4">
                                 <h6>訂單明細</h6>
@@ -306,7 +306,7 @@
                                                 <li><button class="btn bg-neutral-200 text-primary-br500" type="button">1</button></li>
                                                 <li><button class="btn bg-neutral-200" type="button"><img src="..//assets/images/plus.png" alt="plus-icon"></button></li>
                                             </ul>
-                                            <button class="btn fs-sm text-neutral-400 text-decoration-underline" href="" type="button" class="btn">刪除</button>
+                                            <button class="btn fs-sm text-neutral-400 text-decoration-underline" href="" type="button" data-bs-toggle="modal" data-bs-target="#tsueicancelModal">刪除</button>
                                         </div>
                                     </div>
                                 </div>
@@ -327,7 +327,7 @@
                                                 <li><button class="btn bg-neutral-200 text-primary-br500" type="button">1</button></li>
                                                 <li><button class="btn bg-neutral-200" type="button"><img src="..//assets/images/plus.png" alt="plus-icon"></button></li>
                                             </ul>
-                                            <button class="btn fs-sm text-neutral-400 text-decoration-underline" href="" type="button" class="btn">刪除</button>
+                                            <button class="btn fs-sm text-neutral-400 text-decoration-underline" href="" type="button" data-bs-toggle="modal" data-bs-target="#tsueicancelModal">刪除</button>
                                         </div>
                                     </div>
                                 </div>
@@ -348,7 +348,7 @@
                                                 <li><button class="btn bg-neutral-200 text-primary-br500" type="button">1</button></li>
                                                 <li><button class="btn bg-neutral-200" type="button"><img src="..//assets/images/plus.png" alt="plus-icon"></button></li>
                                             </ul>
-                                            <button class="btn fs-sm text-neutral-400 text-decoration-underline" href="" type="button" class="btn">刪除</button>
+                                            <button class="btn fs-sm text-neutral-400 text-decoration-underline" href="" type="button" data-bs-toggle="modal" data-bs-target="#tsueicancelModal">刪除</button>
                                         </div>
                                     </div>
                                 </div>
@@ -369,7 +369,7 @@
                                                 <li><button class="btn bg-neutral-200 text-primary-br500" type="button">1</button></li>
                                                 <li><button class="btn bg-neutral-200" type="button"><img src="..//assets/images/plus.png" alt="plus-icon"></button></li>
                                             </ul>
-                                            <button class="btn fs-sm text-neutral-400 text-decoration-underline" href="" type="button" class="btn">刪除</button>
+                                            <button class="btn fs-sm text-neutral-400 text-decoration-underline" href="" type="button" data-bs-toggle="modal" data-bs-target="#tsueicancelModal">刪除</button>
                                         </div>
                                     </div>
                                 </div>
@@ -414,11 +414,45 @@
                             </div>
                         </div>
                     </div>
+                    <!-- cancelModal -->
+                    <div class="modal fade" id="tsueicancelModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="tsueicancelmodalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-md">
+                            <div class="modal-content rounded-3 py-10">
+                                <div class="modal-header border-0 mx-auto mb-5">
+                                    <img src="../assets/images/trash-2.png" alt="trash-icon">
+                                </div>
+                                <div class="modal-body text-center mb-5">
+                                    <h5 class="h5" id="tsueicancelmodalLabel">確定要刪除此品項嗎?</h5>
+                                </div>
+                                <div class="modal-footer justify-content-center border-0">
+                                    <button type="button" class="btn btn-primary-br500 text-neutral-50 rounded-pill fs-6 px-10 py-1" data-bs-dismiss="modal">是</button>
+                                    <button type="button" class="btn btn-primary-br500 text-neutral-50 rounded-pill fs-6 px-10 py-1" data-bs-dismiss="modal">否</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="text-center py-6 d-lg-none">
-                    <button class="fs-6 px-2 btn btn-primary-br500 rounded-pill text-neutral-50 px-6" type="submit">
+                    <button class="fs-6 px-2 btn btn-primary-br500 rounded-pill text-neutral-50 px-6" type="submit" data-bs-toggle="modal" data-bs-target="#tsueicheckModal">
                         前往結帳/完成訂單
                     </button>
+                </div>
+                <!-- checkModal -->
+                <div class="modal fade" id="tsueicheckModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="tsueicancelmodalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-md">
+                        <div class="modal-content rounded-3 py-10">
+                            <div class="modal-header border-0 mx-auto mb-5">
+                                <img src="../assets/images/file-check.png" alt="trash-icon">    
+                            </div>
+                            <div class="modal-body text-center mb-5">
+                                <h5 class="h5" id="tsueicancelmodalLabel">已經收到您的訂單</h5>
+                                <p class="text-neutral-600">訂單編號：202408310830</p>
+                            </div>
+                            <div class="modal-footer border-0 mx-auto">
+                                <button type="button" class="btn btn-primary-gr500 text-neutral-50 rounded-pill fs-6 px-10 py-1" data-bs-dismiss="modal">確定</button>
+                        </div>
+                    </div>
+                </div>
                 </div>
             </div>
         </section>

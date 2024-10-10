@@ -29,8 +29,11 @@
 }
 
 .combo-bg{
-    background-image: url("../images/banner_product_2.jpg");
+    background-image: url("../images/combo_banner.png");
     background-size: cover;
+    @include mobile{
+        background-position: right top;
+    }
 }
 .combo-title{
     background: #FFFFFFCC;
