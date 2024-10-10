@@ -51,18 +51,24 @@
         
     <!--右側介紹-->
         <div class="col-lg-4">
-            <div>
+            <div class="d-flex position-relative">
+              <div>
                 <h1 class="fs-3">緊緻修護洗面皂</h1>
                 <h2 class="fs-sm">Facial Cleanser With Pink Clay</h2> 
+              </div>
+              <div class="position-absolute top-0 end-0">
+                <button type="button" class="like-link btn" data-bs-toggle="button" autocomplete="off">
+                <i data-feather="heart"></i>
+              </div>
             </div>
+            
             <div class="mt-8">
                 <ul>
                     <li>容量  120g</li>
-                    <li><span class="fs-4 text-primary-br500">NT$</span><span class="fs-1 text-primary-br500">260</span></li>
-                    
+                    <li class="mt-5"><span class="fs-4 text-primary-br500">NT$</span><span class="fs-1 text-primary-br500">260</span></li>
                     <!--數量按鍵 參考: https://codepen.io/NinaLena/pen/jmqwxb-->
-                    <li>
-                        <p>數量</p>
+                    <li class="d-flex mt-5">
+                        <p class="">數量</p>
                         <div class="input-group mb-3 countbtn">
                             <div class="input-group-btn">
                                 <button class="btn btn btn-light" type="button" id="down"><span class="glyphicon glyphicon-minus">-</button>
@@ -74,14 +80,14 @@
                         </div>
                     </li>
                     <li>    
-                      <button type="button" class="btn btn-primary rounded-3 px-7 py-1 fs-6 text-neutral-50">加入購物車</button>
-                      <button type="button" class="btn btn btn-secondary rounded-3 px-7 py-1 fs-6 text-primary-br500">立即結帳</button>
+                      <a href="#" type="button" class="btn btn-primary rounded-3 px-7 py-1 fs-6 text-neutral-50">加入購物車</a>
+                      <a href="#" type="button" class="btn btn btn-secondary rounded-3 px-7 py-1 fs-6 text-primary-br500">立即結帳</a>
                     </li>
                 </ul>
             </div>
         </div>
      <!--商品描述-->
-      <div class="col-8 mt-6 bg-light">
+      <div class="col-lg-8 mt-6 bg-light">
         <ul>
           <li class="fw-bold py-3">商品描述<li>
           <li class="fw-bold text-primary-br500 border-top pt-3">清潔效果</li>
@@ -133,7 +139,7 @@
                       alt="除毛刮鬍皂">
                         <div class="position-absolute top-0 end-0">
                           <button type="button" class="like-link btn" data-bs-toggle="button" autocomplete="off">
-                            <i data-feather="heart"><img src="../assets/images/outline white heart.png" alt=""></i>
+                            <i data-feather="heart"></i>
                           </button>
                         </div>
                         <div class="position-absolute bottom-0 end-0">
