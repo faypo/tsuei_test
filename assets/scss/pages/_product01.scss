@@ -1,11 +1,15 @@
+//檢查用，記得註解
 .line{
   border: 1px solid;
 }
-
+//數字按鈕//
 .countbtn{
   width: 240px;
 }
 
+
+
+//本月推薦裝飾線//
 .decoline{
     display: block;
     font-size: 2px;
@@ -39,19 +43,8 @@
   right: 0;
 }
 
+//本月推薦card//
 .bg-card{
   background-color:#F0F0F0;
   ;
-}
-
-
-.productList{
-  position: relative;
-}
-
-.productList.sale{
-
-  position: absolute;
-  top: 0;
-  left: 0;
 }
