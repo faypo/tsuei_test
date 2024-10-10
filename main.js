@@ -37,11 +37,19 @@ document.getElementById("up").addEventListener('click',function(){
 
 
   //單項商品-本月推薦swiper
-var swiper = new Swiper(".mySwiper3", {
-    slidesPerView: 3,
+  var swiper = new Swiper(".mySwiper3", {
+    slidesPerView: 1, // 預設手機版顯示一個slide
     spaceBetween: 24,
+    breakpoints: {
+        // 當螢幕寬度大於等於640px時，顯示3個slide
+        640: {
+            slidesPerView: 3,
+            spaceBetween: 24,
+        },
+    },
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
-      },
-  });
+    },
+});
+
