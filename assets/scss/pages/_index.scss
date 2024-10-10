@@ -4,6 +4,7 @@
   background-image: url("../assets/images/Banner_top.jpg");
   background-size: cover; /*調整圖片大小*/
   height: calc(100vh - 80px); /*計算*/
+  background-position: center;
 }
 
 .banner-wrapper{
@@ -43,68 +44,87 @@
   }
 }
 
-//介紹區 core value
-
-.test-box-b{
-  border: solid black 1px;
-}
-
-.test-box-r{
-  border: solid red 1px;
-}
-
-.testbox-bl{
-  border: solid blue 1px;
-}
-
-.test-box-g{
-  border: solid green 1px;
-  background-color: #262626;
-}
-
-.core_value-box{
-  width: 1296px;
-  height: 570px;
-  border: 1px solid black;
-}
-
-
-
 .mountain-photo{
   background-image: url("../assets/images/rocky-mountain-landscape.jpg");
   background-size: cover; /*調整圖片大小*/
   height: 570px;
+  background-position: center;
 }
 
 .washHand-photo{
   background-image: url("../assets/images/close-up-hand-with-cleaning-products.jpg");
-  background-size: cover; /*調整圖片大小*/
+  background-size: 115%; /*調整圖片大小*/
   height: 282px;
+  background-position: 45% 95%;
 }
 
 .tree-photo{
   background-image: url("../assets/images/coast-twilight-summer-paradise-sun.jpg");
   background-size: cover; /*調整圖片大小*/
   height: 282px;
+  background-position: center;
 }
 
 .soapSkin-photo{
   background-image: url("../assets/images/macadamia-soap-skin-care-treatment.jpg");
-  background-size: cover; /*調整圖片大小*/
+  background-size: 270%; /*調整圖片大小*/
   height: 282px;
+  background-position: 58% 80%; 
 }
 
 .vector-photo{
   background-image: url("../assets/images/Vector 25.png");
   background-size: cover; /*調整圖片大小*/
   height: 264px;
-  background-position: center;
 }
 
 .koala-photo{
   background-image: url("../assets/images/koala-bear-tree-branch.jpg");
-  background-size: cover; /*調整圖片大小*/
+  background-size: 105%; /*調整圖片大小*/
   height: 264px;
+  background-position: 0% 50%;
+}
+
+.prod_2-photo{
+  height: 236px;
+  background-image: url("../assets/images/prod_2.png");
+  background-position: 0 50%;
+  background-size: cover;
+}
+
+.prod_3-photo{
+  height: 236px;
+  background-image: url("../assets/images/prod_3.png");
+  background-position: 0 50%;
+  background-size: cover;
+}
+
+.prod_4-photo{
+  height: 236px;
+  background-image: url("../assets/images/prod_4.png");
+  background-position: 0 50%;
+  background-size: cover;
+}
+
+.prod_5-photo{
+  height: 236px;
+  background-image: url("../assets/images/prod_5.png");
+  background-position: 0 50%;
+  background-size: cover;
+}
+
+.prod_6-photo{
+  height: 236px;
+  background-image: url("../assets/images/prod_6.png");
+  background-position: 0 50%;
+  background-size: cover;
+}
+
+.prod_7-photo{
+  height: 236px;
+  background-image: url("../assets/images/prod_7.png");
+  background-position: 0 50%;
+  background-size: cover;
 }
 
 // 透明度的BOX
@@ -115,12 +135,17 @@
 
 //多樣商品介紹的BOX
 .box-outSide{
-  height:530px;
+  height:535px;
   border: 3px solid #525252;
 }
 
 .box-inSideFirst{
   background: #E8EFCF66;
+  overflow: hidden;
+}
+
+.card-grey{
+  background-color: #F0F0F0;
 }
 
 
@@ -151,46 +176,47 @@
   text-align: center;
 }
 
+.card-1{
+  margin-bottom: 8px;
+  font-weight: 700;
+}
 
 
 
 
 
-
-
-
-
-
-
-
-.mb-4{
-  margin-bottom: 16px;
+.mb-b7{
+  margin-bottom: 28px;
 }
 
 .mb-b8{
   margin-bottom: 32px;
 }
 
-.mb-b7{
-  margin-bottom: 28px;
-}
-
 .mb-b22{
   margin-bottom: 88px;
 }
 
-.mb-30{
+.mb-b30{
   margin-bottom: 120px;
 }
 
-.mt-16{
+.mt-t16{
   margin-top: 64px;
 }
 
-.mt-30{
+.mt-t30{
   margin-top: 120px;
 }
 
-.mr-3{
+.mr-r3{
   margin-right: 12px;
+}
+
+.pt-t4{
+  padding-top: 18px;
+}
+
+.pb-b4{
+  padding-bottom: 18px;
 }
