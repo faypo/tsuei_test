@@ -16,26 +16,60 @@
     <div class="row align-items-center justify-content-center">
     <!--左側商品圖群JS套件待補/Swiper 圖片數量???
     參考: https://codepen.io/kevin-chang-the-sasster/pen/WNGZpLx
+        https://codesandbox.io/p/sandbox/qd6gyz?file=%2Findex.html
     -->
-        <div class="col-4 line">
-                
+        <div class="col-lg-4">
+          <div style="--swiper-navigation-color:#AFD198; --swiper-pagination-color:#E8EFCF;" class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="../assets/images/prod_2.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../assets/images/products/Facial Cleanser With Pink Clay.jpg"  />
+              </div>
+              <div class="swiper-slide">
+                <img src="../assets/images/prod_2.png" />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <div thumbsSlider="" class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="../assets/images/prod_2.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../assets/images/products/Facial Cleanser With Pink Clay.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../assets/images/prod_2.png" />
+              </div>
+            </div>
+          </div>      
         </div>
         
     <!--右側介紹-->
-        <div class="col-4">
-            <div>
+        <div class="col-lg-4">
+            <div class="d-flex position-relative">
+              <div>
                 <h1 class="fs-3">緊緻修護洗面皂</h1>
                 <h2 class="fs-sm">Facial Cleanser With Pink Clay</h2> 
+              </div>
+              <div class="position-absolute top-0 end-0">
+                <button type="button" class="like-link btn py-0 px-0" data-bs-toggle="button" autocomplete="off">
+                <i data-feather="heart"></i>
+              </div>
             </div>
+            
             <div class="mt-8">
                 <ul>
                     <li>容量  120g</li>
-                    <li><span class="fs-4 text-primary-br500">NT$</span><span class="fs-1 text-primary-br500">260</span></li>
-                    
+                    <li class="mt-5"><span class="fs-4 text-primary-br500">NT$</span><span class="fs-1 text-primary-br500">260</span></li>
                     <!--數量按鍵 參考: https://codepen.io/NinaLena/pen/jmqwxb-->
-                    <li>
+                    <li class="d-flex mt-5">
                         <p>數量</p>
-                        <div class="input-group mb-3 countbtn">
+                        <div class="input-group countbtn">
                             <div class="input-group-btn">
                                 <button class="btn btn btn-light" type="button" id="down"><span class="glyphicon glyphicon-minus">-</button>
                             </div>
@@ -45,24 +79,24 @@
                             </div>
                         </div>
                     </li>
-                    <li>    
-                      <button type="button" class="btn btn-primary rounded-3 px-7 py-1 fs-6 text-neutral-50">加入購物車</button>
-                      <button type="button" class="btn btn btn-secondary rounded-3 px-7 py-1 fs-6 text-primary-br500">立即結帳</button>
+                    <li class="mt-8">    
+                      <a href="#" type="button" class="btn btn-primary rounded-3 px-5  py-1 fs-6 text-neutral-50">加入購物車</a>
+                      <a href="#" type="button" class="btn btn btn-secondary rounded-3 px-6 px-md-5 py-1 ms-1 fs-6 text-primary-br500">立即結帳</a>
                     </li>
                 </ul>
             </div>
         </div>
      <!--商品描述-->
-      <div class="col-8">
+      <div class="col-lg-8 mt-6 bg-light">
         <ul>
-          <li><h5>商品描述</h5><li>
-          <li class="fw-bold text-decoration-underline">清潔效果</li>
+          <li class="fw-bold py-3">商品描述<li>
+          <li class="fw-bold text-primary-br500 border-top pt-3">清潔效果</li>
           <li>這款潔面皂能夠有效去除臉部的污垢和多餘油脂，使用後皮膚感覺非常清爽乾淨，但不會過度乾燥。</li>
-          <li class="fw-bold text-decoration-underline">溫和配方</li>
+          <li class="fw-bold text-primary-br500 pt-3">溫和配方</li>
           <li>含有粉紅黏土和多種皂化植物油，如椰子油、橄欖油、蓖麻油、可可脂和甜杏仁油，這些成分溫和且具有滋潤效果，適合平衡膚質。</li>
-          <li class="fw-bold text-decoration-underline">天然成分</li>
+          <li class="fw-bold text-primary-br500 pt-3">天然成分</li>
           <li>由天然成分製成，不含棕櫚油，對皮膚更友好，並且符合環保和道德標準。</li>
-          <li class="fw-bold text-decoration-underline">植物清香</li>
+          <li class="fw-bold text-primary-br500 pt-3">植物清香</li>
           <li>一般天然成分的潔面皂會有淡淡的植物香味，使用時感覺舒適。</li>
         </ul>   
       </div>
@@ -88,7 +122,7 @@
     參考: https://hackmd.io/iUyXrm0dSN6ILfLdw1_A8w
         https://codesandbox.io/p/sandbox/lvq34j-->
     <section class="container mb-10">
-        <div class="swiper mySwiper px-10">
+        <div class="swiper mySwiper3 px-10">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="card border-0 mx-auto">
@@ -98,14 +132,11 @@
                     </div>
                     <div class="card-img">
                       
-                      <div class="position-relative">
-                        <img
-                      src="../assets/images/prod_1.png"
-                      class="card-img-top productList"
-                      alt="除毛刮鬍皂">
+                      <div class="position-relative pics">
+                        <img src="../assets/images/prod_1.png" class="card-img-top productList" alt="除毛刮鬍皂">
                         <div class="position-absolute top-0 end-0">
                           <button type="button" class="like-link btn" data-bs-toggle="button" autocomplete="off">
-                            <i data-feather="heart"><img src="../assets/images/outline white heart.png" alt=""></i>
+                            <i data-feather="heart"></i>
                           </button>
                         </div>
                         <div class="position-absolute bottom-0 end-0">
@@ -118,7 +149,7 @@
                       <p class="card-text">
                           天然滋潤</br>輕鬆軟化毛髮及鬍鬚
                       </p>
-                      <a href="#" class="btn btn-neutral-600 w-100 rounded-3">來去逛逛</a>
+                      <a href="#" class="btn btn-neutral-600 w-100 rounded-3 mt-3">來去逛逛</a>
                     </div>
                   </div>
               </div>
