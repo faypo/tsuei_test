@@ -108,6 +108,45 @@
   background-position: 0% 50%;
 }
 
+.leaves1_bg-photo{
+  position: absolute;
+  top: 1430px;
+  right: 0;
+  width: 537px;
+  height: 313px;
+  background-image: url("../assets/images/leaves1_bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
+  z-index: -1;
+}
+
+.leaves2_bg-photo{
+  position: absolute;
+  top: 2030px;
+  left: 0;
+  width: 242px;
+  height: 535px;
+  background-image: url("../assets/images/leaves2_bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
+  z-index: -1;
+}
+
+.bg2-photo{
+  position: absolute;
+  top: 2830px;
+  left: 0;
+  width: calc(100vw - 20px);
+  height: 200vh;
+  background-image: url("../assets/images/bg-2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right center;
+  z-index: -1;
+}
+
 .prod_2-photo{
   height: 236px;
   background-image: url("../assets/images/prod_2.png");
@@ -154,6 +193,10 @@
 .box-whith60 {
   background-color: rgba(255, 255, 255, 0.6); /* 白色背景，60% 不透明 */
   height: auto;
+}
+
+.box-title{
+  color: #6F4620;
 }
 
 //多樣商品介紹的BOX
