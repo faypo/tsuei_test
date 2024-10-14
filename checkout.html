@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>checkout</title>
+  <script type="module" crossorigin src="/tsuei_test/assets/main-d3bd3c76.js"></script>
+  <link rel="stylesheet" href="/tsuei_test/assets/main-a2636e47.css">
+</head>
+<body>
+    <header class="header">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container d-lg-none">
+            <a class="navbar-brand me-auto" href="#">
+                <img src="data:image/png;base64,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" alt="TSUEI Logo">
+            </a>
+            <ul class="mb-0 nav align-items-center justify-content-between">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADASURBVHgB5ZTdDcIwDIRPiAEyUjYhI3SDeLPCBozQDcoGkEqOEmiI07gv0E869ceqXTmnA46CDRqD5qAn31+wE56bluShxGXNKMiwhuy9hYKRmwyFGiGtq5v4l6ZQM1ybaw1OqPOAjIFiwJ2vpRVFF92gwCKtaRkSDzl3ltquhO82JeyEQ3LUcqhXKO35+1i8Z4+kTdnkG5t2ZZPDOnskNmVTLXskCA3ZVMseiaZsigN6WX0vZZGa88fzBB0T/o4XDOFcFiHpw8MAAAAASUVORK5CYII=" alt="account icon">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="checkout.html">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADlSURBVHgB1VTBEYMgEFxJA5ZAB6YEU0GSClJHqkoJ2kG0AifPvLCDRMczOgYED3i4MzvH6B4LHAcANB0/CxYICJ1BT4lIeJDBBQEgNN9eFHNEMigpSkSChL4mHDaJwUR1TOGPVhh+lBSvHRMGT5Rfmwx8C51TrGw7kOAhW8zzB4mhSAo8jM17XBMp8Do6xWxxYkVYUVxdhQajvrYZ1BRz8Awqm8G4gwzu6I/nTOOni9j00lo7GI6160XFxslLbK/bjnHDcJ8bGofS/jAvsuJohSVp/mS3HO3BkvTGdCPumHrDVxsOX0TwaDZ9YWq4AAAAAElFTkSuQmCC" alt="shopping cart icon"> (10)
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="shopping.html">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGrSURBVHgB3VXtcYJAEF2YFGAHwQpiOsAKglqAWoF0EKkgYwVqA5pUEFJBKIESrADyHiwZMXcXyCQ/4ptZZ4W9fftxu4j8d3iul1EUhb7vz6GGkIDPyrLMPM/LiqJ4eQbkJwRwHMDJFhKKGzmIxuDJbQa+wfkIUb+r8xMkgZPh4XDwKNDvIUs6Z1a05RnpkgEj5wGoA5RiD4kR3UnMWQ4QxBqyYiAkNmVy00rH91/V+eZ4PMbigBLHk8mERHOWFP/Hl3afJZrNZpHUjcxBsJaOYJbMgCXlpbASwPBB1cRWFhPUdlM5q2+cmQARVI1CLTPpCZzZqRpaCZDBSCPqTXDW3MBK8Fc4J8j5M51Ob6UnmjnglFsJ8PJN1aX0R0XAFeIi2Km64hBJR9AWt+eROveTlQCNSkGSQuWBJ+kIdR5ActPya00yCJZIk6tigV5w/BPXqtBAFhq9sbSe4eCoWRlSN57LLmuur+4rDlSsNg2Mm9W6rpUkEAdYUkgC263afiH57oMToWTcUXfNpGtWKRzt2TdDQC0SJ0EfXJLg2zHk81+bZEbMyEUH9nrwAV626mOA4vkTAAAAAElFTkSuQmCC" alt="shopping cart icon">
+                    </a>
+                </li>
+            </ul>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">品牌故事</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="allproduct.html">商品總覽</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="d-none d-lg-block container py-6">
+            <nav class="navbar navbar-expand-lg justify-content-between">
+                <ul class="d-lg-flex d-none">
+                    <li>
+                        <a class="header-link px-6" href="index.html">首頁</a>
+                    </li>
+                    <li>
+                        <a class="header-link ps-6" href="about.html">品牌故事</a>
+                    </li>
+                    <li>
+                        <a class="header-link px-6" href="allproduct.html">商品總覽</a>
+                    </li>
+                </ul>
+                <div>
+                    <a class="tsuei-logo" href="index.html">
+                        <img src="/tsuei_test/assets/logo-6e36472e.png" alt="TSUEI Logo">
+                    </a>
+                </div>
+                <div class="d-flex align-items-center">
+                    <ul class="d-flex gap-5">
+                        <li>
+                            <a href="#">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADASURBVHgB5ZTdDcIwDIRPiAEyUjYhI3SDeLPCBozQDcoGkEqOEmiI07gv0E869ceqXTmnA46CDRqD5qAn31+wE56bluShxGXNKMiwhuy9hYKRmwyFGiGtq5v4l6ZQM1ybaw1OqPOAjIFiwJ2vpRVFF92gwCKtaRkSDzl3ltquhO82JeyEQ3LUcqhXKO35+1i8Z4+kTdnkG5t2ZZPDOnskNmVTLXskCA3ZVMseiaZsigN6WX0vZZGa88fzBB0T/o4XDOFcFiHpw8MAAAAASUVORK5CYII=" alt="account icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="header-link" href="checkout.html">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADlSURBVHgB1VTBEYMgEFxJA5ZAB6YEU0GSClJHqkoJ2kG0AifPvLCDRMczOgYED3i4MzvH6B4LHAcANB0/CxYICJ1BT4lIeJDBBQEgNN9eFHNEMigpSkSChL4mHDaJwUR1TOGPVhh+lBSvHRMGT5Rfmwx8C51TrGw7kOAhW8zzB4mhSAo8jM17XBMp8Do6xWxxYkVYUVxdhQajvrYZ1BRz8Awqm8G4gwzu6I/nTOOni9j00lo7GI6160XFxslLbK/bjnHDcJ8bGofS/jAvsuJohSVp/mS3HO3BkvTGdCPumHrDVxsOX0TwaDZ9YWq4AAAAAElFTkSuQmCC" alt="shopping cart icon"> (10)
+                            </a>
+                        </li>
+                        <li>
+                            <form class="d-none d-lg-flex position-relative" role="search" >
+                                <input class="bg-neutral-200 text-neutral-300 border-0 form-control form-control-sm rounded-pill py-1 ps-7 pe-0" type="search" placeholder="search" aria-label="Search" />
+                                <div class="find-icon">
+                                    <img class="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGrSURBVHgB3VXtcYJAEF2YFGAHwQpiOsAKglqAWoF0EKkgYwVqA5pUEFJBKIESrADyHiwZMXcXyCQ/4ptZZ4W9fftxu4j8d3iul1EUhb7vz6GGkIDPyrLMPM/LiqJ4eQbkJwRwHMDJFhKKGzmIxuDJbQa+wfkIUb+r8xMkgZPh4XDwKNDvIUs6Z1a05RnpkgEj5wGoA5RiD4kR3UnMWQ4QxBqyYiAkNmVy00rH91/V+eZ4PMbigBLHk8mERHOWFP/Hl3afJZrNZpHUjcxBsJaOYJbMgCXlpbASwPBB1cRWFhPUdlM5q2+cmQARVI1CLTPpCZzZqRpaCZDBSCPqTXDW3MBK8Fc4J8j5M51Ob6UnmjnglFsJ8PJN1aX0R0XAFeIi2Km64hBJR9AWt+eROveTlQCNSkGSQuWBJ+kIdR5ActPya00yCJZIk6tigV5w/BPXqtBAFhq9sbSe4eCoWRlSN57LLmuur+4rDlSsNg2Mm9W6rpUkEAdYUkgC263afiH57oMToWTcUXfNpGtWKRzt2TdDQC0SJ0EfXJLg2zHk81+bZEbMyEUH9nrwAV626mOA4vkTAAAAAElFTkSuQmCC" alt="">
+                                </div>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </nav>
+</header>
+
+    <main>
+        <section>
+            <div class="container py-lg-10 mb-lg-10">
+                <div class="row">
+                    <div class="d-lg-none"> <!-- 平板才出現的區塊 -->
+                        <div class="accordion" id="accordionPanelsStayOpenExample">
+                            <div class="accordion-item border-0">
+                                <h2 class="accordion-header">
+                                    <button class="fs-5 text-neutral-800 accordion-button bg-checkout-bg" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseMobile" aria-expanded="true" aria-controls="panelsStayOpen-collapseMobile">
+                                        訂單明細
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseMobile" class="accordion-collapse collapse show px-2 bg-neutral-200">
+                                    <div class="border-bottom border-1 border-netral-400 pb-8 d-flex flex-column gap-4">
+                                        <div class="row align-items-center">
+                                            <div class="col-5">
+                                                <img class="" src="/tsuei_test/assets/prod_2-3427d432.png" alt="">
+                                            </div>
+                                            <div class="col-7">
+                                                <h6>緊緻修護洗面皂</h6>
+                                                <p class="fs-sm">容量 120 ML</p>
+                                                <div>
+                                                    <span class="text-primary-br500 me-1">NT$</span><span class="fs-5 text-primary-br500">260</span>
+                                                </div>
+                                                <div class="d-flex justify-content-between">
+                                                    <ul class="d-flex align-items-center">
+                                                        <li class="me-1">數量</li>
+                                                        <li><button class="btn bg-neutral-200" type="button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABNSURBVHgB7c6xDQAQEIXhwyJGYQOFERSWkEgsoTCCwgaMYhGiJRpRiq+74v48gO8BaD6sFvTkyfpUt4BTkhEM+STQOnATYlkCtwu+JwzkLQ8EfL4zywAAAABJRU5ErkJggg==" alt="minus-icon"></button></li>
+                                                        <li><button class="btn bg-neutral-200 text-primary-br500" type="button">1</button></li>
+                                                        <li><button class="btn bg-neutral-200" type="button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACXSURBVHgB3ZLBCYNgDIWT2HaOjtAR2g0KtRsU26MdoFBo0aNXD4IO4MENdARHcAxF/aPeFDEIHgQ/yCHkEV7IA9g2f0M3rbYkzU4aEvAJkVjWLGTxAuw339f12O8PvHe6A3Iq3wOdG2WjBb+HftYIYphBreDy8cJklgNUjIVWmVMORCzjFtjPuy9p1v+CGCQFmBKLOdoCDYWZJzb6+26JAAAAAElFTkSuQmCC" alt="plus-icon"></button></li>
+                                                    </ul>
+                                                    <button class="btn fs-sm text-neutral-400 text-decoration-underline" href="" type="button" data-bs-toggle="modal" data-bs-target="#tsueicancelModal">刪除</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row align-items-center">
+                                            <div class="col-5">
+                                                <img class="" src="/tsuei_test/assets/prod_1-b925917d.png" alt="">
+                                            </div>
+                                            <div class="col-7">
+                                                <h6>除毛刮鬍皂</h6>
+                                                <p class="fs-sm">容量 115 ML</p>
+                                                <div>
+                                                    <span class="text-primary-br500 me-1">NT$</span><span class="fs-5 text-primary-br500">460</span>
+                                                </div>
+                                                <div class="d-flex justify-content-between">
+                                                    <ul class="d-flex align-items-center">
+                                                        <li class="me-1">數量</li>
+                                                        <li><button class="btn bg-neutral-200" type="button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABNSURBVHgB7c6xDQAQEIXhwyJGYQOFERSWkEgsoTCCwgaMYhGiJRpRiq+74v48gO8BaD6sFvTkyfpUt4BTkhEM+STQOnATYlkCtwu+JwzkLQ8EfL4zywAAAABJRU5ErkJggg==" alt="minus-icon"></button></li>
+                                                        <li><button class="btn bg-neutral-200 text-primary-br500" type="button">1</button></li>
+                                                        <li><button class="btn bg-neutral-200" type="button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACXSURBVHgB3ZLBCYNgDIWT2HaOjtAR2g0KtRsU26MdoFBo0aNXD4IO4MENdARHcAxF/aPeFDEIHgQ/yCHkEV7IA9g2f0M3rbYkzU4aEvAJkVjWLGTxAuw339f12O8PvHe6A3Iq3wOdG2WjBb+HftYIYphBreDy8cJklgNUjIVWmVMORCzjFtjPuy9p1v+CGCQFmBKLOdoCDYWZJzb6+26JAAAAAElFTkSuQmCC" alt="plus-icon"></button></li>
+                                                    </ul>
+                                                    <button class="btn fs-sm text-neutral-400 text-decoration-underline" href="" type="button" data-bs-toggle="modal" data-bs-target="#tsueicancelModal">刪除</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row align-items-center">
+                                            <div class="col-5">
+                                                <img class="" src="/tsuei_test/assets/prod_4-cfde33d2.png" alt="prod_4">
+                                            </div>
+                                            <div class="col-7">
+                                                <h6>洗髮皂</h6>
+                                                <p class="fs-sm">容量 120 ML</p>
+                                                <div>
+                                                    <span class="text-primary-br500 me-1">NT$</span><span class="fs-5 text-primary-br500">310</span>
+                                                </div>
+                                                <div class="d-flex justify-content-between">
+                                                    <ul class="d-flex align-items-center">
+                                                        <li class="me-1">數量</li>
+                                                        <li><button class="btn bg-neutral-200" type="button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABNSURBVHgB7c6xDQAQEIXhwyJGYQOFERSWkEgsoTCCwgaMYhGiJRpRiq+74v48gO8BaD6sFvTkyfpUt4BTkhEM+STQOnATYlkCtwu+JwzkLQ8EfL4zywAAAABJRU5ErkJggg==" alt="minus-icon"></button></li>
+                                                        <li><button class="btn bg-neutral-200 text-primary-br500" type="button">1</button></li>
+                                                        <li><button class="btn bg-neutral-200" type="button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACXSURBVHgB3ZLBCYNgDIWT2HaOjtAR2g0KtRsU26MdoFBo0aNXD4IO4MENdARHcAxF/aPeFDEIHgQ/yCHkEV7IA9g2f0M3rbYkzU4aEvAJkVjWLGTxAuw339f12O8PvHe6A3Iq3wOdG2WjBb+HftYIYphBreDy8cJklgNUjIVWmVMORCzjFtjPuy9p1v+CGCQFmBKLOdoCDYWZJzb6+26JAAAAAElFTkSuQmCC" alt="plus-icon"></button></li>
+                                                    </ul>
+                                                    <button class="btn fs-sm text-neutral-400 text-decoration-underline" href="" type="button" data-bs-toggle="modal" data-bs-target="#tsueicancelModal">刪除</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row align-items-center">
+                                            <div class="col-5">
+                                                <img class="" src="/tsuei_test/assets/prod_4-cfde33d2.png" alt="prod_4">
+                                            </div>
+                                            <div class="col-7">
+                                                <h6>潤髮皂</h6>
+                                                <p class="fs-sm">容量 120 ML</p>
+                                                <div>
+                                                    <span class="text-primary-br500 me-1">NT$</span><span class="fs-5 text-primary-br500">260</span>
+                                                </div>
+                                                <div class="d-flex justify-content-between">
+                                                    <ul class="d-flex align-items-center">
+                                                        <li class="me-1">數量</li>
+                                                        <li><button class="btn bg-neutral-200" type="button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABNSURBVHgB7c6xDQAQEIXhwyJGYQOFERSWkEgsoTCCwgaMYhGiJRpRiq+74v48gO8BaD6sFvTkyfpUt4BTkhEM+STQOnATYlkCtwu+JwzkLQ8EfL4zywAAAABJRU5ErkJggg==" alt="minus-icon"></button></li>
+                                                        <li><button class="btn bg-neutral-200 text-primary-br500" type="button">1</button></li>
+                                                        <li><button class="btn bg-neutral-200" type="button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACXSURBVHgB3ZLBCYNgDIWT2HaOjtAR2g0KtRsU26MdoFBo0aNXD4IO4MENdARHcAxF/aPeFDEIHgQ/yCHkEV7IA9g2f0M3rbYkzU4aEvAJkVjWLGTxAuw339f12O8PvHe6A3Iq3wOdG2WjBb+HftYIYphBreDy8cJklgNUjIVWmVMORCzjFtjPuy9p1v+CGCQFmBKLOdoCDYWZJzb6+26JAAAAAElFTkSuQmCC" alt="plus-icon"></button></li>
+                                                    </ul>
+                                                    <button class="btn fs-sm text-neutral-400 text-decoration-underline" href="" type="button" data-bs-toggle="modal" data-bs-target="#tsueicancelModal">刪除</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="border-bottom border-1 border-netral-400 py-8 d-flex flex-column gap-4">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h6>總額</h6>
+                                            <div>
+                                                <span class="fs-5">NT$</span><span class="fs-5">260</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <h6>7-11 取貨</h6>
+                                            <p class="h6">免費</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <h6>折扣碼</h6>
+                                            <p class="h6">5% off</p>
+                                        </div>
+                                    </div>
+                                    <div class="border-bottom border-1 border-netral-400 py-8 d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h5 class="h5">總額</h5>
+                                            <p class="text-neutral-600">含運費總金額</p>
+                                        </div>
+                                        <div>
+                                            <span class="text-primary-br500 fs-5">NT$</span><span class="text-primary-br500 h3 fw-bold">979</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column gap-5 pt-8 pb-7">
+                                        <div class="d-flex align-items-center mb-5">
+                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADmSURBVHgB7ZaNDcIgEIVfjQM4AiM4gm7gBnaT4iY6id2gI5QNOoJeE2IulR+jgBjvS15KgOa9cEAABEH4MxpP/4Z0ICnkwZB6+41yJE2kW2aN1ivItkCQpXY8wLJkVzbBkC7Iw7wyyrZ70t43kSdXyIdiPhMfaByBfGOpcXqtAz9ofIHQCpXkkWOFygiV7IS8dK7O6jb1T5WMo0ito9+QzsgIvxg5I/xXf4v3cHpVV7JXN7VC+pI5veSUxag+kGHtDvnoPJ5PaJR/MepQoPlxPxQMM1hPxEJphC/DTzVaj2gYQRBScweg8rPThs1I0wAAAABJRU5ErkJggg==" alt="">
+                                            <h5>100%交易安全承諾</h5>
+                                        </div>
+                                        <p class="text-neutral-600 fs-6">我們採用SSL安全憑證技術，以保障您在線上商店的信用卡交易安全。</p>
+                                        <ul class="d-flex gap-3">
+                                            <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADMAAAAqCAYAAAAeeGN5AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUVSURBVHgB7VprTJtVGH5KS6FQGAMKbGRQwMFAYXbAhmQjg6EbilO2ZJtowjCaJShqYoxuZpg55/ZDjZnZTOYlauQHJnNsnS5BLjXLhsMLhAkdysKtIMPSdrS0tvTiez5YZ0mHtFmyttuTHDjfufV9znlv52sBgsPhkFJpo6J1+B9OUZEyHry5SieVKPgvdFRkjMwpqjwJ/4eCkXEgMKALJDIIQgAhoMgI/vvQ2N6P9ssjCBeFwNehM5jw6NpUlOamONsErgPMqNkqQ3KC73tp5ZAaPQNqlzaBu4GqiSk0dw3DN+HAjqJVXI03r8ctmSvDk6g+1gKfhN2OzblSt133vJmv4i4gw4Nfwq0DyEmJg/z1x3yTEyVf0REiLozMh1sycdHhKC+8z10X9NNm58nxeDyIRUJnn3nGBsuMFUKBADabHTaHnep8hAgF7M6Erv4J9I9qEREuxOpUCZbFRLisbTCamazcmuMaAyRRYgj4i99SATzADAn4c+8Yqj9swtiUCSsTItH7ybPO/vK6k1B0j+DSB5XY/q4cKo0Rz5Vm4uDuIuw6LEcrzb2R1jIZ91Xk4u3q9WxbIKfsY9uhs9xGNby6mTaBB1n6MiTGLVm0fB6RCeYHoSQ/BZUlmThyphNm+82Eu765B82/j6KmbDX0/1gwqDVyglUUpqPqvXNoUf6FkqxEHKgs4DalqXMI24oyOCJqnREvnVDAOncKJqsdhdlJiCcN8QQekbmByLBZ1ZqxMTIOaPVm7P3yAhKjwlD39EM4UN/OdBAxpC73p8TiexIctBEPrIjB+pwV3NxiWbJzvUMNHRieNCAyJBhTFis0ehMS5qngYuCVaw4LEXAk7BSNGY7LO6G6bsSRqg2IXxoOxWUV1/54vhSSJWGkjrO53tFz3dj3+XnojRbnWv0qDT5r6UHtlhwkxYq5tmG1Ad7AKzKhwYwMD1ZSs6HxKbx/+jesTZHgmdIs/DGigXJMy96SYOeGDAiD+ZC/tRXpEtppPnC4kca+XD9r7DRmz0fNCKMxr+3IRwKdLINu2uyNWN6RYQIyYa2k+y8cb4GNiDXsLef6Tp7vo1WDEEWquGkuh8og9eo9sRv7K/K45yuUyDYo+lDfqkSrcgwF6Qloo8TWQCrGoJqchjfwiowgeHbaJKnLdyREbVk2XRtmvc63P13l/hekxWPyugn9I1rumU8EX3xChhABM3IHZqxW1H19EfGRIpjInX+lUGKCVJWBuWWv5IIXYIbKDJwhNUaMN3au4+q9g2r8MvA31/fUxgycvXQVtZ/+iOKs5UiSiMmDjcBMp7mSbKObMvMBMvr6Vx4h75jFzX+HHMf+bzqgpk1gKsjjeRa2vSIjISOXJUVz0fhYzSZn4Py1bxxrpLHMNLAlLxWjGj3KHkzGRVKljj+vYTnNO7hrHcqp7/mjTagsTHMSYciiNdm6IvJ8TIWDBXxPxILL25kvfuhBcXYikiUiwOLdUbsD+wQ7/eEH3aYEKTQaSjrZXrppbt+4ytns/mSuUZxo24PbBUbBsz1eCOQkKi7AnegLqJmPvk5bQKx7l7M7AjoRhzCCi2G3glfe7I6AR6lTbD7dEwZuOcQ9GTElg5lV8K0rJ8UdJpc5k6Rm2fQiL2eITAPWvAnfxv+QWSoOxcdnuuj1rO9r39S0BQ/nSV3a/PwrDSb6TVPwc9fsatMBF2d0CBAwMl0IDJwOqK/Og+gCNMgqVBrhf2AkFGC/ASAe/wJc2HwsLlsc6AAAAABJRU5ErkJggg==" alt="VISA"></li>
+                                            <li><img src="data:image/png;base64,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" alt="JCB"></li>
+                                            <li><img src="data:image/png;base64,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" alt="MASTER"></li>
+                                            <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADMAAAAqCAYAAAAeeGN5AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARcSURBVHgB7ZpZKO1fFMfXMQ+ZhzyYH+RB4U2k8KR4UKYiJRnyhIhIREhRLuLRFBLinxRS+suQyJDpQTIWkeEv87j+e617ne655xzn3NtV5+h8anfO3nv99tnfvdZee/9EAj9AxBDx4SeKNWgX/0gkkhVpTQipQ+2mjnRIxJds8VkH2k8OidkVX9xB+9kjMQhfBD34QujEaCo6MZqKToym8ltiXl5eYGhoCB4fH0ETMVDX8OLiAuLi4mBlZQWOjo4U2uzs7MDk5KTsDxgYgLu7OwQEBIChoSF8Kure5PLz8+mmgJWVlUpturq62EZRcXNzw8XFRfxMPvTM6+srieXVNTMzg9raWkhNTeUwMzY2VvpcbGws29Gzd3d3MDw8DC0tLRAREQFbW1tgYWEBn4IihU9PT1hWVoY2NjZobW2NCQkJ2NDQgGFhYWhkZISWlpaYkZGBNzc3qMgzBQUFcmOGhIRwX3t7u0z729sbikXDv4FCMVlZWUrD5b2QqLm5OVRXTEVFBffl5eVxfXNzE4OCglDsI253cHDAwsJCFnZ4eMiL6OLigg8PDzLjpKSkoPAs9vT0qBYjNjdPVJWYmpoaucE+EpOens59VVVVuLu7i05OTmhubs6Ty87ORm9vb+4vKipi+/DwcK6PjIxIx6CIcXR0RFtbWxQJSbUYEd8qhYjXVDw9PVVbzPb2Nrq6unLf8vIydnR0oL+/P3Z3d0ttzs/P0dTUFK2srFAcAdjb28v2mZmZUpuFhQVuS0pKQkXIJYD7+3tQY5/xmaOM/v5+WF1d5e9iX8HS0hLc3t6CCF/w8/PjIiYEYr9w+9XVFQgxnFREWHF7ZGQk16enp/n3xAJyIiFiYmKUTkyG9fV1lZ6hQvGtzDOUIJydnbmQRwIDA7GxsZE3O3F5eYnFxcXo4eGBIlOyp9/HNTEx4XAioqOjuW9jY4Prvr6+vLd+TTzvyIl5fn7mSagjqLq6WqEYRXvmZ5KTk9mOsiSFtfAcHhwc8ER/FjM6Osp2JSUl0kWmLKoMuTCjMyUtLQ1KS0tBFcpuAqqYmJgAfX19qK+vB3t7e+lY19fXMnahoaHg6ekJAwMDoKf3/eYl9pDScRXezejAs7Ozg4+geM7JyYE/gSZIB3JbWxuIRAIiTUN8fLzcPhRZFRITE0GEGR+69JwINeUDK3PZ7OwsilOfXUtngZeXl7ROcd7Z2Sn3jLphRucThRT8CFfhJSwvL0cfHx+ZMCNmZmakdrm5uR+O++HdbH5+Hpubm/H4+JjrZ2dn2NrailNTUwrt9/f3sa+vD0UmQ1WcnJyw+KamJlxbW+O2sbExHBwclCYKQmQ6XkRKBO92fyRGE6AzibwSHBys0lZjxZD36VZAYUdhThlPFRr7pknZS1x5ICoqCsbHx0HcGFQ+o/uLpqaiE6Op6MRoKjoxmgqJ2YOvwR6JqYevwXcd4hLwDbWbb6RD8i5LNNA/NESBdvGfKCvi9eBfqvwPuYYRqzo2piIAAAAASUVORK5CYII=" alt="APPLE-PAY"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="accordion" id="accordionPanelsStayOpenExample">
+                            <div class="accordion-item border-0">
+                                <h2 class="accordion-header">
+                                    <button class="fs-5 text-neutral-800 accordion-button bg-checkout-bg" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                        1.登入
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                                    <div class="accordion-body py-6">
+                                        <h5 class="fs-6">您好!曉明 您正以以下google帳號登入</h5>
+                                        <p class="text-primary-br500">abc123456@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0">
+                                <h2 class="accordion-header">
+                                    <button class="fs-5 text-neutral-800 accordion-button bg-checkout-bg" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
+                                        2.商品寄送
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show py-7">
+                                    <button class="btn btn-outline-neutral-400 px-6 text-neutral-800 ative" type="button" data-bs-toggle="button">
+                                        超商取貨
+                                    </button>
+                                    <div class="accordion-body py-7">
+                                        <div class="mb-4">
+                                            <h5 class="fs-6">配送方式</h5>
+                                            <div class="d-flex justify-content-between mt-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                    <label class="form-check-label fs-6" for="flexRadioDefault1">
+                                                        7-11取貨
+                                                    </label>
+                                                </div>
+                                                <h6 class="h6">免費</h6>
+                                            </div>
+                                            <div class="mt-1 ps-4">
+                                                <p class="ps-2 text-primary-br500">預計2024-08-28 星期三 到貨</p>
+                                                <a href="#" class="text-decoration-underline link-neutral-600">
+                                                    <small class="ps-2">選擇您的超取商店</small>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="mt-2">
+                                            <h5 class="fs-6">收貨人資料</h5>
+                                            <div class="form-check mt-4">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label fs-6" for="flexCheckDefault">
+                                                    收貨人資料與會員收貨人資料與會員資料相同
+                                                </label>
+                                            </div>
+                                            <div class="d-flex gap-4 my-1">
+                                                <input class="form-control" type="text" placeholder="收件人名稱*" aria-label="" id="tsueiformReceive">
+                                                <input class="form-control" type="tel" placeholder="收件人手機號碼*" aria-label="" id="tsueiformReceive">
+                                            </div>
+                                            <label class="form-check-label" for="tsueiformReceive">
+                                                請填寫收件人真實姓名、正確手機號碼，以確保能正常收件。
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0">
+                                <h2 class="accordion-header">
+                                    <button class="fs-5 text-neutral-800 accordion-button bg-checkout-bg" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true" aria-controls="panelsStayOpen-collapseThree">
+                                        3.折扣碼
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show">
+                                    <div class="accordion-body py-6">
+                                        <div class="d-flex">
+                                            <div class="gap-1 me-1">
+                                                <label class="form-label border-0" for="tsueiformDiscoumt">
+                                                    使用折扣碼
+                                                </label>
+                                                <input class="form-control" type="text" placeholder="discount95" aria-label="" id="tsueiformDiscoumt">
+                                            </div>
+                                            <div class="align-self-baseline mt-auto">
+                                                <button class="btn btn_2 rounded-1 active" type="button" data-bs-toggle="button">使用</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0">
+                                <h2 class="accordion-header">
+                                    <button class="fs-5 text-neutral-800 accordion-button bg-checkout-bg" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="true" aria-controls="panelsStayOpen-collapseFour">
+                                        4.付款方式
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse show">
+                                    <div class="accordion-body py-6">
+                                        <select class="form-select" aria-label="Default select">
+                                            <option selected>請選擇付款方式</option>
+                                            <option value="1">線上信用卡付款</option>
+                                            <option value="2">貨到付款</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0">
+                                <h2 class="accordion-header">
+                                    <button class="fs-5 text-neutral-800 accordion-button bg-checkout-bg" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="true" aria-controls="panelsStayOpen-collapseFive">
+                                        5.發票
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse show">
+                                    <div class="accordion-body py-6 row">
+                                        <div class="col-6">
+                                            <small class="fs-xs">發票類型</small>
+                                            <select class="form-select" aria-label="Default select">
+                                                <option value="1">二聯式統一發票</option>
+                                                <option value="2">電子發票</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-6">
+                                            <small class="fs-xs">載具類型</small>
+                                            <select class="form-select" aria-label="Default select">
+                                                <option value="1">請附紙本</option>
+                                                <option value="2">手機載具</option>
+                                            </select>
+                                        </div>
+                                        <div class="ms-auto col-6 mt-1">
+                                            <label for="tsueimobileBarcode" class="form-label fs-xs">載具編號</span>
+                                            <input class="form-control" type="text" placeholder="請輸入載具編號" aria-label="" id="tsueimobileBarcode">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center py-6 d-none d-lg-block">
+                            <button class="btn btn-primary-br500 rounded-pill text-neutral-50 px-6" type="submit" data-bs-toggle="modal" data-bs-target="#tsueicheckModal">
+                                前往結帳/完成訂單
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 d-lg-block d-none"> <!-- 桌機板才出現的區塊 -->
+                        <div class="bg-checkout-bg p-6">
+                            <div class="border-bottom border-1 border-netral-400 pb-8 d-flex flex-column gap-4">
+                                <h6>訂單明細</h6>
+                                <div class="row align-items-center">
+                                    <div class="col-5">
+                                        <img class="" src="/tsuei_test/assets/prod_2-3427d432.png" alt="">
+                                    </div>
+                                    <div class="col-7">
+                                        <h6>緊緻修護洗面皂</h6>
+                                        <p class="fs-sm">容量 120 ML</p>
+                                        <div>
+                                            <span class="text-primary-br500 me-1">NT$</span><span class="fs-5 text-primary-br500">260</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <ul class="d-flex align-items-center">
+                                                <li class="me-1">數量</li>
+                                                <li><button class="btn bg-neutral-200" type="button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABNSURBVHgB7c6xDQAQEIXhwyJGYQOFERSWkEgsoTCCwgaMYhGiJRpRiq+74v48gO8BaD6sFvTkyfpUt4BTkhEM+STQOnATYlkCtwu+JwzkLQ8EfL4zywAAAABJRU5ErkJggg==" alt="minus-icon"></button></li>
+                                                <li><button class="btn bg-neutral-200 text-primary-br500" type="button">1</button></li>
+                                                <li><button class="btn bg-neutral-200" type="button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACXSURBVHgB3ZLBCYNgDIWT2HaOjtAR2g0KtRsU26MdoFBo0aNXD4IO4MENdARHcAxF/aPeFDEIHgQ/yCHkEV7IA9g2f0M3rbYkzU4aEvAJkVjWLGTxAuw339f12O8PvHe6A3Iq3wOdG2WjBb+HftYIYphBreDy8cJklgNUjIVWmVMORCzjFtjPuy9p1v+CGCQFmBKLOdoCDYWZJzb6+26JAAAAAElFTkSuQmCC" alt="plus-icon"></button></li>
+                                            </ul>
+                                            <button class="btn fs-sm text-neutral-400 text-decoration-underline" href="" type="button" data-bs-toggle="modal" data-bs-target="#tsueicancelModal">刪除</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-5">
+                                        <img class="" src="/tsuei_test/assets/prod_1-b925917d.png" alt="">
+                                    </div>
+                                    <div class="col-7">
+                                        <h6>除毛刮鬍皂</h6>
+                                        <p class="fs-sm">容量 115 ML</p>
+                                        <div>
+                                            <span class="text-primary-br500 me-1">NT$</span><span class="fs-5 text-primary-br500">460</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <ul class="d-flex align-items-center">
+                                                <li class="me-1">數量</li>
+                                                <li><button class="btn bg-neutral-200" type="button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABNSURBVHgB7c6xDQAQEIXhwyJGYQOFERSWkEgsoTCCwgaMYhGiJRpRiq+74v48gO8BaD6sFvTkyfpUt4BTkhEM+STQOnATYlkCtwu+JwzkLQ8EfL4zywAAAABJRU5ErkJggg==" alt="minus-icon"></button></li>
+                                                <li><button class="btn bg-neutral-200 text-primary-br500" type="button">1</button></li>
+                                                <li><button class="btn bg-neutral-200" type="button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACXSURBVHgB3ZLBCYNgDIWT2HaOjtAR2g0KtRsU26MdoFBo0aNXD4IO4MENdARHcAxF/aPeFDEIHgQ/yCHkEV7IA9g2f0M3rbYkzU4aEvAJkVjWLGTxAuw339f12O8PvHe6A3Iq3wOdG2WjBb+HftYIYphBreDy8cJklgNUjIVWmVMORCzjFtjPuy9p1v+CGCQFmBKLOdoCDYWZJzb6+26JAAAAAElFTkSuQmCC" alt="plus-icon"></button></li>
+                                            </ul>
+                                            <button class="btn fs-sm text-neutral-400 text-decoration-underline" href="" type="button" data-bs-toggle="modal" data-bs-target="#tsueicancelModal">刪除</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-5">
+                                        <img class="" src="/tsuei_test/assets/prod_4-cfde33d2.png" alt="prod_4">
+                                    </div>
+                                    <div class="col-7">
+                                        <h6>洗髮皂</h6>
+                                        <p class="fs-sm">容量 120 ML</p>
+                                        <div>
+                                            <span class="text-primary-br500 me-1">NT$</span><span class="fs-5 text-primary-br500">310</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <ul class="d-flex align-items-center">
+                                                <li class="me-1">數量</li>
+                                                <li><button class="btn bg-neutral-200" type="button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABNSURBVHgB7c6xDQAQEIXhwyJGYQOFERSWkEgsoTCCwgaMYhGiJRpRiq+74v48gO8BaD6sFvTkyfpUt4BTkhEM+STQOnATYlkCtwu+JwzkLQ8EfL4zywAAAABJRU5ErkJggg==" alt="minus-icon"></button></li>
+                                                <li><button class="btn bg-neutral-200 text-primary-br500" type="button">1</button></li>
+                                                <li><button class="btn bg-neutral-200" type="button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACXSURBVHgB3ZLBCYNgDIWT2HaOjtAR2g0KtRsU26MdoFBo0aNXD4IO4MENdARHcAxF/aPeFDEIHgQ/yCHkEV7IA9g2f0M3rbYkzU4aEvAJkVjWLGTxAuw339f12O8PvHe6A3Iq3wOdG2WjBb+HftYIYphBreDy8cJklgNUjIVWmVMORCzjFtjPuy9p1v+CGCQFmBKLOdoCDYWZJzb6+26JAAAAAElFTkSuQmCC" alt="plus-icon"></button></li>
+                                            </ul>
+                                            <button class="btn fs-sm text-neutral-400 text-decoration-underline" href="" type="button" data-bs-toggle="modal" data-bs-target="#tsueicancelModal">刪除</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-5">
+                                        <img class="" src="/tsuei_test/assets/prod_4-cfde33d2.png" alt="prod_4">
+                                    </div>
+                                    <div class="col-7">
+                                        <h6>潤髮皂</h6>
+                                        <p class="fs-sm">容量 120 ML</p>
+                                        <div>
+                                            <span class="text-primary-br500 me-1">NT$</span><span class="fs-5 text-primary-br500">260</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <ul class="d-flex align-items-center">
+                                                <li class="me-1">數量</li>
+                                                <li><button class="btn bg-neutral-200" type="button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABNSURBVHgB7c6xDQAQEIXhwyJGYQOFERSWkEgsoTCCwgaMYhGiJRpRiq+74v48gO8BaD6sFvTkyfpUt4BTkhEM+STQOnATYlkCtwu+JwzkLQ8EfL4zywAAAABJRU5ErkJggg==" alt="minus-icon"></button></li>
+                                                <li><button class="btn bg-neutral-200 text-primary-br500" type="button">1</button></li>
+                                                <li><button class="btn bg-neutral-200" type="button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACXSURBVHgB3ZLBCYNgDIWT2HaOjtAR2g0KtRsU26MdoFBo0aNXD4IO4MENdARHcAxF/aPeFDEIHgQ/yCHkEV7IA9g2f0M3rbYkzU4aEvAJkVjWLGTxAuw339f12O8PvHe6A3Iq3wOdG2WjBb+HftYIYphBreDy8cJklgNUjIVWmVMORCzjFtjPuy9p1v+CGCQFmBKLOdoCDYWZJzb6+26JAAAAAElFTkSuQmCC" alt="plus-icon"></button></li>
+                                            </ul>
+                                            <button class="btn fs-sm text-neutral-400 text-decoration-underline" href="" type="button" data-bs-toggle="modal" data-bs-target="#tsueicancelModal">刪除</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border-bottom border-1 border-netral-400 py-8 d-flex flex-column gap-4">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h6>總額</h6>
+                                    <div>
+                                        <span class="fs-5">NT$</span><span class="fs-5">260</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <h6>7-11 取貨</h6>
+                                    <p class="h6">免費</p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <h6>折扣碼</h6>
+                                    <p class="h6">5% off</p>
+                                </div>
+                            </div>
+                            <div class="border-bottom border-1 border-netral-400 py-8 d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h5 class="h5">總額</h5>
+                                    <p class="text-neutral-600">含運費總金額</p>
+                                </div>
+                                <div>
+                                    <span class="text-primary-br500 fs-5">NT$</span><span class="text-primary-br500 h3 fw-bold">979</span>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column gap-5 pt-8 pb-7">
+                                <div class="d-flex align-items-center mb-5">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADmSURBVHgB7ZaNDcIgEIVfjQM4AiM4gm7gBnaT4iY6id2gI5QNOoJeE2IulR+jgBjvS15KgOa9cEAABEH4MxpP/4Z0ICnkwZB6+41yJE2kW2aN1ivItkCQpXY8wLJkVzbBkC7Iw7wyyrZ70t43kSdXyIdiPhMfaByBfGOpcXqtAz9ofIHQCpXkkWOFygiV7IS8dK7O6jb1T5WMo0ito9+QzsgIvxg5I/xXf4v3cHpVV7JXN7VC+pI5veSUxag+kGHtDvnoPJ5PaJR/MepQoPlxPxQMM1hPxEJphC/DTzVaj2gYQRBScweg8rPThs1I0wAAAABJRU5ErkJggg==" alt="">
+                                    <h5>100%交易安全承諾</h5>
+                                </div>
+                                <p class="text-neutral-600 fs-6">我們採用SSL安全憑證技術，以保障您在線上商店的信用卡交易安全。</p>
+                                <ul class="d-flex gap-3">
+                                    <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADMAAAAqCAYAAAAeeGN5AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUVSURBVHgB7VprTJtVGH5KS6FQGAMKbGRQwMFAYXbAhmQjg6EbilO2ZJtowjCaJShqYoxuZpg55/ZDjZnZTOYlauQHJnNsnS5BLjXLhsMLhAkdysKtIMPSdrS0tvTiez5YZ0mHtFmyttuTHDjfufV9znlv52sBgsPhkFJpo6J1+B9OUZEyHry5SieVKPgvdFRkjMwpqjwJ/4eCkXEgMKALJDIIQgAhoMgI/vvQ2N6P9ssjCBeFwNehM5jw6NpUlOamONsErgPMqNkqQ3KC73tp5ZAaPQNqlzaBu4GqiSk0dw3DN+HAjqJVXI03r8ctmSvDk6g+1gKfhN2OzblSt133vJmv4i4gw4Nfwq0DyEmJg/z1x3yTEyVf0REiLozMh1sycdHhKC+8z10X9NNm58nxeDyIRUJnn3nGBsuMFUKBADabHTaHnep8hAgF7M6Erv4J9I9qEREuxOpUCZbFRLisbTCamazcmuMaAyRRYgj4i99SATzADAn4c+8Yqj9swtiUCSsTItH7ybPO/vK6k1B0j+DSB5XY/q4cKo0Rz5Vm4uDuIuw6LEcrzb2R1jIZ91Xk4u3q9WxbIKfsY9uhs9xGNby6mTaBB1n6MiTGLVm0fB6RCeYHoSQ/BZUlmThyphNm+82Eu765B82/j6KmbDX0/1gwqDVyglUUpqPqvXNoUf6FkqxEHKgs4DalqXMI24oyOCJqnREvnVDAOncKJqsdhdlJiCcN8QQekbmByLBZ1ZqxMTIOaPVm7P3yAhKjwlD39EM4UN/OdBAxpC73p8TiexIctBEPrIjB+pwV3NxiWbJzvUMNHRieNCAyJBhTFis0ehMS5qngYuCVaw4LEXAk7BSNGY7LO6G6bsSRqg2IXxoOxWUV1/54vhSSJWGkjrO53tFz3dj3+XnojRbnWv0qDT5r6UHtlhwkxYq5tmG1Ad7AKzKhwYwMD1ZSs6HxKbx/+jesTZHgmdIs/DGigXJMy96SYOeGDAiD+ZC/tRXpEtppPnC4kca+XD9r7DRmz0fNCKMxr+3IRwKdLINu2uyNWN6RYQIyYa2k+y8cb4GNiDXsLef6Tp7vo1WDEEWquGkuh8og9eo9sRv7K/K45yuUyDYo+lDfqkSrcgwF6Qloo8TWQCrGoJqchjfwiowgeHbaJKnLdyREbVk2XRtmvc63P13l/hekxWPyugn9I1rumU8EX3xChhABM3IHZqxW1H19EfGRIpjInX+lUGKCVJWBuWWv5IIXYIbKDJwhNUaMN3au4+q9g2r8MvA31/fUxgycvXQVtZ/+iOKs5UiSiMmDjcBMp7mSbKObMvMBMvr6Vx4h75jFzX+HHMf+bzqgpk1gKsjjeRa2vSIjISOXJUVz0fhYzSZn4Py1bxxrpLHMNLAlLxWjGj3KHkzGRVKljj+vYTnNO7hrHcqp7/mjTagsTHMSYciiNdm6IvJ8TIWDBXxPxILL25kvfuhBcXYikiUiwOLdUbsD+wQ7/eEH3aYEKTQaSjrZXrppbt+4ytns/mSuUZxo24PbBUbBsz1eCOQkKi7AnegLqJmPvk5bQKx7l7M7AjoRhzCCi2G3glfe7I6AR6lTbD7dEwZuOcQ9GTElg5lV8K0rJ8UdJpc5k6Rm2fQiL2eITAPWvAnfxv+QWSoOxcdnuuj1rO9r39S0BQ/nSV3a/PwrDSb6TVPwc9fsatMBF2d0CBAwMl0IDJwOqK/Og+gCNMgqVBrhf2AkFGC/ASAe/wJc2HwsLlsc6AAAAABJRU5ErkJggg==" alt="VISA"></li>
+                                    <li><img src="data:image/png;base64,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" alt="JCB"></li>
+                                    <li><img src="data:image/png;base64,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" alt="MASTER"></li>
+                                    <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADMAAAAqCAYAAAAeeGN5AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARcSURBVHgB7ZpZKO1fFMfXMQ+ZhzyYH+RB4U2k8KR4UKYiJRnyhIhIREhRLuLRFBLinxRS+suQyJDpQTIWkeEv87j+e617ne655xzn3NtV5+h8anfO3nv99tnfvdZee/9EAj9AxBDx4SeKNWgX/0gkkhVpTQipQ+2mjnRIxJds8VkH2k8OidkVX9xB+9kjMQhfBD34QujEaCo6MZqKToym8ltiXl5eYGhoCB4fH0ETMVDX8OLiAuLi4mBlZQWOjo4U2uzs7MDk5KTsDxgYgLu7OwQEBIChoSF8Kure5PLz8+mmgJWVlUpturq62EZRcXNzw8XFRfxMPvTM6+srieXVNTMzg9raWkhNTeUwMzY2VvpcbGws29Gzd3d3MDw8DC0tLRAREQFbW1tgYWEBn4IihU9PT1hWVoY2NjZobW2NCQkJ2NDQgGFhYWhkZISWlpaYkZGBNzc3qMgzBQUFcmOGhIRwX3t7u0z729sbikXDv4FCMVlZWUrD5b2QqLm5OVRXTEVFBffl5eVxfXNzE4OCglDsI253cHDAwsJCFnZ4eMiL6OLigg8PDzLjpKSkoPAs9vT0qBYjNjdPVJWYmpoaucE+EpOens59VVVVuLu7i05OTmhubs6Ty87ORm9vb+4vKipi+/DwcK6PjIxIx6CIcXR0RFtbWxQJSbUYEd8qhYjXVDw9PVVbzPb2Nrq6unLf8vIydnR0oL+/P3Z3d0ttzs/P0dTUFK2srFAcAdjb28v2mZmZUpuFhQVuS0pKQkXIJYD7+3tQY5/xmaOM/v5+WF1d5e9iX8HS0hLc3t6CCF/w8/PjIiYEYr9w+9XVFQgxnFREWHF7ZGQk16enp/n3xAJyIiFiYmKUTkyG9fV1lZ6hQvGtzDOUIJydnbmQRwIDA7GxsZE3O3F5eYnFxcXo4eGBIlOyp9/HNTEx4XAioqOjuW9jY4Prvr6+vLd+TTzvyIl5fn7mSagjqLq6WqEYRXvmZ5KTk9mOsiSFtfAcHhwc8ER/FjM6Osp2JSUl0kWmLKoMuTCjMyUtLQ1KS0tBFcpuAqqYmJgAfX19qK+vB3t7e+lY19fXMnahoaHg6ekJAwMDoKf3/eYl9pDScRXezejAs7Ozg4+geM7JyYE/gSZIB3JbWxuIRAIiTUN8fLzcPhRZFRITE0GEGR+69JwINeUDK3PZ7OwsilOfXUtngZeXl7ROcd7Z2Sn3jLphRucThRT8CFfhJSwvL0cfHx+ZMCNmZmakdrm5uR+O++HdbH5+Hpubm/H4+JjrZ2dn2NrailNTUwrt9/f3sa+vD0UmQ1WcnJyw+KamJlxbW+O2sbExHBwclCYKQmQ6XkRKBO92fyRGE6AzibwSHBys0lZjxZD36VZAYUdhThlPFRr7pknZS1x5ICoqCsbHx0HcGFQ+o/uLpqaiE6Op6MRoKjoxmgqJ2YOvwR6JqYevwXcd4hLwDbWbb6RD8i5LNNA/NESBdvGfKCvi9eBfqvwPuYYRqzo2piIAAAAASUVORK5CYII=" alt="APPLE-PAY"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- cancelModal -->
+                    <div class="modal fade" id="tsueicancelModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="tsueicancelmodalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-md">
+                            <div class="modal-content rounded-3 py-10">
+                                <div class="modal-header border-0 mx-auto mb-5">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAwCAYAAAC4wJK5AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHwSURBVHgB7ZrLccIwEIbXTgqgg5AjN0pwBzFQAKQSTAfpIKEB4hI45pgbx5AOSAN2fk1gosiekayVyQ7om9EY9Bjp9+q9JorIIKEA5HmepWk6Vz8RBg5FDghlVVWrsiz3xIQtYjqdLvEoyJ9is9msiMENMYAFFkmSPBGPbDQafe12uzfyJCUG6EJLCsMSL8SlG7ZyS57MZrO8ruuhFnVAH5+gj29tZdHgHC/gmX7Hj3qOEaxl2/C2BASMjajSRcApI8qv9TiIysgTVncy+OySGWPpQIEIKeLfaEyxaoDhLb0iZCQPtbY8ojf+sWKbJXKhAhRqQliYkQ0RyOQ91Z2JxlhqiIC5XmCJkgSCGW2L9jXaZt12YFtR4KEvaitsEwrqCZ/6LmJ2iiKkEEVIwXsXa2Ks9I2V1ZbOIaQl9JW+bWW1pXsTTAQaNTSiBl3SWXXTBRBFSCGKkEIUIYUoQgpRhBRCijB3pPuO6d4EE6HfkrTdStjSOQQ7TxzPBhPfdA5xTEjhOkVgUPZ9V3tHHbGKwCyy1f9jhpkrdxX1gHIl048bWa//3VbOeherbilwPv6ggGfiDuxxD3tvy2S1xHFqZPmZGTjV6+THVj5m+JqV1TI6H+o23MlH3umLAnStIcZEgfBA/XSv0+cSa1dPbEQS30f7tWkthXdfAAAAAElFTkSuQmCC" alt="trash-icon">
+                                </div>
+                                <div class="modal-body text-center mb-5">
+                                    <h5 class="h5" id="tsueicancelmodalLabel">確定要刪除此品項嗎?</h5>
+                                </div>
+                                <div class="modal-footer justify-content-center border-0">
+                                    <button type="button" class="btn btn-primary-br500 text-neutral-50 rounded-pill fs-6 px-10 py-1" data-bs-dismiss="modal">是</button>
+                                    <button type="button" class="btn btn-primary-br500 text-neutral-50 rounded-pill fs-6 px-10 py-1" data-bs-dismiss="modal">否</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center py-6 d-lg-none">
+                    <button class="fs-6 px-2 btn btn-primary-br500 rounded-pill text-neutral-50 px-6" type="submit" data-bs-toggle="modal" data-bs-target="#tsueicheckModal">
+                        前往結帳/完成訂單
+                    </button>
+                </div>
+                <!-- checkModal -->
+                <div class="modal fade" id="tsueicheckModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="tsueicancelmodalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-md">
+                        <div class="modal-content rounded-3 py-10">
+                            <div class="modal-header border-0 mx-auto mb-5">
+                                <img src="data:image/png;base64,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" alt="trash-icon">    
+                            </div>
+                            <div class="modal-body text-center mb-5">
+                                <h5 class="h5" id="tsueicancelmodalLabel">已經收到您的訂單</h5>
+                                <p class="text-neutral-600">訂單編號：202408310830</p>
+                            </div>
+                            <div class="modal-footer border-0 mx-auto">
+                                <button type="button" class="btn btn-primary-gr500 text-neutral-50 rounded-pill fs-6 px-10 py-1" data-bs-dismiss="modal">確定</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <footer class="footer bg-neutral-800 pt-lg-4 pb-lg-7">
+        <div class="container py-lg-10 py-7">
+            <div class="pb-6 mb-6 border-bottom border-neutral-600 d-flex justify-content-between">
+                <h3 class="h3">聯絡我們</h3>
+                <ul class="d-none d-lg-flex gap-8 list-unstyled me-8">
+                  <li><a href="https://tw.linebiz.com/login/" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMaSURBVHgB7VjbcdpAFF3efPBBKoBUYKggogLowKSC2BVAKjBUAFQQUgF2BcYVQCowH8zwhpzjWc2sFiHtIsmeZHxmdqR93T26j927EuIT/zlSQZ2n06m82+1u0+l0TSSA4/E4zeVyv1Op1PzSmNQlYvv9voPnnXgHgGAPRO99+/wat9vtMx6JaO0SQHKazWYbeC7U9rQ+ECZ9EO9MjoC1arSa3u7R4Gq1qmYymZn4QMDUX1QtejSIjpaIAGjhD4uIgM1m01brWbUCgjam5VeOUBiJj3okMtDgyw5eW+j7hmfVRCj88MZTF/ZYYPF+Pp/v6Q6tQvaNZWHgtfHomBJ1kRZ2eIK2vhYKhW4QOT/gg4aYW8dr32aeDUFqzbElpoJzIeMOFvhpOseIIASPKVjEBFpAGGrShOAcjnsvYgbM3aXssHGhBHEOeyKU0YlS9asvl8ua3s4n9lfHLW4/zY2z2MofuQcNEW0ntaiLEjhpJhjXVeZ0Me6Ri3M8ToOWKwvvA12m/nFoe1X7OUddL0yDi1KpNBUWgFYGKgmJF2isgWddtQa1GJTJGBEU9lhAC7+0tgpKB2QeqDWbNWz3wVAcDofv1CDI3CrN9LcntI9tt6mwk+TNyXWhqDehpQr65ljYM6FYLM7hp4z6gS4MAXdGjlmMiEBQyPN0rAhkBtyUfkZzjfBOYlOQHkufGiI42D9DndlJhecxxt3I+W9EZVSXhSn8ophRKxICZevr2UYxNeas1+vYU3+Q+UHZYeOMggS+04HA2LJsKatnMtY0iuknE5jEEREBEzK6jd3GZpvh0UWSHZ+N2Ag0K6J+KCwCw3ofBLkunZvOrB+DAXPK8jJmZNZIBCWq0EQbKdgztDIjYWrWbyAvYuy/9o4dx0nCzdyhZnXT06S4JUa6Y19zJwmCuwFXkUMOTLaRMHg0CIFWmYuGBU8dlAHv1teSg2+/qHXPxV0686v4QPBSpqZg+sWdJrLLcuNFX88Pz34eyT9bk7AsIwFMsSvU9cazKKYWr7m/RkQfazb8OgJ/YMqfSc2Ef2COoty1P/HP4y+Lsx7usEJwvgAAAABJRU5ErkJggg==" alt="Line icon"></a></li>
+                  <li><a href="https://www.instagram.com/" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANzSURBVHgB7VjtURsxEF0bA8MMM5gKcqkgpIIcFcRUEFJBSAW2K6AEQgU4FXBUEKiASwV2ZpjB3857RjrWinV3Ys75wfBmbu6k02qfVtJqVyJveOWolW34+PgYb21tfVgsFod4v5MXYDab/a7Van287/b29pIyMrkEQaY5nU6/4X2GYlOqRVqv1xMMtgvSqYQSHI/HR3hdb4CYixTPyc7Ozu26n2sJesgNMOKenSaU/0gYDrg80AeXCfuPdN94jn0kV4C1FoHgPZ6FefrD4fBMKgb6PXX03HNJlRG80OSMNTcCY4y+1TcajTqFQnpU2CBfpEKwP/Y/mUx+wVoR60CqpQ2S2wFdiTa5VAw9eJC8VvV9VR9rmYYuYPFn04kR3klJcKrgLj5zE5h+qPBmf3//VvXXhPJIl9X3T8gsZwubkBwSH0G9SAt3FC3eaDTaUBAb+ewfdiQtQ1/XQZtL/BtgOunz2vLkEbqqq9TDQeqOzkieRzWQHMAabVjt2pLzIJrP5z/YloXd3d3O9vb2IZ73IN1bp8s9pRq+njHCQR45dNpRVZmPNLL0dS1FoAMZATFacBCiy0vQh4eHhyNNDgp7sMZXVzHXJerPLVFD8gYkEwlAXQKBaTrX5KDwZJ1VEAyk5l9PVbclEEEEaRW95mCh70UytK48HWW0YswZkAAEEcQCju23cQ1pkQyty7a2DMKxBCCIoPX+BsUH+zNS++G6kSIEr8H/jSCCekpDomq6Hftd5F//kQ1pDD+X2G844FaZ8MhsrMwnImBIJABBBOk6YMXEFJkOXBTJ0BeqYqrP5zJ4yRrMzlBaBs73ytk89l/T/Musx3NZAhF8kvAkUIe+Jcmnh2lfRkBcn6wTlTKgXZdBgwTCSxDKvOuLhz5IiiVpiaLcMrIr7UmOMnm6YN21/9za1H4U+SsqRJtjfObFjTdsk0fO1WUDDosVC9IFqJiu8EgyB/+RyVs+6YCV5EplaZJFPxkHb0OG2zo/KJVlVQAnFYiLGmf5wSbSzTX6ToPyIKZ+jhUj2RDcHLyMX136Lzehrjr9JIzl+k7iHrntQq4+eIrcWl+3FC4RbhFWMTbDAV42ply5VhHP1UfR5dGVrN6hbAKp5FweeY86CsAnHWO0l6L8Y4VgINuFq/qY545KX2By+6PDSi4w8dyFJk9veLX4C0Zuyqufs2ETAAAAAElFTkSuQmCC" alt="ins icon"></a></li>
+                  <li><a href="https://www.facebook.com" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGMSURBVHgB7ZjtbYMwEIaPbyR+pJ0gdANGoBtkg3aEbFC6QTNB00naEZIN6Ab5x5eAvvxAMiYNVsF11PqRUOTzJXll3/nOEGn+OAZvqKrqyTCMkBTQtm1q2/YO/3/qbTbr0ImDU4KHVFGWZbdoST822cmmae5IMZZlrdmxSVfO1Qu0ST5dwL/hOXD2FZJhg3iPL31ZtsCd4zgJm5UsRVHcYi6+9APSthgr8+y67vY7caLIEph6npfQAkgRaJpmQgshJQbzPD/ytizLQlSJV2x9hOENCSJFYBAEo7jDAbydythz/No5CHHCq8aiK8lclojBE846vkqMYhA+H8juQZuE5mRDEwmzhMAjqsX9lBMO7T0+9qwN7V04lThKtxjiwikf1TEYTjkoE4jOORLxWyIGV6gSMWvwff/ANwmIt5jdUsyvRa4WSwiMUCXeOVt3dRgIRMY+QtRDPxa99+iDei5a4Fy0wLlogXPRAufCC0xJMXVdf7LjQS1GU/mCLmP0CuwHCHXU58R1Gkjzn/gC6q18fzfavqMAAAAASUVORK5CYII=" alt="facebook icon"></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+              <h4 class="h4 mb-6">聯絡資訊</h4>
+              <div class="d-lg-flex mb-5">
+                  <div class="d-flex flex-column mb-5 me-7">
+                    <a class="fs-6 mb-5" href="tel:+0800-000-000">
+                      <img class="me-4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIiSURBVHgBvVXbVcJAEJ0sj+/YAVYgVGDswAKAJBWoFRgrQCtAeXyLFYgVSAdiB/zz8t7NxBM5QWA5OudsZjO72TtzZ3Yi8sfiZZN+v38LdY3h/9jgeY/z+fwujuOpOEiZj16vx4OTog3r9Toql8s1TC/EQYykXoaqo1ar5WVjsVicwjzDCLrdri8OkgHYj0HFW35RaZnqa10cxAKAhgl1tVoNCvZYUGNMIA5iVH/ysVqtirwc8VEqlUI5AmCk+nxzA/IwkyPE6CGkiAfVkcxatsh5pVJ51texOIgFQDJ5+JM1GBNliyjPZ+SnhjHlXRAHMbn5SAGuciVp6UGVTVwv2jcA6n4sKQ0+QHjxSF2sIJd6Gd0BVCwNALgdDod1eg16rA1RdAaDwcGV5G0a0JPuoa5wIHlvMD+wJbCxV/HO3LTb7XvSiALo4P2Se7E0xv4X6InmtBiAH6Lm3/FRjY2u2WzGCvwNQjtUwAKQIq/TBnlDoE2KbEUtl0s2thkbnXZZ5iih95k9qy7Q2ZC0ET5ImkO7zugKI8hFUkeZvmLq5yPh3UCEpNGHI9FmdXEd330QCE6dbAUoAGFOLvYpV0S91qg989tGHDZBqTZIBSmhZ6Qsf9t3idm1gR6DCvL8oKYE/L6iZDv7AHlygCi/XUyDnHmM8YZIqaf69yOtu3OwTUBTABVhbL14aP13YRgmTgCZ8M7A40DSiM4wTnXpkWUt/yFf1DQN7dA4SDsAAAAASUVORK5CYII=" alt="call icon"> 02-1234-5678
+                    </a>
+                    <a class="fs-6" href="mailto:soap_AUS@gmail.com">
+                      <img class="me-4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF3SURBVHgB7VXbcYJQEF0Y/LcELSEdQAcpQAUqiKlArCBaAfL4twRJBUkHsQQK4JFzCGQIgYDBL8czs+wF9p59XhC5owdKtQiCYAO1hkxlHGJFUQ6LxeL524Hv+y94uJYrIsuyrWmajlZ4URSLOkkSw7btSEYAlXiEOqqq+gTtqOXzoiyapp3KUv2XnKTHH5wtdg4MdWSDZOyzDIDrujME52KpN9+pjXsjz/MzDSeTySkMQ1MGRA3yN+4p9xqdDpbLZZSmKQ08GM8gBzhxGaH8jnoKcpZjJ1/l8LD3gRydDgiWBUYWyG1GBLGYDQj1WtTMkFGzoTFtuQd74yZfWw8KrFarA0gj1hYEejkADtaMdg0tkFdEbf3Vq04HVTZQBomhOV0ORpqveJi2iHonPVBlAEDkYKrmZRPfeV5wUnvJCU0GosxmLhdiUAZjcDsOivltO1CXosZRcFZN3kM2mPUPjKRcCR4v9R8Ox47fntE/HMieoy13DMEn1gm0OJVJwggAAAAASUVORK5CYII=" alt="mail icon"> soap_AUS@gmail.com
+                    </a>
+                  </div>
+                  <div class="fs-6 d-flex">
+                    <p class="me-5 text-neutral-400">客服時間</p>
+                    <p>09:30-17:30</p>
+                  </div>
+              </div>
+              <ul class="d-flex gap-8 list-unstyled me-8 d-lg-none">
+                <li><a href="https://tw.linebiz.com/login/" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMaSURBVHgB7VjbcdpAFF3efPBBKoBUYKggogLowKSC2BVAKjBUAFQQUgF2BcYVQCowH8zwhpzjWc2sFiHtIsmeZHxmdqR93T26j927EuIT/zlSQZ2n06m82+1u0+l0TSSA4/E4zeVyv1Op1PzSmNQlYvv9voPnnXgHgGAPRO99+/wat9vtMx6JaO0SQHKazWYbeC7U9rQ+ECZ9EO9MjoC1arSa3u7R4Gq1qmYymZn4QMDUX1QtejSIjpaIAGjhD4uIgM1m01brWbUCgjam5VeOUBiJj3okMtDgyw5eW+j7hmfVRCj88MZTF/ZYYPF+Pp/v6Q6tQvaNZWHgtfHomBJ1kRZ2eIK2vhYKhW4QOT/gg4aYW8dr32aeDUFqzbElpoJzIeMOFvhpOseIIASPKVjEBFpAGGrShOAcjnsvYgbM3aXssHGhBHEOeyKU0YlS9asvl8ua3s4n9lfHLW4/zY2z2MofuQcNEW0ntaiLEjhpJhjXVeZ0Me6Ri3M8ToOWKwvvA12m/nFoe1X7OUddL0yDi1KpNBUWgFYGKgmJF2isgWddtQa1GJTJGBEU9lhAC7+0tgpKB2QeqDWbNWz3wVAcDofv1CDI3CrN9LcntI9tt6mwk+TNyXWhqDehpQr65ljYM6FYLM7hp4z6gS4MAXdGjlmMiEBQyPN0rAhkBtyUfkZzjfBOYlOQHkufGiI42D9DndlJhecxxt3I+W9EZVSXhSn8ophRKxICZevr2UYxNeas1+vYU3+Q+UHZYeOMggS+04HA2LJsKatnMtY0iuknE5jEEREBEzK6jd3GZpvh0UWSHZ+N2Ag0K6J+KCwCw3ofBLkunZvOrB+DAXPK8jJmZNZIBCWq0EQbKdgztDIjYWrWbyAvYuy/9o4dx0nCzdyhZnXT06S4JUa6Y19zJwmCuwFXkUMOTLaRMHg0CIFWmYuGBU8dlAHv1teSg2+/qHXPxV0686v4QPBSpqZg+sWdJrLLcuNFX88Pz34eyT9bk7AsIwFMsSvU9cazKKYWr7m/RkQfazb8OgJ/YMqfSc2Ef2COoty1P/HP4y+Lsx7usEJwvgAAAABJRU5ErkJggg==" alt="Line icon"></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANzSURBVHgB7VjtURsxEF0bA8MMM5gKcqkgpIIcFcRUEFJBSAW2K6AEQgU4FXBUEKiASwV2ZpjB3857RjrWinV3Ys75wfBmbu6k02qfVtJqVyJveOWolW34+PgYb21tfVgsFod4v5MXYDab/a7Van287/b29pIyMrkEQaY5nU6/4X2GYlOqRVqv1xMMtgvSqYQSHI/HR3hdb4CYixTPyc7Ozu26n2sJesgNMOKenSaU/0gYDrg80AeXCfuPdN94jn0kV4C1FoHgPZ6FefrD4fBMKgb6PXX03HNJlRG80OSMNTcCY4y+1TcajTqFQnpU2CBfpEKwP/Y/mUx+wVoR60CqpQ2S2wFdiTa5VAw9eJC8VvV9VR9rmYYuYPFn04kR3klJcKrgLj5zE5h+qPBmf3//VvXXhPJIl9X3T8gsZwubkBwSH0G9SAt3FC3eaDTaUBAb+ewfdiQtQ1/XQZtL/BtgOunz2vLkEbqqq9TDQeqOzkieRzWQHMAabVjt2pLzIJrP5z/YloXd3d3O9vb2IZ73IN1bp8s9pRq+njHCQR45dNpRVZmPNLL0dS1FoAMZATFacBCiy0vQh4eHhyNNDgp7sMZXVzHXJerPLVFD8gYkEwlAXQKBaTrX5KDwZJ1VEAyk5l9PVbclEEEEaRW95mCh70UytK48HWW0YswZkAAEEcQCju23cQ1pkQyty7a2DMKxBCCIoPX+BsUH+zNS++G6kSIEr8H/jSCCekpDomq6Hftd5F//kQ1pDD+X2G844FaZ8MhsrMwnImBIJABBBOk6YMXEFJkOXBTJ0BeqYqrP5zJ4yRrMzlBaBs73ytk89l/T/Musx3NZAhF8kvAkUIe+Jcmnh2lfRkBcn6wTlTKgXZdBgwTCSxDKvOuLhz5IiiVpiaLcMrIr7UmOMnm6YN21/9za1H4U+SsqRJtjfObFjTdsk0fO1WUDDosVC9IFqJiu8EgyB/+RyVs+6YCV5EplaZJFPxkHb0OG2zo/KJVlVQAnFYiLGmf5wSbSzTX6ToPyIKZ+jhUj2RDcHLyMX136Lzehrjr9JIzl+k7iHrntQq4+eIrcWl+3FC4RbhFWMTbDAV42ply5VhHP1UfR5dGVrN6hbAKp5FweeY86CsAnHWO0l6L8Y4VgINuFq/qY545KX2By+6PDSi4w8dyFJk9veLX4C0Zuyqufs2ETAAAAAElFTkSuQmCC" alt="ins icon"></a></li>
+                <li><a href="https://www.facebook.com" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGMSURBVHgB7ZjtbYMwEIaPbyR+pJ0gdANGoBtkg3aEbFC6QTNB00naEZIN6Ab5x5eAvvxAMiYNVsF11PqRUOTzJXll3/nOEGn+OAZvqKrqyTCMkBTQtm1q2/YO/3/qbTbr0ImDU4KHVFGWZbdoST822cmmae5IMZZlrdmxSVfO1Qu0ST5dwL/hOXD2FZJhg3iPL31ZtsCd4zgJm5UsRVHcYi6+9APSthgr8+y67vY7caLIEph6npfQAkgRaJpmQgshJQbzPD/ytizLQlSJV2x9hOENCSJFYBAEo7jDAbydythz/No5CHHCq8aiK8lclojBE846vkqMYhA+H8juQZuE5mRDEwmzhMAjqsX9lBMO7T0+9qwN7V04lThKtxjiwikf1TEYTjkoE4jOORLxWyIGV6gSMWvwff/ANwmIt5jdUsyvRa4WSwiMUCXeOVt3dRgIRMY+QtRDPxa99+iDei5a4Fy0wLlogXPRAufCC0xJMXVdf7LjQS1GU/mCLmP0CuwHCHXU58R1Gkjzn/gC6q18fzfavqMAAAAASUVORK5CYII=" alt="facebook icon"></a></li>
+              </ul>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
