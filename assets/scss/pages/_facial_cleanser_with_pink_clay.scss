@@ -1,0 +1,65 @@
+//檢查用，記得註解
+.line{
+  border: 1px solid;
+}
+//數字按鈕//
+.countbtn{
+  width: 240px;
+}
+
+
+
+//本月推薦裝飾線//
+.decoline{
+    display: block;
+    font-size: 2px;
+    color: black;
+    position: relative;
+    width: 1168px;
+  
+      @include mobile-lager{
+        width: 768px;
+      }
+      @include mobile{
+        width: 416px;
+      }
+  }
+.decoline:before,
+.decoline:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  background: black;
+  width: 40%;
+  height: 2px;
+  @include mobile-lager{
+    width: 30%;
+  }
+}
+.decoline:before {
+  left: 0; 
+}
+.decoline:after {
+  right: 0;
+}
+
+//本月推薦card//
+.bg-card{
+  background-color:#F0F0F0;
+  ;
+}
+
+
+//套用失敗 圖片hover轉換
+//.pics{position: relative;
+  //img{position:absolute;
+    //淡出淡入效果2秒*/
+    //-webkit-transition: opacity 2s ease-in-out;
+    //-moz-transition: opacity 2s ease-in-out;
+    //-o-transition: opacity 2s ease-in-out;
+    //transition: opacity 2s ease-in-out;
+    //:last-child:hover{
+    //  opacity: 0;
+    //}
+ // }
+//}*//

@@ -1,63 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TSUEI</title>
-  </head>
-  <body>
-    <%- include('./layout/header'); -%>
 
-     <!--banner區-->
-     <section class="banner">
-      <div class="container banner-wrapper">
-        <h1 class="banner-title mb-4">專注引入無化學成分的天然肥皂，</h1>
-        <h2 class="banner-title mb-12">讓每塊肥皂，都成為都市人心靈的自然慰藉。</h2>
-        <h3 class="banner-subtitle">在都市喧囂中尋覓寧靜，捕捉大自然的精華與靜謐。</H3>
-  
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TSUEI</title>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+
+    <!--banner區-->
+    <section class="banner">
+      <div class="container h-100">
+        <div class="d-flex flex-column justify-content-center align-items-center h-100">
+          <h1 class="fs-lg-2 fs-5 mb-2">專注引入無化學成分的天然肥皂，</h1>
+          <div class="d-lg-flex row-gap-1 text-center mb-5">
+            <h2 class="fs-lg-2 fs-5 ">讓每塊肥皂，</h2>
+            <h2 class="fs-lg-2 fs-5 ">都成為都市人心靈的自然慰藉。</h2>
+          </div>
+          <h3 class="fs-sm fs-lg-3">在都市喧囂中尋覓寧靜，捕捉大自然的精華與靜謐。</h3>
+        </div>
       </div>
     </section>
 
+
     <!--介紹區-->
-    <section>
-      <div class="container">
-        <div>
-          <!--第一部分-->
-          <div class="row mt-30">
-            <div class="col-6 mountain-photo">
+    <section class="position-relative">
+      <div class="leaves1_bg-photo"></div>
+      <div class="leaves2_bg-photo"></div>
+      <div class="container py-10">
+        <!--第一部分-->
+        <div class="row pt-lg-7 pt-5">
+          <div class="col-lg-6">
+            <!-- 山圖片區 -->
+            <div class="mountain-photo">
               <ul class="list-unstyled">
-                <li class="top-title">O<samp class="normal-title">rganic</samp></li>
-                <li class="top-title">E<samp class="normal-title">nvironmental friendly</samp></li>
-                <li class="top-title">C<samp class="normal-title">lear</samp></li>
+                <li class="top-title pt-5 ps-8">O<samp class="normal-title">rganic</samp></li>
+                <li class="top-title ps-8">E<samp class="normal-title">nvironmental friendly</samp></li>
+                <li class="top-title ps-8">C<samp class="normal-title">lear</samp></li>
               </ul>
             </div>
-            <div class="col-6">
+          </div>
+          <div class="col-lg-6 d-flex flex-column justify-content-between">
+            <div class="py-5">
+              <ul class="list-unstyled mt-lg-7">
+                <li class="mb-b8"><img src="../assets/images/trees.png" alt="tree icon" class="mr-r3"><samp
+                    class="text-description">專為關注地球環境和皮膚健康的人士設計</samp></li>
+                <li class="mb-b8"><img src="../assets/images/trees.png" alt="tree icon" class="mr-r3"><samp
+                    class="text-description">採用天然成分製作，不含化學添加劑</samp></li>
+                <li class=""><img src="../assets/images/trees.png" alt="tree icon" class="mr-r3"><samp
+                    class="text-description">包裝使用可降解材質，從生產到使用全程減少對環境的影響</samp></li>
+              </ul>
+            </div>
+            <div class="d-flex gap-5">
               <div class="">
-                <ul class="list-unstyled mt-16">
-                  <li class="mb-8"><img src="../assets/images/trees.png" alt="tree icon" class="mr-3"><samp class="text-description">專為關注地球環境和皮膚健康的人士設計</samp></li>
-                  <li class="mb-8"><img src="../assets/images/trees.png" alt="tree icon" class="mr-3"><samp class="text-description">採用天然成分製作，不含化學添加劑</samp></li>
-                  <li class=""><img src="../assets/images/trees.png" alt="tree icon" class="mr-3"><samp class="text-description">包裝使用可降解材質，從生產到使用全程減少對環境的影響</samp></li>
-                </ul>
+                <img src="../assets/images/close-up-hand-with-cleaning-products.png" alt="close-up-hand-with-cleaning-products">
               </div>
-              <div class="row">
-                <div class="col washHand-photo">1</div>
-                <div class="col tree-photo">2</div>
-                <div class="col soapSkin-photo">3</div>
+              <div class="">
+                <img src="../assets/images/coast-twilight-summer-paradise-sun.png" alt="coast-twilight-summer-paradise-sun">
+              </div>
+              <div class="">
+                <img src="../assets/images/macadamia-soap-skin-care-treatment.png" alt="macadamia-soap-skin-care-treatment">
               </div>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-6 vector-photo"><p class="text-center text-description">減少棕櫚油使用對環境至關重要。棕櫚油生產常涉及砍伐熱带雨林，不僅摧毀珍貴生態系統，並影響多種動植物生存。選擇無棕櫚油產品，支持永續農業，一起保護地球生物多樣性和氣候。</p></div>
-          <div class="col-6 koala-photo mb-30"></div>
+        <div class="row pb-lg-7 py-5 align-items-center">
+          <div class="col-lg-6">
+            <div class="h-100 vector-photo d-flex align-items-center justify-content-center">
+              <p class="text-description2 py-lg-9 py-6">
+                減少棕櫚油使用對環境至關重要。棕櫚油生產常涉及砍伐熱带雨林，不僅摧毀珍貴生態系統，並影響多種動植物生存。選擇無棕櫚油產品，支持永續農業，一起保護地球生物多樣性和氣候。
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="koala-bear-img"></div>
+          </div>
         </div>
+      </div>
     </section>
 
+    <!-- 單一商品介紹區 -->
+    <section class="onSales-bg">
+      <div class="container py-lg-10 py-6">
+        <div class="row justify-content-center row-gap-5 align-items-stretch">
+          <div class="col-lg-5 d-flex flex-column">
+            <div class="box-whith60 py-5 px-3 ps-md-8 pt-lg-9 flex-grow-1">
+              <p class="fs-6 mb-5 text-primary-br500">天然滋潤 輕鬆軟化毛髮及鬍鬚</p>
+              <h4 class="fs-4 mb-5">除毛 x 刮鬍</h4>
+              <h6 class="fs-6 mb-4">減少刀片對皮膚的摩擦和刺激</h6>
+              <h6 class="fs-6">能夠產生豐富的泡沫，確保剃鬚過程順滑</h6>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="mb-1">
+              <h5 class="h5">除毛刮皂</h6>
+              <p class="fs-sm">Rummy Body & Shave Soap</p>
+            </div>
+            <div class="position-relative">
+              <a href="">
+                <img class="prod_1" src="../assets/images/prod_1.png" class="card-img-top" alt="除毛刮皂商品圖">
+              </a>
+              <button type="button" class="like-link btn" data-bs-toggle="button" autocomplete="off"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- 多個商品介紹區 -->
+
+    <section class="position-relative">
+      <div class="bg2-photo"></div> <!--背景圖-->
+      <div class="container py-lg-10">
+        <ul class="py-lg-7">
+          <li class="box-outSide pe-xl-5 mb-lg-9 mb-md-5">
+            <div class="row row-gap-5">
+              <div class="col-xl-4">
+                <div class="pt-lg-10 py-8 ps-2 ps-md-8 box-inSideFirst h-100">
+                  <div class="mt-xl-5">
+                    <h2 class="mb-2 fs-3 fs-md-2">柔化肌膚，<br> 淡化細紋紋理</h2>
+                    <p class="fs-md-6">符合環保和道德標準</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6">
+                <div class="card py-lg-8 px-lg-5">
+                  <h5 class="h5">緊緻修護洗面皂</h5>
+                  <p class="fs-sm mb-1">Facial Cleanser with Pink Clay</p>
+                  <div class="card-img position-relative">
+                    <a href="#">
+                      <img class="prod_2" src="../assets/images/prod_2.png" class="card-img-top" alt="緊緻修護洗面皂">
+                    </a>
+                    <button type="button" class="like-link btn" data-bs-toggle="button" autocomplete="off"></button>
+                  </div>
+                  <div class="card-body card-grey px-5 py-4">
+                    <h5 class="fw-bold mb-1">緊緻修護</h5>
+                    <p class="">有效去除臉部的污垢和多餘油脂<br>使用後皮膚感覺非常清爽乾淨<br>不會過度乾燥</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6">
+                <div class="card py-lg-8 px-lg-5">
+                  <h5 class="h5">深層潔淨洗面皂</h5>
+                  <p class="mb-1 fs-sm">Facial Cleanser with Charcoal</p>
+                  <div class="card-img position-relative">
+                    <a href="#">
+                      <img class="prod_3" src="../assets/images/prod_3.png" class="card-img-top" alt="深層潔淨洗面皂">
+                    </a>
+                    <button type="button" class="like-link btn" data-bs-toggle="button" autocomplete="off"></button>
+                  </div>
+                  <div class="card-body card-grey px-5 py-4">
+                    <h5 class="fw-bold mb-1">深層潔淨</h5>
+                    <p class="">活性炭有助於深層清潔皮膚<br>去除多餘油脂和污垢<br>使肌膚感覺清爽</p>
+                  </div>
+                </div>
+              </div>
+            </div>                         
+          </li>
+          <li class="box-outSide ps-xl-5 mb-lg-9 mb-md-5">
+            <div class="row row-gap-5 flex-row-reverse">
+              <div class="col-xl-4">
+                <div class="pt-lg-10 py-8 ps-2 ps-md-8 box-inSideFirst h-100">
+                  <div class="mt-xl-5">
+                    <h2 class="mb-2 fs-3 fs-md-2">非常溫和，<br>適合敏感肌膚</h2>
+                    <p class="fs-md-6">清新宜人氣息，讓人精神煥發</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6">
+                <div class="card py-lg-8 px-lg-5">
+                  <h5 class="h5">椰子油肥皂</h5>
+                  <p class="mb-1 fs-sm">Base Coconut Bar Soap</p>
+                  <div class="card-img position-relative">
+                    <a href="#">
+                      <img class="prod_4" src="../assets/images/prod_4.png" class="card-img-top" alt="椰子油肥皂">
+                    </a>
+                    <button type="button" class="like-link btn" data-bs-toggle="button" autocomplete="off"></button>
+                  </div>
+                  <div class="card-body card-grey px-5 py-4">
+                    <h5 class="fw-bold mb-1">椰子油</h5>
+                    <p class="">不含精油和其他添加物<br>對香料過敏或不喜歡強烈香氣的人<br>是一個好選擇</p>
+                  </div>
+                </div>
+              </div>      
+              <div class="col-xl-4 col-md-6">
+                <div class="card py-lg-8 px-lg-5">
+                  <h5 class="h5">檸檬香桃木肥皂</h5>
+                  <p class="mb-1 fs-sm">Base Lemon Myrtle Bar Soap</p>
+                  <div class="card-img position-relative">
+                    <a href="#">
+                      <img class="prod_5" src="../assets/images/prod_5.png" class="card-img-top" alt="檸檬香桃木肥皂">
+                    </a>
+                    <button type="button" class="like-link btn" data-bs-toggle="button" autocomplete="off"></button>
+                  </div>
+                  <div class="card-body card-grey px-5 py-4">
+                    <h5 class="fw-bold mb-1">檸檬香桃木</h5>
+                    <p class="">沒有化學添加物及人工香料<br>保持了最純淨的配方<br>適合追求自然和純淨的人群使用</p>
+                  </div>
+                </div>
+              </div>                    
+            </div>
+          </li>
+          <li class="box-outSide pe-xl-5">
+            <div class="row row-gap-5">
+              <div class="col-xl-4">
+                <div class="pt-lg-10 py-8 ps-2 ps-md-8 box-inSideFirst h-100">
+                  <div class="mt-lg-7">
+                    <h2 class="mb-2 fs-3 fs-md-2">溫和且具有<br>保濕效果</h2>
+                    <p class="fs-md-6">深層清除肌膚油脂及污垢</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6">
+                <div class="card py-lg-8 px-lg-5">
+                  <h5 class="h5">天竺葵和粉紅礦物肥皂</h5>
+                  <p class="mb-1 fs-sm">Base Geranium & Pink Clay Bar Soap</p>
+                  <div class="card-img position-relative">
+                    <a href="#">
+                      <img class="prod_6" src="../assets/images/prod_6.png" class="card-img-top" alt="天竺葵和粉紅礦物肥皂">
+                    </a>
+                    <button type="button" class="like-link btn" data-bs-toggle="button" autocomplete="off"></button>
+                  </div>
+                  <div class="card-body card-grey px-5 py-4">
+                    <h5 class="fw-bold mb-1">天竺葵和粉紅礦物</h5>
+                    <p class="">玫瑰花的香氣及淡淡的天竺葵香氣<br>含有保濕的粉紅礦物成分<br>能夠緊緻毛孔滋潤肌膚</p>
+                  </div>
+                </div>
+              </div>      
+              <div class="col-xl-4 col-md-6">
+                <div class="card py-lg-8 px-lg-5">
+                  <h5 class="h5">薰衣草綠礦皂</h5>
+                  <p class="mb-1 fs-sm">Base Lavender & Green Clay Bar Soap</p>
+                  <div class="card-img position-relative">
+                    <a href="#">
+                      <img class="prod_7" src="../assets/images/prod_7.png" class="card-img-top" alt="薰衣草綠礦皂">
+                    </a>
+                    <button type="button" class="like-link btn" data-bs-toggle="button" autocomplete="off"></button>
+                  </div>
+                  <div class="card-body card-grey px-5 py-4">
+                    <h5 class="fw-bold mb-1">薰衣草綠礦</h5>
+                    <p class="">薰衣草花香帶來放鬆和愉悅的感覺<br>薰衣草精油和綠色礦物泥成分<br>能夠溫和滋潤肌膚</p>
+                  </div>
+                </div>
+              </div>                    
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
 
     <%- include('./layout/footer'); -%>
 
-    <script type="module" src="../main.js"></script>
-  </body>
+      <script type="module" src="../main.js"></script>
+</body>
+
 </html>
