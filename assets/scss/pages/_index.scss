@@ -12,61 +12,28 @@
   color: var(--secondary); /* 顏色用變數設定 */
   background: none; /* 移除原本的背景圖片設定 */
   height: calc(100vh - 80px); /* 計算 */
-  z-index: 1; /* 確保內容位於背景圖片之上 */
-}
-
-.banner::before {
-  content: "";
-  background-image: url("../assets/images/Banner_top.jpg");
-  background-size: cover; /* 調整圖片大小 */
-  background-position: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.5; /* 設定背景圖片透明度 */
-  z-index: -1; /* 確保背景圖片位於內容的後方 */
-}
-
-
-.banner-wrapper{
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-
-.banner-title {
-  font-size: 40px;
-  font-weight: 700;
-  text-align: center;
-}
-
-.banner-subtitle {
-  font-size: 24px;
-  font-weight: 700;
-}
-
-/*在寬度992px以下，修正成下方設定*/
-@media (max-width: 992px) {
-  .banner{
-      background-image: url("../img/home-header-sm.png");
+  @include pad{
+    height: calc(80vh - 80px);
+  }
+  @include mobile{
+    height: calc(50vh - 80px);
+  }
+  &::before {
+    content: "";
+    background-image: url("../assets/images/Banner_top.jpg");
+    background-size: cover; /* 調整圖片大小 */
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5; /* 設定背景圖片透明度 */
+    z-index: -1; /* 確.保背景圖片位於內容的後方 */
   }
 }
 
-@media (max-width: 767px) {
-  .banner-title{
-      font-size:24px;
-  }
-
-  .banner-subtitle{
-      font-size: 16px;
-  }
-}
-
+//山與樹林圖
 .mountain-photo{
   background-image: url("../assets/images/rocky-mountain-landscape.jpg");
   background-size: cover; /*調整圖片大小*/
@@ -74,46 +41,22 @@
   background-position: center;
 }
 
-.washHand-photo{
-  background-image: url("../assets/images/close-up-hand-with-cleaning-products.jpg");
-  background-size: 115%; /*調整圖片大小*/
-  height: 282px;
-  background-position: 45% 95%;
-}
-
-.tree-photo{
-  background-image: url("../assets/images/coast-twilight-summer-paradise-sun.jpg");
-  background-size: cover; /*調整圖片大小*/
-  height: 282px;
-  background-position: center;
-}
-
-.soapSkin-photo{
-  background-image: url("../assets/images/macadamia-soap-skin-care-treatment.jpg");
-  background-size: 270%; /*調整圖片大小*/
-  height: 282px;
-  background-position: 58% 80%; 
-}
-
+//水彩筆一抹背景
 .vector-photo{
   background-image: url("../assets/images/Vector 25.png");
   background-size: cover; /*調整圖片大小*/
-  height: 264px;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: auto;
 }
 
-.koala-photo{
-  background-image: url("../assets/images/koala-bear-tree-branch.jpg");
-  background-size: 105%; /*調整圖片大小*/
-  height: 264px;
-  background-position: 0% 50%;
-}
-
+//右上棕梠樹背景圖
 .leaves1_bg-photo{
   position: absolute;
-  top: 1430px;
+  top: 0;
   right: 0;
   width: 537px;
-  height: 313px;
+  height: 300px;
   background-image: url("../assets/images/leaves1_bg.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -121,9 +64,10 @@
   z-index: -1;
 }
 
+//左下棕梠樹背景圖
 .leaves2_bg-photo{
   position: absolute;
-  top: 2030px;
+  bottom: 0;
   left: 0;
   width: 242px;
   height: 535px;
@@ -134,9 +78,18 @@
   z-index: -1;
 }
 
+//無尾熊圖
+.koala-bear-img{
+  background-image: url(../images/koala-bear-tree-branch.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 264px;
+}
+
+//精選商品背景圖
 .bg2-photo{
   position: absolute;
-  top: 2830px;
+  top: 0;
   left: 0;
   width: calc(100vw - 20px);
   height: 200vh;
@@ -147,47 +100,6 @@
   z-index: -1;
 }
 
-.prod_2-photo{
-  height: 236px;
-  background-image: url("../assets/images/prod_2.png");
-  background-position: 0 50%;
-  background-size: cover;
-}
-
-.prod_3-photo{
-  height: 236px;
-  background-image: url("../assets/images/prod_3.png");
-  background-position: 0 50%;
-  background-size: cover;
-}
-
-.prod_4-photo{
-  height: 236px;
-  background-image: url("../assets/images/prod_4.png");
-  background-position: 0 50%;
-  background-size: cover;
-}
-
-.prod_5-photo{
-  height: 236px;
-  background-image: url("../assets/images/prod_5.png");
-  background-position: 0 50%;
-  background-size: cover;
-}
-
-.prod_6-photo{
-  height: 236px;
-  background-image: url("../assets/images/prod_6.png");
-  background-position: 0 50%;
-  background-size: cover;
-}
-
-.prod_7-photo{
-  height: 236px;
-  background-image: url("../assets/images/prod_7.png");
-  background-position: 0 50%;
-  background-size: cover;
-}
 
 // 透明度的BOX
 .box-whith60 {
@@ -202,7 +114,7 @@
 //多樣商品介紹的BOX
 .box-outSide{
   //height:535px;
-  border: 3px solid #525252;
+  border: 3px solid $neutral-600;
   @include pad{
     border: 0;
   }

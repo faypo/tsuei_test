@@ -10,8 +10,7 @@
     border-radius: 4px;
     position: absolute;
     top: 12px;  
-    right: 12px;
-    
+    right: 12px;  
 }
 .like-link:focus
 ,.like-link:hover
@@ -34,9 +33,9 @@
 }
 
 .combo-bg{
-    background-image: url("../images/combo_banner.png");
+    background-image: url(../images/combo_banner.jpg);
     background-size: cover;
-    @include mobile{
+    @include pad{
         background-position: right top;
     }
 }
