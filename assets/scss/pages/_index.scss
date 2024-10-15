@@ -13,10 +13,10 @@
   background: none; /* 移除原本的背景圖片設定 */
   height: calc(100vh - 80px); /* 計算 */
   @include pad{
-    height: calc(80vh - 80px);
+    height: calc(70vh - 80px);
   }
   @include mobile{
-    height: calc(50vh - 80px);
+    height: calc(40vh - 80px);
   }
   &::before {
     content: "";
@@ -39,6 +39,9 @@
   background-size: cover; /*調整圖片大小*/
   height: 570px;
   background-position: center;
+  @include mobile{
+    height: 195px;
+  }
 }
 
 //水彩筆一抹背景
@@ -62,6 +65,9 @@
   background-repeat: no-repeat;
   background-position: right center;
   z-index: -1;
+  @include pad{
+    display: none;
+  }
 }
 
 //左下棕梠樹背景圖
@@ -76,6 +82,9 @@
   background-repeat: no-repeat;
   background-position: right center;
   z-index: -1;
+  @include pad{
+    display: none;
+  }
 }
 
 //無尾熊圖
@@ -129,33 +138,14 @@
   background-color: #F0F0F0;
 }
 
-
-
-.top-title{
-  color: #FAFAFA;
+.mountain-title{
+  font-family: "Roboto";
   font-size: 64px;
-  font-family: "Roboto";
+  @include mobile{
+    font-size: 32px;
+  }
 }
 
-.normal-title{
-  color: #FAFAFA;
-  font-size: 32px;
-  font-family: "Roboto";
-}
-
-.text-description{
-  font-size: 20px;
-  color: #262626;
-  font-weight: 700;
-  text-align: center;
-}
-
-.text-description2{
-  font-size: 20px;
-  color: #262626;
-  font-weight: 400;
-  text-align: center;
-}
 
 .card-1{
   margin-bottom: 8px;

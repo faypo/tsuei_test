@@ -35,13 +35,14 @@
 .combo-bg{
     background-image: url(../images/combo_banner.jpg);
     background-size: cover;
+    background-position: center;
     @include pad{
         background-position: right top;
+        height: 424px;
     }
 }
 .combo-title{
     background: #FFFFFFCC;
-    width: 420px;
 }
 
 .prod-menu{
