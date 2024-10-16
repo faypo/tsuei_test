@@ -38,6 +38,7 @@ var swiper2 = new Swiper(".mySwiper2", {
 
 //單項商品-本月推薦swiper
 var swiper = new Swiper(".mySwiper3", {
+  autoplay:true,
   slidesPerView: 1, // 預設手機版顯示一個slide
   spaceBetween: 24,
   breakpoints: {
