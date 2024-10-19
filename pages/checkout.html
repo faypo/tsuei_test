@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>checkout</title>
+    <title>TSUEI：購物車</title>
 </head>
 <body>
     <%- include('./layout/header'); -%>
@@ -25,22 +25,26 @@
                                     <div class="border-bottom border-1 border-netral-400 pb-8 d-flex flex-column gap-4">
                                         <div class="row align-items-center">
                                             <div class="col-5">
-                                                <img class="" src="../assets/images/prod_2.png" alt="">
+                                                <img class="" src="../assets/images/prod_2.png" alt="緊緻修護洗面皂的圖">
                                             </div>
                                             <div class="col-7">
-                                                <h6>緊緻修護洗面皂</h6>
-                                                <p class="fs-sm">容量 120 ML</p>
-                                                <div>
-                                                    <span class="text-primary-br500 me-1">NT$</span><span class="fs-5 text-primary-br500">260</span>
-                                                </div>
-                                                <div class="d-flex justify-content-between">
-                                                    <ul class="d-flex align-items-center">
-                                                        <li class="me-1">數量</li>
-                                                        <li><button class="btn bg-neutral-200" type="button"><img src="..//assets/images/minus.png" alt="minus-icon"></button></li>
-                                                        <li><button class="btn bg-neutral-200 text-primary-br500" type="button">1</button></li>
-                                                        <li><button class="btn bg-neutral-200" type="button"><img src="..//assets/images/plus.png" alt="plus-icon"></button></li>
-                                                    </ul>
-                                                    <button class="btn fs-sm text-neutral-400 text-decoration-underline" href="" type="button" data-bs-toggle="modal" data-bs-target="#tsueicancelModal">刪除</button>
+                                                <div class="d-flex flex-column">
+                                                    <div class="mb-auto">
+                                                        <h6>緊緻修護洗面皂</h6>
+                                                        <p class="fs-sm">容量 120 ML</p>
+                                                        <div>
+                                                            <span class="text-primary-br500 me-1">NT$</span><span class="fs-5 text-primary-br500">260</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="d-flex align-items-center me-auto">
+                                                            <p class="me-1">數量</p>
+                                                            <button class="btn bg-neutral-200 border-0" type="button"><img src="..//assets/images/minus.png" alt="minus-icon"></button>
+                                                            <button class="btn bg-neutral-200 text-primary-br500 border-0" type="button" disabled tabindex="-1">1</button>
+                                                            <button class="btn bg-neutral-200 border-0" type="button"><img src="..//assets/images/plus.png" alt="plus-icon"></button>
+                                                        </div>
+                                                        <button class="btn fs-sm text-neutral-400 text-decoration-underline" href="" type="button" data-bs-toggle="modal" data-bs-target="#tsueicancelModal">刪除</button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -48,19 +52,21 @@
                                             <div class="col-5">
                                                 <img class="" src="../assets/images/prod_1.png" alt="">
                                             </div>
-                                            <div class="col-7">
-                                                <h6>除毛刮鬍皂</h6>
-                                                <p class="fs-sm">容量 115 ML</p>
+                                            <div class="col-7 d-flex flex-column justify-content-between">
                                                 <div>
-                                                    <span class="text-primary-br500 me-1">NT$</span><span class="fs-5 text-primary-br500">460</span>
+                                                    <h6>除毛刮鬍皂</h6>
+                                                    <p class="fs-sm">容量 115 ML</p>
+                                                    <div>
+                                                        <span class="text-primary-br500 me-1">NT$</span><span class="fs-5 text-primary-br500">460</span>
+                                                    </div>
                                                 </div>
                                                 <div class="d-flex justify-content-between">
-                                                    <ul class="d-flex align-items-center">
-                                                        <li class="me-1">數量</li>
-                                                        <li><button class="btn bg-neutral-200" type="button"><img src="..//assets/images/minus.png" alt="minus-icon"></button></li>
-                                                        <li><button class="btn bg-neutral-200 text-primary-br500" type="button">1</button></li>
-                                                        <li><button class="btn bg-neutral-200" type="button"><img src="..//assets/images/plus.png" alt="plus-icon"></button></li>
-                                                    </ul>
+                                                    <div class="d-flex align-items-center me-auto">
+                                                        <p class="me-1">數量</p>
+                                                        <button class="btn bg-neutral-200" type="button"><img src="..//assets/images/minus.png" alt="minus-icon"></button>
+                                                        <button class="btn bg-neutral-200 text-primary-br500 border-0" type="button" disabled tabindex="-1">1</button>
+                                                        <button class="btn bg-neutral-200" type="button"><img src="..//assets/images/plus.png" alt="plus-icon"></button>
+                                                    </div>
                                                     <button class="btn fs-sm text-neutral-400 text-decoration-underline" href="" type="button" data-bs-toggle="modal" data-bs-target="#tsueicancelModal">刪除</button>
                                                 </div>
                                             </div>
@@ -76,12 +82,12 @@
                                                     <span class="text-primary-br500 me-1">NT$</span><span class="fs-5 text-primary-br500">310</span>
                                                 </div>
                                                 <div class="d-flex justify-content-between">
-                                                    <ul class="d-flex align-items-center">
-                                                        <li class="me-1">數量</li>
-                                                        <li><button class="btn bg-neutral-200" type="button"><img src="..//assets/images/minus.png" alt="minus-icon"></button></li>
-                                                        <li><button class="btn bg-neutral-200 text-primary-br500" type="button">1</button></li>
-                                                        <li><button class="btn bg-neutral-200" type="button"><img src="..//assets/images/plus.png" alt="plus-icon"></button></li>
-                                                    </ul>
+                                                    <div class="d-flex align-items-center me-auto">
+                                                            <p class="me-1">數量</p>
+                                                            <button class="btn bg-neutral-200" type="button"><img src="..//assets/images/minus.png" alt="minus-icon"></button>
+                                                            <button class="btn bg-neutral-200 text-primary-br500 border-0" type="button" disabled tabindex="-1">1</button>
+                                                            <button class="btn bg-neutral-200" type="button"><img src="..//assets/images/plus.png" alt="plus-icon"></button>
+                                                        </div>
                                                     <button class="btn fs-sm text-neutral-400 text-decoration-underline" href="" type="button" data-bs-toggle="modal" data-bs-target="#tsueicancelModal">刪除</button>
                                                 </div>
                                             </div>
@@ -97,12 +103,12 @@
                                                     <span class="text-primary-br500 me-1">NT$</span><span class="fs-5 text-primary-br500">260</span>
                                                 </div>
                                                 <div class="d-flex justify-content-between">
-                                                    <ul class="d-flex align-items-center">
-                                                        <li class="me-1">數量</li>
-                                                        <li><button class="btn bg-neutral-200" type="button"><img src="..//assets/images/minus.png" alt="minus-icon"></button></li>
-                                                        <li><button class="btn bg-neutral-200 text-primary-br500" type="button">1</button></li>
-                                                        <li><button class="btn bg-neutral-200" type="button"><img src="..//assets/images/plus.png" alt="plus-icon"></button></li>
-                                                    </ul>
+                                                    <div class="d-flex align-items-center me-auto">
+                                                        <p class="me-1">數量</p>
+                                                        <button class="btn bg-neutral-200" type="button"><img src="..//assets/images/minus.png" alt="minus-icon"></button>
+                                                        <button class="btn bg-neutral-200 text-primary-br500 border-0" type="button" disabled tabindex="-1">1</button>
+                                                        <button class="btn bg-neutral-200" type="button"><img src="..//assets/images/plus.png" alt="plus-icon"></button>
+                                                    </div>
                                                     <button class="btn fs-sm text-neutral-400 text-decoration-underline" href="" type="button" data-bs-toggle="modal" data-bs-target="#tsueicancelModal">刪除</button>
                                                 </div>
                                             </div>
@@ -172,7 +178,7 @@
                                     </button>
                                 </h2>
                                 <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show py-7">
-                                    <button class="btn btn-outline-neutral-400 px-6 text-neutral-800 ative" type="button" data-bs-toggle="button">
+                                    <button class="btn btn-outline-neutral-400 px-6 text-neutral-800 active" type="button" data-bs-toggle="button">
                                         超商取貨
                                     </button>
                                     <div class="accordion-body py-7">
@@ -180,7 +186,7 @@
                                             <h5 class="fs-6">配送方式</h5>
                                             <div class="d-flex justify-content-between mt-4">
                                                 <div class="form-check">
-                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
                                                     <label class="form-check-label fs-6" for="flexRadioDefault1">
                                                         7-11取貨
                                                     </label>
@@ -188,7 +194,7 @@
                                                 <h6 class="h6">免費</h6>
                                             </div>
                                             <div class="mt-1 ps-4">
-                                                <p class="ps-2 text-primary-br500">預計2024-08-28 星期三 到貨</p>
+                                                <p class="ps-2 text-primary-br500">預計2024-11-06 星期三 到貨</p>
                                                 <a href="#" class="text-decoration-underline link-neutral-600">
                                                     <small class="ps-2">選擇您的超取商店</small>
                                                 </a>
@@ -206,9 +212,9 @@
                                                 <input class="form-control" type="text" placeholder="收件人名稱*" aria-label="" id="tsueiformReceive">
                                                 <input class="form-control" type="tel" placeholder="收件人手機號碼*" aria-label="" id="tsueiformReceive">
                                             </div>
-                                            <label class="form-check-label" for="tsueiformReceive">
+                                            <p class="fs-sm" for="tsueiformReceive">
                                                 請填寫收件人真實姓名、正確手機號碼，以確保能正常收件。
-                                            </label>
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -226,7 +232,7 @@
                                                 <label class="form-label border-0" for="tsueiformDiscoumt">
                                                     使用折扣碼
                                                 </label>
-                                                <input class="form-control" type="text" placeholder="discount95" aria-label="" id="tsueiformDiscoumt">
+                                                <input class="form-control" type="text" placeholder="請填入折扣碼" aria-label="" id="tsueiformDiscoumt">
                                             </div>
                                             <div class="align-self-baseline mt-auto">
                                                 <button class="btn btn_2 rounded-1 active" type="button" data-bs-toggle="button">使用</button>
@@ -263,19 +269,17 @@
                                             <small class="fs-xs">發票類型</small>
                                             <select class="form-select" aria-label="Default select">
                                                 <option value="1">二聯式統一發票</option>
-                                                <option value="2">電子發票</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-6">
-                                            <small class="fs-xs">載具類型</small>
-                                            <select class="form-select" aria-label="Default select">
-                                                <option value="1">請附紙本</option>
-                                                <option value="2">手機載具</option>
+                                                <option value="2">三聯式統一發票</option>
+                                                <option value="3">電子發票</option>
                                             </select>
                                         </div>
                                         <div class="ms-auto col-6 mt-1">
-                                            <label for="tsueimobileBarcode" class="form-label fs-xs">載具編號</span>
+                                            <label for="tsueimobileBarcode" class="form-label fs-xs">手機載具編號</span>
                                             <input class="form-control" type="text" placeholder="請輸入載具編號" aria-label="" id="tsueimobileBarcode">
+                                        </div>
+                                        <div class="col-6 mt-1">
+                                            <label for="tsueimobileBarcode" class="form-label fs-xs">統一編號</span>
+                                            <input class="form-control" type="text" placeholder="請輸入統一編號" aria-label="" id="tsueimobileBarcode">
                                         </div>
                                     </div>
                                 </div>
@@ -302,12 +306,12 @@
                                             <span class="text-primary-br500 me-1">NT$</span><span class="fs-5 text-primary-br500">260</span>
                                         </div>
                                         <div class="d-flex justify-content-between">
-                                            <ul class="d-flex align-items-center">
-                                                <li class="me-1">數量</li>
-                                                <li><button class="btn bg-neutral-200" type="button"><img src="..//assets/images/minus.png" alt="minus-icon"></button></li>
-                                                <li><button class="btn bg-neutral-200 text-primary-br500" type="button">1</button></li>
-                                                <li><button class="btn bg-neutral-200" type="button"><img src="..//assets/images/plus.png" alt="plus-icon"></button></li>
-                                            </ul>
+                                            <div class="d-flex align-items-center me-auto">
+                                                <p class="me-1">數量</p>
+                                                <button class="btn bg-neutral-200 border-0" type="button"><img src="..//assets/images/minus.png" alt="minus-icon"></button>
+                                                <button class="btn bg-neutral-200 text-primary-br500 border-0" type="button" disabled tabindex="-1">1</button>
+                                                <button class="btn bg-neutral-200 border-0" type="button"><img src="..//assets/images/plus.png" alt="plus-icon"></button>
+                                            </div>
                                             <button class="btn fs-sm text-neutral-400 text-decoration-underline" href="" type="button" data-bs-toggle="modal" data-bs-target="#tsueicancelModal">刪除</button>
                                         </div>
                                     </div>
@@ -323,12 +327,12 @@
                                             <span class="text-primary-br500 me-1">NT$</span><span class="fs-5 text-primary-br500">460</span>
                                         </div>
                                         <div class="d-flex justify-content-between">
-                                            <ul class="d-flex align-items-center">
-                                                <li class="me-1">數量</li>
-                                                <li><button class="btn bg-neutral-200" type="button"><img src="..//assets/images/minus.png" alt="minus-icon"></button></li>
-                                                <li><button class="btn bg-neutral-200 text-primary-br500" type="button">1</button></li>
-                                                <li><button class="btn bg-neutral-200" type="button"><img src="..//assets/images/plus.png" alt="plus-icon"></button></li>
-                                            </ul>
+                                            <div class="d-flex align-items-center me-auto">
+                                                <p class="me-1">數量</p>
+                                                <button class="btn bg-neutral-200 border-0" type="button"><img src="..//assets/images/minus.png" alt="minus-icon"></button>
+                                                <button class="btn bg-neutral-200 text-primary-br500 border-0" type="button" disabled tabindex="-1">1</button>
+                                                <button class="btn bg-neutral-200 border-0" type="button"><img src="..//assets/images/plus.png" alt="plus-icon"></button>
+                                            </div>
                                             <button class="btn fs-sm text-neutral-400 text-decoration-underline" href="" type="button" data-bs-toggle="modal" data-bs-target="#tsueicancelModal">刪除</button>
                                         </div>
                                     </div>
@@ -344,12 +348,12 @@
                                             <span class="text-primary-br500 me-1">NT$</span><span class="fs-5 text-primary-br500">310</span>
                                         </div>
                                         <div class="d-flex justify-content-between">
-                                            <ul class="d-flex align-items-center">
-                                                <li class="me-1">數量</li>
-                                                <li><button class="btn bg-neutral-200" type="button"><img src="..//assets/images/minus.png" alt="minus-icon"></button></li>
-                                                <li><button class="btn bg-neutral-200 text-primary-br500" type="button">1</button></li>
-                                                <li><button class="btn bg-neutral-200" type="button"><img src="..//assets/images/plus.png" alt="plus-icon"></button></li>
-                                            </ul>
+                                            <div class="d-flex align-items-center me-auto">
+                                                <p class="me-1">數量</p>
+                                                <button class="btn bg-neutral-200 border-0" type="button"><img src="..//assets/images/minus.png" alt="minus-icon"></button>
+                                                <button class="btn bg-neutral-200 text-primary-br500 border-0" type="button" disabled tabindex="-1">1</button>
+                                                <button class="btn bg-neutral-200 border-0" type="button"><img src="..//assets/images/plus.png" alt="plus-icon"></button>
+                                            </div>
                                             <button class="btn fs-sm text-neutral-400 text-decoration-underline" href="" type="button" data-bs-toggle="modal" data-bs-target="#tsueicancelModal">刪除</button>
                                         </div>
                                     </div>
@@ -365,12 +369,12 @@
                                             <span class="text-primary-br500 me-1">NT$</span><span class="fs-5 text-primary-br500">260</span>
                                         </div>
                                         <div class="d-flex justify-content-between">
-                                            <ul class="d-flex align-items-center">
-                                                <li class="me-1">數量</li>
-                                                <li><button class="btn bg-neutral-200" type="button"><img src="..//assets/images/minus.png" alt="minus-icon"></button></li>
-                                                <li><button class="btn bg-neutral-200 text-primary-br500" type="button">1</button></li>
-                                                <li><button class="btn bg-neutral-200" type="button"><img src="..//assets/images/plus.png" alt="plus-icon"></button></li>
-                                            </ul>
+                                            <div class="d-flex align-items-center me-auto">
+                                                <p class="me-1">數量</p>
+                                                <button class="btn bg-neutral-200 border-0" type="button"><img src="..//assets/images/minus.png" alt="minus-icon"></button>
+                                                <button class="btn bg-neutral-200 text-primary-br500 border-0" type="button" disabled tabindex="-1">1</button>
+                                                <button class="btn bg-neutral-200 border-0" type="button"><img src="..//assets/images/plus.png" alt="plus-icon"></button>
+                                            </div>
                                             <button class="btn fs-sm text-neutral-400 text-decoration-underline" href="" type="button" data-bs-toggle="modal" data-bs-target="#tsueicancelModal">刪除</button>
                                         </div>
                                     </div>
@@ -451,7 +455,9 @@
                                 <p class="text-neutral-600">訂單編號：202408310830</p>
                             </div>
                             <div class="modal-footer border-0 mx-auto">
-                                <button type="button" class="btn btn-primary-gr500 text-neutral-50 rounded-pill fs-6 px-10 py-1" data-bs-dismiss="modal">確定</button>
+                                <a href="index.html">
+                                    <button type="button" class="btn btn-primary-gr500 text-neutral-50 rounded-pill fs-6 px-10 py-1" data-bs-dismiss="modal">確定</button>
+                                </a>
                         </div>
                     </div>
                 </div>
