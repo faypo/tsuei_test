@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <title>緊緻修護洗面皂</title>
-  <script type="module" crossorigin src="/tsuei_test/assets/main-50207c08.js"></script>
-  <link rel="stylesheet" href="/tsuei_test/assets/main-690b1eaf.css">
+  <script type="module" crossorigin src="/tsuei_test/assets/main-c3fb5087.js"></script>
+  <link rel="stylesheet" href="/tsuei_test/assets/main-c7de805d.css">
 </head>
 <body class="bg-white justify-content-center">
     <!--header-->
@@ -145,21 +145,38 @@
                     <li>容量  120g</li>
                     <li class="mt-5"><span class="fs-4 text-primary-br500">NT$</span><span class="fs-1 text-primary-br500">260</span></li>
                     <!--數量按鍵 參考: https://codepen.io/NinaLena/pen/jmqwxb-->
-                    <li class="d-flex mt-5">
+                    <li class="d-flex align-items-end mt-5">
                         <p>數量</p>
                         <div class="input-group countbtn">
                             <div class="input-group-btn">
-                                <button class="btn btn btn-light" type="button" id="down"><span class="glyphicon glyphicon-minus">-</button>
+                                <button class="btn btn btn-light" type="button" id="down"><span class="glyphicon glyphicon-minus"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABGSURBVHgB7cyxDQAQFATQL5EwhrGUNkFlDSMYyRoiBAU6Uf/8V10uuQMgCLAdgtGqi2p/RrU072LKK/PTyvnW7+GTBILLAHe9CxZzB4VaAAAAAElFTkSuQmCC"></button>
                             </div>
                             <input type="text" id="myNumber" class="form-control input-number text-center border-0 bg-light" value="1"/>
                             <div class="input-group-btn">
-                                <button class="btn btn btn-light" type="button" id="up"><span class="glyphicon glyphicon-plus"></span>+</button>
+                                <button class="btn btn btn-light" type="button" id="up"><span class="glyphicon glyphicon-plus"></span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACaSURBVHgB3VK7DYNAFPMdJKHMCCkyQBaIlB2SImXSJGNwFMAYMAIjMAIlJSNQ8r0DCsRH4oREAcKV9eznwu8Ba0ORifbnfbnfrmc/COMpjyoLEMeCHYgiavqd8lAsxPoBpCVNYfyU6wNR0AfAIQj8/jxPS4O5XtTwrkStXuBd4DBoNNcwD9bv5Zr/pyPz7OAK0k8kVGUZEmwbFZAeH6ciS1wSAAAAAElFTkSuQmCC"></button>
                             </div>
                         </div>
                     </li>
-                    <li class="mt-8 ms-lg-1 d-flex justify-content-center">    
-                      <a href="#" type="button" class="btn btn-primary rounded-3 px-lg-5 px-5 py-1 fs-6 text-neutral-50">加入購物車</a>
-                      <a href="checkout.html" type="button" class="btn btn btn-secondary rounded-3 px-lg-7 ms-lg-4 px-6 py-1 ms-4 fs-6 text-primary-br500">立即結帳</a>
+                    <li class="mt-8 d-flex justify-content-evenly justify-content-lg-start">    
+                      <button type="button" class="btn btn-primary-br500 rounded-3 px-lg-5 px-5 py-1 fs-6 text-neutral-50" data-bs-toggle="modal" data-bs-target="#exampleModal">加入購物車</button>
+                        <!-- 互動視窗Modal -->
+                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content rounded-2">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">提示</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              您已成功將商品加入購物車 !
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-primary-br500 text-white rounded-3" data-bs-dismiss="modal">關閉</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="checkout.html" type="button" class="btn btn btn-primary-br200 rounded-3 px-lg-7 ms-lg-4 px-6 py-1 ms-4 fs-6 text-primary-br500">立即結帳</a>
                     </li>
                 </ul>
             </div>
@@ -198,11 +215,11 @@
         </div>   
     </div>
     <!--Swiper 套件應用參考: https://hackmd.io/iUyXrm0dSN6ILfLdw1_A8w  https://codesandbox.io/p/sandbox/lvq34j-->
-    <section class="container col-lg-12 col-md-8 mb-10">
+    <section class="container mb-10">
       <div class="swiper mySwiper3 px-0 px-md-10 px-lg-10">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="card border-0 mx-auto">
+                <div class="card border-0 mx-auto text-truncate">
                     <div class="bg-white">
                       <p class="fs-5 card-title">除毛刮鬍皂</p>
                       <p class="fs-sm">Body & Shave Bar</p>
@@ -226,7 +243,7 @@
                   </div>
               </div>
               <div class="swiper-slide">
-                <div class="card border-0 mx-auto">
+                <div class="card border-0 mx-auto text-truncate">
                     <div class="bg-white">
                       <p class="fs-5 card-title">緊緻修護洗面皂</p>
                       <p class="fs-sm">Facial Cleanser With Pink Clay</p>
@@ -250,7 +267,7 @@
                   </div>
               </div>
               <div class="swiper-slide">
-                <div class="card border-0 mx-auto">
+                <div class="card border-0 mx-auto text-truncate">
                     <div class="bg-white">
                       <p class="fs-5 card-title">深層潔淨洗面皂</p>
                       <p class="fs-sm">Facial Cleanser With Charcoal</p>
@@ -274,7 +291,7 @@
                   </div>
               </div>
               <div class="swiper-slide">
-                <div class="card border-0 mx-auto">
+                <div class="card border-0 mx-auto text-truncate">
                     <div class="bg-white">
                       <p class="fs-5 card-title">椰子油肥皂</p>
                       <p class="fs-sm">Coconut Castile Bar Soap</p>
@@ -298,7 +315,7 @@
                   </div>
               </div>
               <div class="swiper-slide">
-                <div class="card border-0 mx-auto">
+                <div class="card border-0 mx-auto text-truncate">
                     <div class="bg-white">
                       <p class="fs-5 card-title">檸檬香桃木肥皂</p>
                       <p class="fs-sm">Lemon Myrtle Bar Soap</p>
@@ -322,7 +339,7 @@
                   </div>
               </div>
               <div class="swiper-slide">
-                <div class="card border-0 mx-auto">
+                <div class="card border-0 mx-auto text-truncate">
                     <div class="bg-white">
                       <p class="fs-5 card-title">天竺葵和粉紅礦物肥皂</p>
                       <p class="fs-sm">Geranium & Pink Clay Bar Soap</p>
@@ -346,7 +363,7 @@
                   </div>
               </div>
               <div class="swiper-slide">
-                <div class="card border-0 mx-auto">
+                <div class="card border-0 mx-auto text-truncate">
                     <div class="bg-white">
                       <p class="fs-5 card-title">薰衣草綠礦皂</p>
                       <p class="fs-sm">Lavender & Green Clay Bar Soap</p>
