@@ -64,10 +64,8 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right center;
+  opacity: 0.5;
   z-index: -1;
-  @include pad{
-    display: none;
-  }
 }
 
 //左下棕梠樹背景圖
@@ -81,10 +79,8 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right center;
+  opacity: 0.5;
   z-index: -1;
-  @include pad{
-    display: none;
-  }
 }
 
 //無尾熊圖
