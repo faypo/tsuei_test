@@ -2,37 +2,21 @@
 .line{
   border: 1px solid;
 }
+
+//修正swiper圖片填滿容器
+.full{ 
+  img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 4/3; /* 這裡設置為長方形，可以根據需要調整 */
+  }
+}
+
+
 //數字按鈕//
 .countbtn{
   width: 240px;
-}
-
-.top {
-  position: relative;
-  padding-top: 75%; // 這裡設置為 4:3 比例，可以根據需要調整
-
-  img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-}
-
-.thumb{
-  position: relative;
-  padding-top: 75%; // 這裡設置為 4:3 比例，可以根據需要調整
-
-  img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 33%;
-    object-fit: cover;
-  }
 }
 
 
