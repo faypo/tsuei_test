@@ -76,7 +76,24 @@
                         </div>
                     </li>
                     <li class="mt-8 d-flex justify-content-evenly justify-content-lg-start">    
-                      <a href="#" type="button" class="btn btn-primary-br500 rounded-3 px-lg-5 px-5 py-1 fs-6 text-neutral-50">加入購物車</a>
+                      <button type="button" class="btn btn-primary-br500 rounded-3 px-lg-5 px-5 py-1 fs-6 text-neutral-50" data-bs-toggle="modal" data-bs-target="#exampleModal">加入購物車</button>
+                        <!-- 互動視窗Modal -->
+                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content rounded-2">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">提示</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              您已成功將商品加入購物車 !
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-primary-br500 text-white rounded-3" data-bs-dismiss="modal">關閉</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                       <a href="checkout.html" type="button" class="btn btn btn-primary-br200 rounded-3 px-lg-7 ms-lg-4 px-6 py-1 ms-4 fs-6 text-primary-br500">立即結帳</a>
                     </li>
                 </ul>
