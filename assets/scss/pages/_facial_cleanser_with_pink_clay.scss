@@ -29,7 +29,7 @@
     width: 1168px;
   
       @include mobile-lager{
-        width: 660px;
+        width: 600px;
       }
       @include mobile{
         width: 480px;
@@ -44,7 +44,7 @@
   width: 40%;
   height: 2px;
   @include mobile-lager{
-    width: 30%;
+    width: 27%;
   }
 }
 .decoline:before {
