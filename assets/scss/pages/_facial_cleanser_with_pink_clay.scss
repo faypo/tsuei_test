@@ -7,6 +7,33 @@
   width: 240px;
 }
 
+.top {
+  position: relative;
+  padding-top: 75%; // 這裡設置為 4:3 比例，可以根據需要調整
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.thumb{
+  position: relative;
+  padding-top: 75%; // 這裡設置為 4:3 比例，可以根據需要調整
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 33%;
+    object-fit: cover;
+  }
+}
 
 
 //本月推薦裝飾線//
