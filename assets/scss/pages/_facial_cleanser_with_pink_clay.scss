@@ -13,7 +13,6 @@
   }
 }
 
-
 //數字按鈕//
 .countbtn{
   width: 240px;
@@ -60,5 +59,10 @@
 //本月推薦card//
 .bg-card{
   background-color:#F0F0F0;
-  ;
+}
+
+//卡片商品連結樣式//
+.product-link {
+  color: inherit; /* 繼承父元素的顏色 */
+  text-decoration: none; /* 移除底線 */
 }
