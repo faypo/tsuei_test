@@ -1,6 +1,10 @@
 import "./assets/scss/all.scss";
 import "bootstrap/dist/js/bootstrap.min.js";
 
+AOS.init({
+  duration: 800,
+});
+
 // console.log("Hello world!");
 
 document.getElementById("down").addEventListener("click", function () {
