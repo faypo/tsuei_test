@@ -7,6 +7,10 @@
   padding-right: 18px;
   padding-left: 18px;
   color: $neutral-800;
+  @include pad{
+    padding-right: 9px;
+    padding-left: 9px;
+  }
 }
 
 .header-link:hover {
@@ -25,11 +29,12 @@
   height: 100px;
 }
 
-.navbar-burger{
+.navbar-hanburger{
   position: absolute;
-  top: 60px;
+  left: 0;
+  top: 70px;
   width: 100%;
-  height: 100px;
+  height: 120px;
   background: $neutral-50;
   z-index: 100;
 }

@@ -7,12 +7,14 @@
     <title>TSUEI：商品總攬</title>
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <%- include('./layout/header'); -%>
     
     <main>
-      <section>
+      <section class="position-relative">
+        <!--平板以下才出現的區塊-->
         <div class="d-lg-none">
           <div class="bg-neutral-600">
             <nav class="d-lg-none navbar navbar-expand-lg">
@@ -23,28 +25,29 @@
               </div>
             </nav>
           </div>
-          <div class="bg-primary-br200">
+          <div class="bg-primary-br200 allprodnavHanburger">
             <div class="collapse navbar-collapse container" id="navbarNavCollapse">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link px-3" href="#">+臉部清潔</a>
+                  <a class="nav-link ps-3" href="#">+臉部清潔</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link px-3" href="#">+臉部保養</a>
+                  <a class="nav-link ps-3" href="#">+臉部保養</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link px-3" href="#">+身體清潔</a>
+                  <a class="nav-link ps-3" href="#">+身體清潔</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link px-3" href="#">+身體調理</a>
+                  <a class="nav-link ps-3" href="#">+身體調理</a>
                 </li>
                 <li class="nav-item">                
-                  <a class="nav-link px-3" href="#">+沐浴系列</a>
+                  <a class="nav-link ps-3" href="#">+沐浴系列</a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
+        <!--桌機才出現的區塊-->
         <div class="d-lg-block d-none bg-primary-br200">
           <div class="container">
             <ul class="nav">
@@ -70,35 +73,35 @@
       <section class="onSales-bg">
         <div class="container py-10">
           <div class="row justify-content-center row-gap-5">
-            <div class="col-lg-5">
+            <div class="col-lg-5" data-aos="zoom-in">
               <div class="d-flex mb-1">
                 <div class="me-auto mb-1">
                   <h5 class="h5">除毛刮皂</h5>
                   <p class="me-auto fs-xs">Rummy Body & Shave Soap</p>
                 </div>
                 <div class="d-flex pt-2">
-                  <p class="mt-2 me-1"><a class="link-primary-br500" href="facial_cleanser_with_pink_clay.html">NT$</a></p>
-                  <h3 class="h3"><a class="link-primary-br500" href="facial_cleanser_with_pink_clay.html">230</a></h3>                      
+                  <p class="mt-2 me-1"><a class="link-primary-br500" href="body&shave_bar.html">NT$</a></p>
+                  <h3 class="h3"><a class="link-primary-br500" href="body&shave_bar.html">230</a></h3>                      
                 </div>
               </div>
-              <a class="d-block" href="facial_cleanser_with_pink_clay.html">
+              <a class="d-block" href="body&shave_bar.html">
                 <div class="img_pord_1 position-relative">
                   <button type="button" class="like-link border-0 active" data-bs-toggle="button"></button>
                 </div>
               </a>
             </div>
-            <div class="col-lg-5">
+            <div class="col-lg-5" data-aos="zoom-in">
               <div class="d-flex mb-1">
                 <div class="me-auto mb-1">
                   <h5 class="h5">除毛刮皂</h5>
                   <p class="me-auto fs-xs">Rummy Body & Shave Soap</p>
                 </div>
                 <div class="d-flex pt-2">
-                  <p class="mt-2 me-1"><a class="link-primary-br500" href="facial_cleanser_with_pink_clay.html">NT$</a></p>
-                  <h3 class="h3"><a class="link-primary-br500" href="facial_cleanser_with_pink_clay.html">230</a></h3>                      
+                  <p class="mt-2 me-1"><a class="link-primary-br500" href="body&shave_bar.html">NT$</a></p>
+                  <h3 class="h3"><a class="link-primary-br500" href="body&shave_bar.html">230</a></h3>                      
                 </div>
               </div>
-              <a class="d-block" href="facial_cleanser_with_pink_clay.html">
+              <a class="d-block" href="body&shave_bar.html">
                 <div class="img_pord_1 position-relative">
                   <button type="button" class="like-link border-0 active" data-bs-toggle="button"></button>
                 </div>
@@ -111,7 +114,7 @@
         <div class="d-none d-lg-block">
           <div class="container py-10">
             <div class="combo-bg py-lg-10 py-5 h-100">
-              <div class="col-lg-6 col-xl-4 col-10 combo-title p-6 m-lg-8 mx- my-7">
+              <div class="col-lg-6 col-xl-4 col-10 combo-title p-6 m-lg-8 mx- my-7" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                 <h2 class="fs-lg-2 fs-3">柔化肌膚組合</h2>
                 <p class="fs-sm mb-lg-8">Facial Cleanser with Pink Clay</p>
                 <div class="d-flex align-items-end justify-content-end text-primary-br500">
@@ -140,16 +143,16 @@
       <section>
         <div class="container py-10">
           <ul class="row prod-menu">
-            <li class="col-lg-4 col-md-6">
+            <li class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="2000">
               <div class="d-flex">
                 <div class="me-auto mb-1 text-truncate">
-                  <h5 class="h5">緊緻修護洗面皂</h5>
-                  <p class="text-truncate me-auto fs-sm">Facial Cleanser with Pink Clay</p>
+                  <h5 class="h5"><a href="facial_cleanser_with_pink_clay.html">緊緻修護洗面皂</a></h5>
+                  <p class="me-auto fs-sm"><a href="facial_cleanser_with_pink_clay.html">Facial Cleanser with Pink Clay</a></p>
                 </div>
                 <div class="pt-2">
                   <div class="d-flex text-primary-br500">
-                    <p class="mt-2 me-1">NT$</p>
-                    <h3 class="h3">260</h3>                      
+                    <p class="mt-2 me-1"><a class="link-primary-br500" href="facial_cleanser_with_pink_clay.html">NT$</a></p>
+                    <h3 class="h3"><a class="link-primary-br500" href="facial_cleanser_with_pink_clay.html">260</a></h3>                      
                   </div>
                 </div>
               </div>
@@ -159,86 +162,86 @@
                 </div>
               </a>
             </li>
-            <li class="col-lg-4 col-md-6">
+            <li class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="2000">
               <div class="d-flex">
                 <div class="me-auto mb-1 text-truncate">
-                  <h5 class="h5">深層潔淨洗面皂</h5>
-                  <p class="me-auto fs-sm">Facial Cleanser with Charcoal</p>
+                  <h5 class="h5"><a href="facial_cleanser_with_charcoal.html">深層潔淨洗面皂</a></h5>
+                  <p class="me-auto fs-sm"><a href="facial_cleanser_with_charcoal.html">Facial Cleanser with Charcoal</a></p>
                 </div>
                 <div class="d-flex pt-2">
-                  <p class="mt-2 me-1"><a class="link-primary-br500" href="facial_cleanser_with_pink_clay.html">NT$</a></p>
-                  <h3 class="h3"><a class="link-primary-br500" href="facial_cleanser_with_pink_clay.html">260</a></h3>                      
+                  <p class="mt-2 me-1"><a class="link-primary-br500" href="facial_cleanser_with_charcoal.html">NT$</a></p>
+                  <h3 class="h3"><a class="link-primary-br500" href="facial_cleanser_with_charcoal.html">260</a></h3>                      
                 </div>
               </div>
-              <a class="d-block" href="facial_cleanser_with_pink_clay.html">
+              <a class="d-block" href="facial_cleanser_with_charcoal.html">
                 <div class="img_pord_3 position-relative">
                   <button type="button" class="like-link border-0 active" data-bs-toggle="button"></button>
                 </div>
               </a>
             </li>
-            <li class="col-lg-4 col-md-6">
+            <li class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="2000">
               <div class="d-flex">
                 <div class="me-auto mb-1 text-truncate">
                   <h5 class="h5">椰子油肥皂</h5>
                   <p class="me-auto fs-sm">Base Coconut Bar Soap</p>
                 </div>
                 <div class="d-flex pt-2">
-                  <p class="mt-2 me-1"><a class="link-primary-br500" href="facial_cleanser_with_pink_clay.html">NT$</a></p>
-                  <h3 class="h3"><a class="link-primary-br500" href="facial_cleanser_with_pink_clay.html">210</a></h3>                      
+                  <p class="mt-2 me-1"><a class="link-primary-br500" href="coconut_castile_bar_soap.html">NT$</a></p>
+                  <h3 class="h3"><a class="link-primary-br500" href="coconut_castile_bar_soap.html">210</a></h3>                      
                 </div>
               </div>
-              <a class="d-block" href="facial_cleanser_with_pink_clay.html">
+              <a class="d-block" href="coconut_castile_bar_soap.html">
                 <div class="img_pord_4 position-relative">
                   <button type="button" class="like-link border-0 active" data-bs-toggle="button"></button>
                 </div>
               </a>
             </li>
-            <li class="col-lg-4 col-md-6">
+            <li class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="2000">
               <div class="d-flex">
                 <div class="me-auto mb-1 text-truncate">
                   <h5 class="h5">檸檬香桃木肥皂</h5>
                   <p class="me-auto fs-sm">Base Lemon Myrtle Bar Soap</p>
                 </div>
                 <div class="d-flex pt-2">
-                  <p class="mt-2 me-1"><a class="link-primary-br500" href="facial_cleanser_with_pink_clay.html">NT$</a></p>
-                  <h3 class="h3"><a class="link-primary-br500" href="facial_cleanser_with_pink_clay.html">210</a></h3>                      
+                  <p class="mt-2 me-1"><a class="link-primary-br500" href="lemon_myrtle_bar_soap.html">NT$</a></p>
+                  <h3 class="h3"><a class="link-primary-br500" href="lemon_myrtle_bar_soap.html">210</a></h3>                      
                 </div>
               </div>
-              <a class="d-block" href="facial_cleanser_with_pink_clay.html">
+              <a class="d-block" href="lemon_myrtle_bar_soap.html">
                 <div class="img_pord_5 position-relative">
                   <button type="button" class="like-link border-0 active" data-bs-toggle="button"></button>
                 </div>
               </a>
             </li>
-            <li class="col-lg-4 col-md-6">
+            <li class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="2000">
               <div class="d-flex">
                 <div class="me-auto mb-1 text-truncate">
                   <h5 class="h5">天竺葵和粉紅礦物肥皂</h5>
                   <p class="me-auto fs-sm">Base Geranium & Pink Clay Bar Soap</p>
                 </div>
                 <div class="d-flex pt-2">
-                  <p class="mt-2 me-1"><a class="link-primary-br500" href="facial_cleanser_with_pink_clay.html">NT$</a></p>
-                  <h3 class="h3"><a class="link-primary-br500" href="facial_cleanser_with_pink_clay.html">210</a></h3>                      
+                  <p class="mt-2 me-1"><a class="link-primary-br500" href="geranium&pink_clay_bar_soap.html">NT$</a></p>
+                  <h3 class="h3"><a class="link-primary-br500" href="geranium&pink_clay_bar_soap.html">210</a></h3>                      
                 </div>
               </div>
-              <a class="d-block" href="facial_cleanser_with_pink_clay.html">
+              <a class="d-block" href="geranium&pink_clay_bar_soap.html">
                 <div class="img_pord_6 position-relative">
                   <button type="button" class="like-link border-0 active" data-bs-toggle="button"></button>
                 </div>
               </a>
             </li>
-            <li class="col-lg-4 col-md-6">
+            <li class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="2000">
               <div class="d-flex">
                 <div class="me-auto mb-1 text-truncate">
                   <h5 class="h5">薰衣草綠礦皂</h5>
                   <p class=" me-auto fs-sm">Base Lavender & Green Clay Bar Soap</p>
                 </div>
                 <div class="d-flex pt-2">
-                  <p class="mt-2 me-1"><a class="link-primary-br500" href="facial_cleanser_with_pink_clay.html">NT$</a></p>
-                  <h3 class="h3"><a class="link-primary-br500" href="facial_cleanser_with_pink_clay.html">210</a></h3>                      
+                  <p class="mt-2 me-1"><a class="link-primary-br500" href="lavender&green_clay_bar_soap.html">NT$</a></p>
+                  <h3 class="h3"><a class="link-primary-br500" href="lavender&green_clay_bar_soap.html">210</a></h3>                      
                 </div>
               </div>
-              <a class="d-block" href="facial_cleanser_with_pink_clay.html">
+              <a class="d-block" href="lavender&green_clay_bar_soap.html">
                 <div class="img_pord_7 position-relative">
                   <button type="button" class="like-link border-0 active" data-bs-toggle="button"></button>
                 </div>
@@ -246,41 +249,41 @@
             </li>
             <li class="d-none d-lg-block col">
               <ul class="row">
-                <li class="col-4">
+                <li class="col-4" data-aos="fade-up" data-aos-duration="2000">
                   <div class="d-flex">
                     <div class="me-auto mb-1 text-truncate">
                       <h5 class="h5">天竺葵和粉紅礦物肥皂</h5>
                       <span class="me-auto fs-sm">Base Geranium & Pink Clay Bar Soap</span>
                     </div>
                     <div class="d-flex pt-2">
-                      <p class="mt-2 me-1"><a class="link-primary-br500" href="facial_cleanser_with_pink_clay.html">NT$</a></p>
-                      <h3 class="h3"><a class="link-primary-br500" href="facial_cleanser_with_pink_clay.html">210</a></h3>                      
+                      <p class="mt-2 me-1"><a class="link-primary-br500" href="geranium&pink_clay_bar_soap.html">NT$</a></p>
+                      <h3 class="h3"><a class="link-primary-br500" href="geranium&pink_clay_bar_soap.html">210</a></h3>                      
                     </div>
                   </div>
-                  <a class="d-block" href="facial_cleanser_with_pink_clay.html">
+                  <a class="d-block" href="geranium&pink_clay_bar_soap.html">
                     <div class="img_pord_6 position-relative">
                       <button type="button" class="like-link border-0 active" data-bs-toggle="button"></button>
                     </div>
                   </a>
                 </li>
-                <li class="col-4">
+                <li class="col-4" data-aos="fade-up" data-aos-duration="2000">
                   <div class="d-flex">
                     <div class="me-auto mb-1  text-truncate">
                       <h5 class="h5">椰子油肥皂</h5>
                       <span class="me-auto fs-sm">Base Coconut Bar Soap</span>
                     </div>
                     <div class="d-flex pt-2">
-                      <p class="mt-2 me-1"><a class="link-primary-br500" href="facial_cleanser_with_pink_clay.html">NT$</a></p>
-                      <h3 class="h3"><a class="link-primary-br500" href="facial_cleanser_with_pink_clay.html">210</a></h3>                      
+                      <p class="mt-2 me-1"><a class="link-primary-br500" href="coconut_castile_bar_soap.html">NT$</a></p>
+                      <h3 class="h3"><a class="link-primary-br500" href="coconut_castile_bar_soap.html">210</a></h3>                      
                     </div>
                   </div>
-                  <a class="d-block" href="facial_cleanser_with_pink_clay.html">
+                  <a class="d-block" href="coconut_castile_bar_soap.html">
                     <div class="img_pord_4 position-relative">
                       <button type="button" class="like-link border-0 active" data-bs-toggle="button"></button>
                     </div>
                   </a>
                 </li>
-                <li class="col-4">
+                <li class="col-4" data-aos="fade-up" data-aos-duration="2000">
                   <div class="d-flex text-truncate">
                     <div class="me-auto mb-1">
                       <h5 class="h5">緊緻修護洗面皂</h5>
@@ -330,6 +333,7 @@
     <script>
       feather.replace();
     </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="module" src="../main.js"></script>
   </body>
 </html>

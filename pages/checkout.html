@@ -13,7 +13,8 @@
         <section>
             <div class="container py-lg-10 mb-lg-10">
                 <div class="row">
-                    <div class="d-lg-none"> <!-- 平板才出現的區塊 -->
+                    <!-- 平板以下才出現的區塊 -->
+                    <div class="d-lg-none">
                         <div class="accordion" id="accordionPanelsStayOpenExample">
                             <div class="accordion-item border-0">
                                 <h2 class="accordion-header">
@@ -64,7 +65,7 @@
                                                     <div class="d-flex align-items-center me-auto">
                                                         <p class="me-1">數量</p>
                                                         <button class="btn bg-neutral-200" type="button"><img src="..//assets/images/minus.png" alt="minus-icon"></button>
-                                                        <button class="btn bg-neutral-200 text-primary-br500 border-0" type="button" disabled tabindex="-1">1</button>
+                                                        <button class="btn bg-neutral-200 text-primary-br500 border-0" type="button" disabled tabindex="-1">2</button>
                                                         <button class="btn bg-neutral-200" type="button"><img src="..//assets/images/plus.png" alt="plus-icon"></button>
                                                     </div>
                                                     <button class="btn fs-sm text-neutral-400 text-decoration-underline" href="" type="button" data-bs-toggle="modal" data-bs-target="#tsueicancelModal">刪除</button>
@@ -73,13 +74,13 @@
                                         </div>
                                         <div class="row align-items-center">
                                             <div class="col-5">
-                                                <img class="" src="../assets/images/prod_4.png" alt="prod_4">
+                                                <img class="" src="../assets/images/prod_3.png" alt="prod_4">
                                             </div>
                                             <div class="col-7">
-                                                <h6>洗髮皂</h6>
+                                                <h6>深層潔淨洗面皂</h6>
                                                 <p class="fs-sm">容量 120 ML</p>
                                                 <div>
-                                                    <span class="text-primary-br500 me-1">NT$</span><span class="fs-5 text-primary-br500">310</span>
+                                                    <span class="text-primary-br500 me-1">NT$</span><span class="fs-5 text-primary-br500">260</span>
                                                 </div>
                                                 <div class="d-flex justify-content-between">
                                                     <div class="d-flex align-items-center me-auto">
@@ -118,7 +119,7 @@
                                         <div class="d-flex justify-content-between align-items-center">
                                             <h6>總額</h6>
                                             <div>
-                                                <span class="fs-5">NT$</span><span class="fs-5">260</span>
+                                                <span class="fs-5">NT$</span><span class="fs-5">1190</span>
                                             </div>
                                         </div>
                                         <div class="d-flex justify-content-between">
@@ -136,7 +137,7 @@
                                             <p class="text-neutral-600">含運費總金額</p>
                                         </div>
                                         <div>
-                                            <span class="text-primary-br500 fs-5">NT$</span><span class="text-primary-br500 h3 fw-bold">979</span>
+                                            <span class="text-primary-br500 fs-5">NT$</span><span class="text-primary-br500 h3 fw-bold">1131</span>
                                         </div>
                                     </div>
                                     <div class="d-flex flex-column gap-5 pt-8 pb-7">
@@ -156,6 +157,7 @@
                             </div>
                         </div>
                     </div>
+                    <!--客戶資料填寫區-->
                     <div class="col-lg-7">
                         <div class="accordion" id="accordionPanelsStayOpenExample">
                             <div class="accordion-item border-0">
@@ -232,10 +234,10 @@
                                                 <label class="form-label border-0" for="tsueiformDiscoumt">
                                                     使用折扣碼
                                                 </label>
-                                                <input class="form-control" type="text" placeholder="請填入折扣碼" aria-label="" id="tsueiformDiscoumt">
+                                                <input class="form-control" type="text" aria-label="" id="tsueiformDiscoumt" value="discount95">
                                             </div>
                                             <div class="align-self-baseline mt-auto">
-                                                <button class="btn btn_2 rounded-1 active" type="button" data-bs-toggle="button">使用</button>
+                                                <button class="btn btn-primary-br500 rounded-1 text-neutral-50" type="button">使用</button>
                                             </div>
                                         </div>
                                     </div>
@@ -291,7 +293,8 @@
                             </button>
                         </div>
                     </div>
-                    <div class="col-lg-5 d-lg-block d-none"> <!-- 桌機板才出現的區塊 -->
+                    <!-- 桌機板才出現的區塊 -->
+                    <div class="col-lg-5 d-lg-block d-none">
                         <div class="bg-checkout-bg p-6">
                             <div class="border-bottom border-1 border-netral-400 pb-8 d-flex flex-column gap-4">
                                 <h6>訂單明細</h6>
@@ -330,7 +333,7 @@
                                             <div class="d-flex align-items-center me-auto">
                                                 <p class="me-1">數量</p>
                                                 <button class="btn bg-neutral-200 border-0" type="button"><img src="..//assets/images/minus.png" alt="minus-icon"></button>
-                                                <button class="btn bg-neutral-200 text-primary-br500 border-0" type="button" disabled tabindex="-1">1</button>
+                                                <button class="btn bg-neutral-200 text-primary-br500 border-0" type="button" disabled tabindex="-1">2</button>
                                                 <button class="btn bg-neutral-200 border-0" type="button"><img src="..//assets/images/plus.png" alt="plus-icon"></button>
                                             </div>
                                             <button class="btn fs-sm text-neutral-400 text-decoration-underline" href="" type="button" data-bs-toggle="modal" data-bs-target="#tsueicancelModal">刪除</button>
@@ -339,13 +342,13 @@
                                 </div>
                                 <div class="row align-items-center">
                                     <div class="col-5">
-                                        <img class="" src="../assets/images/prod_4.png" alt="prod_4">
+                                        <img class="" src="../assets/images/prod_3.png" alt="prod_4">
                                     </div>
                                     <div class="col-7">
-                                        <h6>洗髮皂</h6>
+                                        <h6>深層潔淨洗面皂</h6>
                                         <p class="fs-sm">容量 120 ML</p>
                                         <div>
-                                            <span class="text-primary-br500 me-1">NT$</span><span class="fs-5 text-primary-br500">310</span>
+                                            <span class="text-primary-br500 me-1">NT$</span><span class="fs-5 text-primary-br500">260</span>
                                         </div>
                                         <div class="d-flex justify-content-between">
                                             <div class="d-flex align-items-center me-auto">
@@ -360,13 +363,13 @@
                                 </div>
                                 <div class="row align-items-center">
                                     <div class="col-5">
-                                        <img class="" src="../assets/images/prod_4.png" alt="prod_4">
+                                        <img class="" src="../assets/images/prod_6.png" alt="prod_4">
                                     </div>
                                     <div class="col-7">
-                                        <h6>潤髮皂</h6>
+                                        <h6>天竺葵和粉紅礦物肥皂</h6>
                                         <p class="fs-sm">容量 120 ML</p>
                                         <div>
-                                            <span class="text-primary-br500 me-1">NT$</span><span class="fs-5 text-primary-br500">260</span>
+                                            <span class="text-primary-br500 me-1">NT$</span><span class="fs-5 text-primary-br500">210</span>
                                         </div>
                                         <div class="d-flex justify-content-between">
                                             <div class="d-flex align-items-center me-auto">
@@ -384,7 +387,7 @@
                                 <div class="d-flex justify-content-between align-items-center">
                                     <h6>總額</h6>
                                     <div>
-                                        <span class="fs-5">NT$</span><span class="fs-5">260</span>
+                                        <span class="fs-5">NT$</span><span class="fs-5">1190</span>
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-between">
@@ -402,7 +405,7 @@
                                     <p class="text-neutral-600">含運費總金額</p>
                                 </div>
                                 <div>
-                                    <span class="text-primary-br500 fs-5">NT$</span><span class="text-primary-br500 h3 fw-bold">979</span>
+                                    <span class="text-primary-br500 fs-5">NT$</span><span class="text-primary-br500 h3 fw-bold">1131</span>
                                 </div>
                             </div>
                             <div class="d-flex flex-column gap-5 pt-8 pb-7">
@@ -438,6 +441,7 @@
                         </div>
                     </div>
                 </div>
+                <!--平板以下出現的結帳按鈕-->
                 <div class="text-center py-6 d-lg-none">
                     <button class="fs-6 px-2 btn btn-primary-br500 rounded-pill text-neutral-50 px-6" type="submit" data-bs-toggle="modal" data-bs-target="#tsueicheckModal">
                         前往結帳/完成訂單
