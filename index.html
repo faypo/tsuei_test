@@ -6,32 +6,32 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TSUEI</title>
-  <script src="https://unpkg.com/feather-icons"></script>
-  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-  <script type="module" crossorigin src="/tsuei_test/assets/main-74b23bce.js"></script>
-  <link rel="stylesheet" href="/tsuei_test/assets/main-e56d9ef3.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script type="module" crossorigin src="/tsuei_test/assets/main-eea64480.js"></script>
+  <link rel="stylesheet" href="/tsuei_test/assets/main-691b169e.css">
 </head>
 
 <body>
   <header class="header">
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg position-relative">
+        <!-- 平板以下才出現 -->
         <div class="container d-lg-none">
             <a class="navbar-brand me-auto" href="index.html">
                 <img src="data:image/png;base64,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" alt="TSUEI Logo">
             </a>
             <ul class="mb-0 nav align-items-center justify-content-between">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="header-link" href="#">
                         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADASURBVHgB5ZTdDcIwDIRPiAEyUjYhI3SDeLPCBozQDcoGkEqOEmiI07gv0E869ceqXTmnA46CDRqD5qAn31+wE56bluShxGXNKMiwhuy9hYKRmwyFGiGtq5v4l6ZQM1ybaw1OqPOAjIFiwJ2vpRVFF92gwCKtaRkSDzl3ltquhO82JeyEQ3LUcqhXKO35+1i8Z4+kTdnkG5t2ZZPDOnskNmVTLXskCA3ZVMseiaZsigN6WX0vZZGa88fzBB0T/o4XDOFcFiHpw8MAAAAASUVORK5CYII=" alt="account icon">
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="checkout.html">
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADlSURBVHgB1VTBEYMgEFxJA5ZAB6YEU0GSClJHqkoJ2kG0AifPvLCDRMczOgYED3i4MzvH6B4LHAcANB0/CxYICJ1BT4lIeJDBBQEgNN9eFHNEMigpSkSChL4mHDaJwUR1TOGPVhh+lBSvHRMGT5Rfmwx8C51TrGw7kOAhW8zzB4mhSAo8jM17XBMp8Do6xWxxYkVYUVxdhQajvrYZ1BRz8Awqm8G4gwzu6I/nTOOni9j00lo7GI6160XFxslLbK/bjnHDcJ8bGofS/jAvsuJohSVp/mS3HO3BkvTGdCPumHrDVxsOX0TwaDZ9YWq4AAAAAElFTkSuQmCC" alt="shopping cart icon"> (10)
+                    <a class="header-link" href="checkout.html">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADlSURBVHgB1VTBEYMgEFxJA5ZAB6YEU0GSClJHqkoJ2kG0AifPvLCDRMczOgYED3i4MzvH6B4LHAcANB0/CxYICJ1BT4lIeJDBBQEgNN9eFHNEMigpSkSChL4mHDaJwUR1TOGPVhh+lBSvHRMGT5Rfmwx8C51TrGw7kOAhW8zzB4mhSAo8jM17XBMp8Do6xWxxYkVYUVxdhQajvrYZ1BRz8Awqm8G4gwzu6I/nTOOni9j00lo7GI6160XFxslLbK/bjnHDcJ8bGofS/jAvsuJohSVp/mS3HO3BkvTGdCPumHrDVxsOX0TwaDZ9YWq4AAAAAElFTkSuQmCC" alt="shopping cart icon"> (4)
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="shopping.html">
+                    <a class="header-link" href="#">
                         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGrSURBVHgB3VXtcYJAEF2YFGAHwQpiOsAKglqAWoF0EKkgYwVqA5pUEFJBKIESrADyHiwZMXcXyCQ/4ptZZ4W9fftxu4j8d3iul1EUhb7vz6GGkIDPyrLMPM/LiqJ4eQbkJwRwHMDJFhKKGzmIxuDJbQa+wfkIUb+r8xMkgZPh4XDwKNDvIUs6Z1a05RnpkgEj5wGoA5RiD4kR3UnMWQ4QxBqyYiAkNmVy00rH91/V+eZ4PMbigBLHk8mERHOWFP/Hl3afJZrNZpHUjcxBsJaOYJbMgCXlpbASwPBB1cRWFhPUdlM5q2+cmQARVI1CLTPpCZzZqRpaCZDBSCPqTXDW3MBK8Fc4J8j5M51Ob6UnmjnglFsJ8PJN1aX0R0XAFeIi2Km64hBJR9AWt+eROveTlQCNSkGSQuWBJ+kIdR5ActPya00yCJZIk6tigV5w/BPXqtBAFhq9sbSe4eCoWRlSN57LLmuur+4rDlSsNg2Mm9W6rpUkEAdYUkgC263afiH57oMToWTcUXfNpGtWKRzt2TdDQC0SJ0EfXJLg2zHk81+bZEbMyEUH9nrwAV626mOA4vkTAAAAAElFTkSuQmCC" alt="shopping cart icon">
                     </a>
                 </li>
@@ -39,17 +39,18 @@
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mb-2 mb-lg-0">
+            <div class="collapse navbar-collapse navbar-hanburger" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">品牌故事</a>
+                        <a class="nav-link ps-5" href="about.html">品牌故事</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="allproduct.html">商品總覽</a>
+                        <a class="nav-link ps-5" href="allproduct.html">商品總覽</a>
                     </li>
                 </ul>
             </div>
         </div>
+        <!--桌機以上才出現-->
         <div class="d-none d-lg-block container py-6">
             <nav class="navbar navbar-expand-lg justify-content-between">
                 <ul class="d-lg-flex d-none">
@@ -77,7 +78,7 @@
                         </li>
                         <li>
                             <a class="header-link" href="checkout.html">
-                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADlSURBVHgB1VTBEYMgEFxJA5ZAB6YEU0GSClJHqkoJ2kG0AifPvLCDRMczOgYED3i4MzvH6B4LHAcANB0/CxYICJ1BT4lIeJDBBQEgNN9eFHNEMigpSkSChL4mHDaJwUR1TOGPVhh+lBSvHRMGT5Rfmwx8C51TrGw7kOAhW8zzB4mhSAo8jM17XBMp8Do6xWxxYkVYUVxdhQajvrYZ1BRz8Awqm8G4gwzu6I/nTOOni9j00lo7GI6160XFxslLbK/bjnHDcJ8bGofS/jAvsuJohSVp/mS3HO3BkvTGdCPumHrDVxsOX0TwaDZ9YWq4AAAAAElFTkSuQmCC" alt="shopping cart icon"> (10)
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADlSURBVHgB1VTBEYMgEFxJA5ZAB6YEU0GSClJHqkoJ2kG0AifPvLCDRMczOgYED3i4MzvH6B4LHAcANB0/CxYICJ1BT4lIeJDBBQEgNN9eFHNEMigpSkSChL4mHDaJwUR1TOGPVhh+lBSvHRMGT5Rfmwx8C51TrGw7kOAhW8zzB4mhSAo8jM17XBMp8Do6xWxxYkVYUVxdhQajvrYZ1BRz8Awqm8G4gwzu6I/nTOOni9j00lo7GI6160XFxslLbK/bjnHDcJ8bGofS/jAvsuJohSVp/mS3HO3BkvTGdCPumHrDVxsOX0TwaDZ9YWq4AAAAAElFTkSuQmCC" alt="shopping cart icon"> (4)
                             </a>
                         </li>
                         <li>
@@ -98,7 +99,7 @@
     <!--banner區-->
     <section class="banner">
       <div class="container h-100">
-        <div class="d-flex flex-column justify-content-center align-items-center h-100">
+        <div class="d-flex flex-column justify-content-center align-items-center h-100" data-aos="fade-up" data-aos-duration="3000">
           <h1 class="fs-lg-2 fs-6 mb-md-2">專注引入無化學成分的天然肥皂，</h1>
           <div class="d-lg-flex text-center mb-lg-8 mb-md-5 mb-2">
             <h2 class="fs-lg-2 fs-6 mb-md-2 mb-lg-0">讓每塊肥皂，</h2>
@@ -112,11 +113,11 @@
 
     <!--介紹區-->
     <section class="position-relative">
-      <div class="leaves1_bg-photo"></div>
-      <div class="leaves2_bg-photo"></div>
+      <div class="leaves1_bg-photo d-none d-xl-block"></div>
+      <div class="leaves2_bg-photo d-none d-xl-block"></div>
       <div class="container py-lg-10 py-5">
         <!--第一部分-->
-        <div class="row pt-lg-7 pt-5">
+        <div class="row pt-lg-7 pt-5" data-aos="fade-up" data-aos-duration="3000">
           <div class="col-lg-6">
             <!-- 山圖片區 -->
             <div class="mountain-photo">
@@ -163,10 +164,10 @@
             </div>
           </div>
         </div>
-        <div class="row pb-lg-7 py-5 align-items-center">
+        <div class="row pb-lg-7 py-5 align-items-center row-gap-5" data-aos="fade-up" data-aos-duration="3000">
           <div class="col-lg-6">
-            <div class="h-100 vector-photo d-flex align-items-center justify-content-center">
-              <p class="fs-md-6 py-lg-9 py-6 px-5">
+            <div class="vector-photo">
+              <p class="fs-md-6 py-lg-9 py-6 px-xl-10">
                 減少棕櫚油使用對環境至關重要。棕櫚油生產常涉及砍伐熱带雨林，不僅摧毀珍貴生態系統，並影響多種動植物生存。選擇無棕櫚油產品，支持永續農業，一起保護地球生物多樣性和氣候。
               </p>
             </div>
@@ -190,10 +191,10 @@
               <h6 class="fs-6">能夠產生豐富的泡沫，確保剃鬚過程順滑</h6>
             </div>
           </div>
-          <div class="col-lg-5">
+          <div class="col-lg-5" data-aos="zoom-in" data-aos-duration="2500">
             <div class="mb-1">
-              <h5 class="h5">除毛刮皂</h6>
-              <p class="fs-sm">Rummy Body & Shave Soap</p>
+              <h5 class="h5"><a class="link-neutral-800" href="#">除毛刮皂</a></h6>
+              <p class="fs-sm"><a href="#">Rummy Body & Shave Soap</a></p>
             </div>
             <a class="d-block" href="body&shave_bar.html">
               <div class="img_pord_1 position-relative">
@@ -206,23 +207,22 @@
     </section>
 
     <!-- 多個商品介紹區 -->
-
     <section class="position-relative">
       <div class="bg2-photo"></div> <!--背景圖-->
-      <div class="container py-lg-10">
-        <ul class="py-lg-7">
-          <li class="box-outSide pe-xl-5 mb-lg-9 mb-md-5">
+      <div class="container py-lg-10 py-7">
+        <ul class="py-lg-7 d-flex flex-column row-gap-5 row-gap-lg-0">
+          <li class="box-outSide mb-lg-9 mb-md-5 pe-xl-6">
             <div class="row row-gap-5">
               <div class="col-xl-4">
-                <div class="pt-lg-10 py-8 ps-2 ps-md-8 box-inSideFirst h-100">
+                <div class="pt-lg-10 py-8 ps-2 ps-md-8 box-inSideFirst h-100 me-xl-2">
                   <div class="mt-xl-5">
                     <h2 class="mb-2 fs-3 fs-md-2">柔化肌膚，<br> 淡化細紋紋理</h2>
                     <p class="fs-md-6">符合環保和道德標準</p>
                   </div>
                 </div>
               </div>
-              <div class="col-xl-4 col-md-6">
-                <div class="card py-lg-8 px-lg-5">
+              <div class="col-xl-4 col-md-6" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div class="card py-xl-8 px-lg-2">
                   <h5 class="h5">緊緻修護洗面皂</h5>
                   <p class="fs-sm mb-1">Facial Cleanser with Pink Clay</p>
                   <a class="d-block" href="facial_cleanser_with_pink_clay.html">
@@ -231,13 +231,13 @@
                     </div>
                   </a>
                   <div class="card-body card-grey px-5 py-4">
-                    <h5 class="fw-bold mb-1">緊緻修護</h5>
-                    <p class="">有效去除臉部的污垢和多餘油脂<br>使用後皮膚感覺非常清爽乾淨<br>不會過度乾燥</p>
+                    <h5 class="fw-bold mb-1"><a href="facial_cleanser_with_pink_clay.html">緊緻修護</a></h5>
+                    <p class=""><a href="facial_cleanser_with_pink_clay.html">有效去除臉部的污垢和多餘油脂<br>使用後皮膚感覺非常清爽乾淨<br>不會過度乾燥</a></p>
                   </div>
                 </div>
               </div>
-              <div class="col-xl-4 col-md-6">
-                <div class="card py-lg-8 px-lg-5">
+              <div class="col-xl-4 col-md-6" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div class="card py-xl-8 px-lg-2">
                   <h5 class="h5">深層潔淨洗面皂</h5>
                   <p class="mb-1 fs-sm">Facial Cleanser with Charcoal</p>
                   <a class="d-block" href="facial_cleanser_with_charcoal.html">
@@ -246,25 +246,25 @@
                     </div>
                   </a>
                   <div class="card-body card-grey px-5 py-4">
-                    <h5 class="fw-bold mb-1">深層潔淨</h5>
-                    <p class="">活性炭有助於深層清潔皮膚<br>去除多餘油脂和污垢<br>使肌膚感覺清爽</p>
+                    <h5 class="fw-bold mb-1"><a href="">深層潔淨</a></h5>
+                    <p class=""><a href="">活性炭有助於深層清潔皮膚<br>去除多餘油脂和污垢<br>使肌膚感覺清爽</a></p>
                   </div>
                 </div>
               </div>
             </div>                         
           </li>
-          <li class="box-outSide ps-xl-5 mb-lg-9 mb-md-5">
+          <li class="box-outSide ps-xl-6 mb-lg-9 mb-md-5">
             <div class="row row-gap-5 flex-row-reverse">
               <div class="col-xl-4">
-                <div class="pt-lg-10 py-8 ps-2 ps-md-8 box-inSideFirst h-100">
+                <div class="pt-lg-10 py-8 ps-2 ps-md-8 box-inSideFirst h-100 ms-xl-2">
                   <div class="mt-xl-5">
                     <h2 class="mb-2 fs-3 fs-md-2">非常溫和，<br>適合敏感肌膚</h2>
                     <p class="fs-md-6">清新宜人氣息，讓人精神煥發</p>
                   </div>
                 </div>
               </div>
-              <div class="col-xl-4 col-md-6">
-                <div class="card py-lg-8 px-lg-5">
+              <div class="col-xl-4 col-md-6" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div class="card py-xl-8 px-lg-2">
                   <h5 class="h5">椰子油肥皂</h5>
                   <p class="mb-1 fs-sm">Base Coconut Bar Soap</p>
                   <a class="d-block" href="coconut_castile_bar_soap.html">
@@ -273,13 +273,13 @@
                     </div>
                   </a>
                   <div class="card-body card-grey px-5 py-4">
-                    <h5 class="fw-bold mb-1">椰子油</h5>
-                    <p class="">不含精油和其他添加物<br>對香料過敏或不喜歡強烈香氣的人<br>是一個好選擇</p>
+                    <h5 class="fw-bold mb-1"><a href="">椰子油</a></h5>
+                    <p class=""><a href="">不含精油和其他添加物<br>對香料過敏或不喜歡強烈香氣的人<br>是一個好選擇</a></p>
                   </div>
                 </div>
               </div>      
-              <div class="col-xl-4 col-md-6">
-                <div class="card py-lg-8 px-lg-5">
+              <div class="col-xl-4 col-md-6" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div class="card py-xl-8 px-lg-2">
                   <h5 class="h5">檸檬香桃木肥皂</h5>
                   <p class="mb-1 fs-sm">Base Lemon Myrtle Bar Soap</p>
                   <a class="d-block" href="lemon_myrtle_bar_soap.html">
@@ -288,25 +288,25 @@
                     </div>
                   </a>
                   <div class="card-body card-grey px-5 py-4">
-                    <h5 class="fw-bold mb-1">檸檬香桃木</h5>
-                    <p class="">沒有化學添加物及人工香料<br>保持了最純淨的配方<br>適合追求自然和純淨的人群使用</p>
+                    <h5 class="fw-bold mb-1"><a href="">檸檬香桃木</a></h5>
+                    <p class=""><a href="">沒有化學添加物及人工香料<br>保持了最純淨的配方<br>適合追求自然和純淨的人群使用</a></p>
                   </div>
                 </div>
               </div>                    
             </div>
           </li>
-          <li class="box-outSide pe-xl-5">
+          <li class="box-outSide pe-xl-6">
             <div class="row row-gap-5">
               <div class="col-xl-4">
-                <div class="pt-lg-10 py-8 ps-2 ps-md-8 box-inSideFirst h-100">
+                <div class="pt-lg-10 py-8 ps-2 ps-md-8 box-inSideFirst h-100 me-xl-2">
                   <div class="mt-lg-7">
                     <h2 class="mb-2 fs-3 fs-md-2">溫和且具有<br>保濕效果</h2>
                     <p class="fs-md-6">深層清除肌膚油脂及污垢</p>
                   </div>
                 </div>
               </div>
-              <div class="col-xl-4 col-md-6">
-                <div class="card py-lg-8 px-lg-5">
+              <div class="col-xl-4 col-md-6" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div class="card py-xl-8 px-lg-2">
                   <h5 class="h5">天竺葵和粉紅礦物肥皂</h5>
                   <p class="mb-1 fs-sm">Base Geranium & Pink Clay Bar Soap</p>
                   <a class="d-block" href="geranium&pink_clay_bar_soap.html">
@@ -315,13 +315,13 @@
                     </div>
                   </a>
                   <div class="card-body card-grey px-5 py-4">
-                    <h5 class="fw-bold mb-1">天竺葵和粉紅礦物</h5>
-                    <p class="">玫瑰花的香氣及淡淡的天竺葵香氣<br>含有保濕的粉紅礦物成分<br>能夠緊緻毛孔滋潤肌膚</p>
+                    <h5 class="fw-bold mb-1"><a href="">天竺葵和粉紅礦物</a></h5>
+                    <p class=""><a href="">玫瑰花的香氣及淡淡的天竺葵香氣<br>含有保濕的粉紅礦物成分<br>能夠緊緻毛孔滋潤肌膚</a></p>
                   </div>
                 </div>
               </div>      
-              <div class="col-xl-4 col-md-6">
-                <div class="card py-lg-8 px-lg-5">
+              <div class="col-xl-4 col-md-6" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div class="card py-xl-8 px-lg-2">
                   <h5 class="h5">薰衣草綠礦皂</h5>
                   <p class="mb-1 fs-sm">Base Lavender & Green Clay Bar Soap</p>
                   <a class="d-block" href="lavender&green_clay_bar_soap.html">
@@ -330,8 +330,8 @@
                     </div>
                   </a>
                   <div class="card-body card-grey px-5 py-4">
-                    <h5 class="fw-bold mb-1">薰衣草綠礦</h5>
-                    <p class="">薰衣草花香帶來放鬆和愉悅的感覺<br>薰衣草精油和綠色礦物泥成分<br>能夠溫和滋潤肌膚</p>
+                    <h5 class="fw-bold mb-1"><a href="">薰衣草綠礦</a></h5>
+                    <p class=""><a href="#">薰衣草花香帶來放鬆和愉悅的感覺<br>薰衣草精油和綠色礦物泥成分<br>能夠溫和滋潤肌膚</a></p>
                   </div>
                 </div>
               </div>                    
@@ -355,10 +355,10 @@
               <h4 class="h4 mb-6">聯絡資訊</h4>
               <div class="d-lg-flex mb-5">
                   <div class="d-flex flex-column mb-5 me-7">
-                    <a class="fs-6 mb-5" href="tel:+0800-000-000">
+                    <a class="fs-6 mb-5 link-neutral-50" href="tel:+0800-000-000">
                       <img class="me-4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIiSURBVHgBvVXbVcJAEJ0sj+/YAVYgVGDswAKAJBWoFRgrQCtAeXyLFYgVSAdiB/zz8t7NxBM5QWA5OudsZjO72TtzZ3Yi8sfiZZN+v38LdY3h/9jgeY/z+fwujuOpOEiZj16vx4OTog3r9Toql8s1TC/EQYykXoaqo1ar5WVjsVicwjzDCLrdri8OkgHYj0HFW35RaZnqa10cxAKAhgl1tVoNCvZYUGNMIA5iVH/ysVqtirwc8VEqlUI5AmCk+nxzA/IwkyPE6CGkiAfVkcxatsh5pVJ51texOIgFQDJ5+JM1GBNliyjPZ+SnhjHlXRAHMbn5SAGuciVp6UGVTVwv2jcA6n4sKQ0+QHjxSF2sIJd6Gd0BVCwNALgdDod1eg16rA1RdAaDwcGV5G0a0JPuoa5wIHlvMD+wJbCxV/HO3LTb7XvSiALo4P2Se7E0xv4X6InmtBiAH6Lm3/FRjY2u2WzGCvwNQjtUwAKQIq/TBnlDoE2KbEUtl0s2thkbnXZZ5iih95k9qy7Q2ZC0ET5ImkO7zugKI8hFUkeZvmLq5yPh3UCEpNGHI9FmdXEd330QCE6dbAUoAGFOLvYpV0S91qg989tGHDZBqTZIBSmhZ6Qsf9t3idm1gR6DCvL8oKYE/L6iZDv7AHlygCi/XUyDnHmM8YZIqaf69yOtu3OwTUBTABVhbL14aP13YRgmTgCZ8M7A40DSiM4wTnXpkWUt/yFf1DQN7dA4SDsAAAAASUVORK5CYII=" alt="call icon"> 02-1234-5678
                     </a>
-                    <a class="fs-6" href="mailto:soap_AUS@gmail.com">
+                    <a class="fs-6 link-neutral-50" href="mailto:soap_AUS@gmail.com">
                       <img class="me-4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF3SURBVHgB7VXbcYJQEF0Y/LcELSEdQAcpQAUqiKlArCBaAfL4twRJBUkHsQQK4JFzCGQIgYDBL8czs+wF9p59XhC5owdKtQiCYAO1hkxlHGJFUQ6LxeL524Hv+y94uJYrIsuyrWmajlZ4URSLOkkSw7btSEYAlXiEOqqq+gTtqOXzoiyapp3KUv2XnKTHH5wtdg4MdWSDZOyzDIDrujME52KpN9+pjXsjz/MzDSeTySkMQ1MGRA3yN+4p9xqdDpbLZZSmKQ08GM8gBzhxGaH8jnoKcpZjJ1/l8LD3gRydDgiWBUYWyG1GBLGYDQj1WtTMkFGzoTFtuQd74yZfWw8KrFarA0gj1hYEejkADtaMdg0tkFdEbf3Vq04HVTZQBomhOV0ORpqveJi2iHonPVBlAEDkYKrmZRPfeV5wUnvJCU0GosxmLhdiUAZjcDsOivltO1CXosZRcFZN3kM2mPUPjKRcCR4v9R8Ox47fntE/HMieoy13DMEn1gm0OJVJwggAAAAASUVORK5CYII=" alt="mail icon"> soap_AUS@gmail.com
                     </a>
                   </div>
@@ -374,8 +374,10 @@
               </ul>
             </div>
         </div>
-    </footer>
-      
+    </footer>    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
 </body>
 
 </html>
