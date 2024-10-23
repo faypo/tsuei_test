@@ -1,65 +1,65 @@
-import "./assets/scss/all.scss";
-import "bootstrap/dist/js/bootstrap.min.js";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './assets/scss/all.scss';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // 嘗試使用 bundle 來確保依賴項正確加載
+import 'swiper/css';
+import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-AOS.init({
-  duration: 800,
-});
+document.addEventListener("DOMContentLoaded", function() {
+  AOS.init({
+    duration: 800
+  });
+  
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 8,
+    slidesPerView: 3,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
 
-// console.log("Hello world!");
-
-document.getElementById("down").addEventListener("click", function () {
-  console.log("test");
-  document.getElementById("myNumber").value =
-    parseInt(document.getElementById("myNumber").value) - 1;
-  if (document.getElementById("myNumber").value <= 1) {
-    document.getElementById("myNumber").value = 1;
-  }
-});
-
-document.getElementById("up").addEventListener("click", function () {
-  console.log("test");
-  document.getElementById("myNumber").value =
-    parseInt(document.getElementById("myNumber").value) + 1;
-});
-
-//單項商品商品圖swiper
-var swiper = new Swiper(".mySwiper", {
-  spaceBetween: 8,
-  slidesPerView: 3,
-  freeMode: true,
-  watchSlidesProgress: true,
-});
-var swiper2 = new Swiper(".mySwiper2", {
-  spaceBetween: 0,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  thumbs: {
-    swiper: swiper,
-  },
-});
-
-//單項商品-本月推薦swiper
-var swiper = new Swiper(".mySwiper3", {
-  autoplay:true,
-  slidesPerView: 1, // 預設手機版顯示一個slide
-  spaceBetween: 24,
-  breakpoints: {
-    // 當螢幕寬度大於等於640px時，顯示2個slide
-    640: {
-      slidesPerView: 2,
-      spaceBetween: 24,
+  var swiper2 = new Swiper(".mySwiper2", {
+    spaceBetween: 0,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
-    // 電腦
-    1024: {
-      slidesPerView: 3,
-      spaceBetween: 24,
+    thumbs: {
+      swiper: swiper,
     },
+  });
 
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+  var swiper3 = new Swiper(".mySwiper3", {
+    autoplay:true,
+    slidesPerView: 1,
+    spaceBetween: 24,
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 24,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 24,
+      },
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+  document.getElementById("down").addEventListener("click", function () {
+    console.log("test");
+    document.getElementById("myNumber").value = parseInt(document.getElementById("myNumber").value) - 1;
+    if (document.getElementById("myNumber").value <= 1) {
+      document.getElementById("myNumber").value = 1;
+    }
+  });
+
+  document.getElementById("up").addEventListener("click", function () {
+    console.log("test");
+    document.getElementById("myNumber").value = parseInt(document.getElementById("myNumber").value) + 1;
+  });
 });
