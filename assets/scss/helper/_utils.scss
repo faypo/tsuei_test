@@ -16,6 +16,16 @@
     }
 }
 
+.img_pord_2_1{
+    background-image: url(../images/prod_2.png);
+    background-size: cover;
+    background-position: center;
+    height: 420px;
+    &:hover{
+        background-image: url(../images/prod_2_hover.jpg);
+    }
+}
+
 .img_pord_2{
     background-image: url(../images/prod_2.png);
     background-size: cover;
