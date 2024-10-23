@@ -3,7 +3,6 @@ import { ViteEjsPlugin } from "vite-plugin-ejs";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 import { glob } from "glob";
-
 import liveReload from "vite-plugin-live-reload";
 
 function moveOutputPlugin() {
@@ -23,8 +22,6 @@ function moveOutputPlugin() {
 }
 
 export default defineConfig({
-  // base 的寫法：
-  // base: '/Repository 的名稱/'
   base: "/tsuei_test/",
   plugins: [
     liveReload(["./layout/**/*.ejs", "./pages/**/*.ejs", "./pages/**/*.html"]),
@@ -32,7 +29,6 @@ export default defineConfig({
     moveOutputPlugin(),
   ],
   server: {
-    // 啟動 server 時預設開啟的頁面
     open: "pages/index.html",
   },
   build: {
@@ -50,5 +46,9 @@ export default defineConfig({
       ),
     },
     outDir: "dist",
+  },
+
+  optimizeDeps: {
+    include: ['swiper', 'aos'],
   },
 });
